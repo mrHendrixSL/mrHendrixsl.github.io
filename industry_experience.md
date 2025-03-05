@@ -8,7 +8,7 @@
 
 ## 📊 **Data Analyst**  
 📍 **EFL Global | Hybrid**  
-🗓 **May 2023 – Present**  
+🗓 **May 2023 – Sep 2024 (1 Year, 5 Months)**  
 📍 **Colombo, Sri Lanka**  
 
 ### 🔹 Key Responsibilities:
@@ -86,5 +86,9 @@
 
 **Skills Gained:**  
 ✅ **Business Process Analysis** | ✅ **Requirement Gathering** | ✅ **Software Documentation**  
+
+[🏠 Home](index.md) [📌 Current Status](current_status.md)
+[🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
+[📘 Education](education.md) [📄 Publications](publications.md)
 
 

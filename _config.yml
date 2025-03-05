@@ -1,5 +1,12 @@
-title: Rasika Edirisinghe
-#logo: /assets/img/headshot_circle.png
-#description: text below image
-#show_downloads: true
-theme: jekyll-theme-minimal
+title: "Rasika Edirisinghe"
+theme: jekyll-theme-cayman
+description: "AI Researcher | NLP | Machine Learning | Deep Learning | Applied Data Visualization"
+show_downloads: false
+
+# Navigation Bar
+header_pages:
+  - index.md
+  - current_status.md
+  - industry_jobs.md
+  - education.md
+  - publications.md

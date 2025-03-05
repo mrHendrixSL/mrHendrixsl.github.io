@@ -1,4 +1,6 @@
-![EFL](assets/img/efl_logo.png)
+[🏠 Home](index.md) [📌 Current Status](current_status.md)
+[🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
+[📘 Education](education.md) [📄 Publications](publications.md)
 
 # 💼 Industry Experience
 
@@ -20,7 +22,6 @@
 
 ---
 
-![Affno](assets/img/affno_logo.png)
 
 ## 🛠 **Implementation Engineer**  
 📍 **Affno Virtual Market**  
@@ -37,7 +38,6 @@
 
 ---
 
-![Synergen](assets/img/synergen_logo.png)
 
 ## 🏥 **Operations Analyst**  
 📍 **SYNERGEN Health | Full-time**  

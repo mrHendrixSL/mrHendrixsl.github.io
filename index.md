@@ -1,9 +1,7 @@
-![Top Banner](assets/img/topper.jpg)
-
 # 🧠 Rasika Edirisinghe  
 ### *AI Researcher | NLP | Machine Learning | Deep Learning | Applied Data Visualization*  
 
-**[🏠 Home](index.md) ||| [📌 Current Status](current_status.md) ||| [🎓 Academic Experience](academic_experience.md) ||| [💼 Industry Experience](industry_experience.md) ||| [📘 Education](education.md) ||| [📄 Publications](publications.md)**  
+[🏠 Home](index.md) ||| [📌 Current Status](current_status.md) ||| [🎓 Academic Experience](academic_experience.md) ||| [💼 Industry Experience](industry_experience.md) ||| [📘 Education](education.md) ||| [📄 Publications](publications.md)
 
 <img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="180" style="border-radius: 50%; display: block; margin: auto;">
 
@@ -24,17 +22,6 @@ I am an AI researcher exploring **Natural Language Processing (NLP), Deep Learni
 - Tackling challenges in **unstable spellings, context sensitivity, and parallel text analysis**.
 - Enhancing **AI interpretability** through **interactive visualization techniques**.
 
----
-
-## 🏆 **Explore More**
-Click the buttons below to navigate through my work:
-
-| 📌 **Sections**  | 🔗 **Quick Links** |
-|----------------|----------------|
-| 🏛 **[Current Research](current_status.md)** | 🏆 **[Industry Experience](industry_jobs.md)** |
-| 🎓 **[Education](education.md)** | 📄 **[Publications](publications.md)** |
-
----
 
 ## 🚀 **Top Skills**
 ✔️ **Machine Learning**  

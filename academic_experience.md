@@ -1,7 +1,9 @@
-![UCC](assets/img/ucc_logo.png)
+
 
 # 🎓 Academic Experience
-
+[🏠 Home](index.md) [📌 Current Status](current_status.md)
+[🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
+[📘 Education](education.md) [📄 Publications](publications.md)
 ---
 
 ## 🏛 **Marie Curie Early Stage Researcher**  
@@ -14,7 +16,7 @@
 
 ---
 
-![SLT Training Center](assets/img/slt_logo.png)
+
 
 ## 📚 **Visiting Lecturer**  
 📍 **Sri Lanka Telecom Training Center**  
@@ -33,7 +35,7 @@
 
 ---
 
-![Ruhuna](assets/img/ruhuna_logo.png)
+
 
 ## 📚 **Visiting Lecturer**  
 📍 **Faculty of Engineering, University of Ruhuna**  
@@ -49,4 +51,4 @@
 **Skills Gained:**  
 ✅ Data Cleaning | ✅ Data Visualization | ✅ Machine Learning | ✅ Teaching  
 
-👉 Return to [🏠 Homepage](index.md)  
+

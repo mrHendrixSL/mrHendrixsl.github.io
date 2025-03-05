@@ -26,6 +26,7 @@
 ### **📌 Sentiment Reason Mining Framework for Analyzing Twitter Discourse on Critical Issues in US Healthcare Industry**  
 📖 *INTERNATIONAL CONFERENCE ON SMART COMPUTING AND SYSTEMS ENGINEERING 2023*  
 👨‍💻 **Authors:** R. Edirisinghe, P. P. G. Dinesh Asanka  
+📍 **Department of Industrial Management, Faculty of Science, University of Kelaniya, Sri Lanka**  
 🔗 **[IEEE Xplore Link](https://ieeexplore.ieee.org/document/10215010/)**  
 🗓 **August 2023**  
 - Developed a **machine learning framework** for analyzing **Twitter discourse** on critical **US healthcare issues**.  

@@ -2,8 +2,11 @@
 [🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
 [📘 Education](education.md) [📄 Publications](publications.md) 
 [📢 Presentations & Academic Contributions](Presentations_Contributions.md)
+
 ---
+
 ---
+
 # 🎓 Academic Experience
 
 ---

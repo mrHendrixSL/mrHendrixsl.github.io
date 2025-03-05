@@ -1,6 +1,3 @@
-# 🧠 Rasika Edirisinghe  
-### *AI Researcher | NLP | Machine Learning | Deep Learning | Applied Data Visualization*  
-
 [🏠 Home](index.md) ||| [📌 Current Status](current_status.md) ||| [🎓 Academic Experience](academic_experience.md) ||| [💼 Industry Experience](industry_experience.md) ||| [📘 Education](education.md) ||| [📄 Publications](publications.md)
 
 <img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="180" style="border-radius: 50%; display: block; margin: auto;">

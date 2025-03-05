@@ -2,7 +2,8 @@
 [🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
 [📘 Education](education.md) [📄 Publications](publications.md) 
 [📢 Presentations & Academic Contributions](Presentations_Contributions.md)
-
+---
+---
 <img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="180" style="border-radius: 50%; display: block; margin: auto;">
 
 

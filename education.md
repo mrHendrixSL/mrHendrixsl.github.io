@@ -3,6 +3,11 @@
 [📘 Education](education.md) [📄 Publications](publications.md) 
 [📢 Presentations & Academic Contributions](Presentations_Contributions.md)
 
+---
+
+---
+
+
 # 🎓 Education
 
 ---

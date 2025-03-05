@@ -24,12 +24,12 @@
 ## 📌 **Master of Science (M.Sc.) in Business Analytics**  
 📍 **Robert Gordon University, Aberdeen, UK**  
 🗓 **Sep 2021 – Sep 2023**  
-🎓 **Final Grade: Distinction**  
+🎓 **Final Grade: Distinction 🏆🏆🏆**  
 
 ### 📌 **Thesis:** *Twitter Sentiment Reason Mining Framework to Identify Major Problems in US Healthcare Industry*  
 - Developed a **Python-based NLP framework** to analyze **Twitter discourse**.  
 - Implemented **Sentiment Analysis (VADER, TextBlob, BERT), Clustering (K-Means, Agglomerative), and Topic Modeling (LDA, NMF)**.  
-- **Final Grade: A**  
+- **Final Grade: A 🏆🏆🏆**  
 
 ### 📌 **Key Modules & Grades**:
 <table>

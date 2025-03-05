@@ -2,8 +2,11 @@
 [🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
 [📘 Education](education.md) [📄 Publications](publications.md) 
 [📢 Presentations & Academic Contributions](Presentations_Contributions.md)
+
 ---
+
 ---
+
 # 📢 Presentations & Academic Contributions
 
 ---
@@ -17,7 +20,7 @@
 
 ## 🏆 **Academic Contributions**
 ### 🏛 **Peer Reviewer - 8ᵗʰ International Research Conference on Smart Computing and Systems Engineering (2025)**  
-🗓 **2025**  
+🗓 **Feb 2025**  
 - Served as a **peer reviewer**, evaluating **academic papers** for the **Smart Computing and Systems Engineering** conference.  
 - Provided **technical assessments and constructive feedback** on **AI, NLP, and Machine Learning research papers**.  
 

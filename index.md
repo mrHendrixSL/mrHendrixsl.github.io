@@ -1,6 +1,7 @@
 [🏠 Home](index.md) [📌 Current Status](current_status.md)
 [🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
-[📘 Education](education.md) [📄 Publications](publications.md)
+[📘 Education](education.md) [📄 Publications](publications.md) 
+[📢 Presentations & Academic Contributions](Presentations_Contributions.md)
 
 <img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="180" style="border-radius: 50%; display: block; margin: auto;">
 
@@ -35,9 +36,10 @@ I am an AI researcher exploring **Natural Language Processing (NLP), Deep Learni
 ## 📄 **Publications**
 📖 *[Sentiment Reason Mining Framework for Analyzing Twitter Discourse on Critical Issues in US Healthcare](https://ieeexplore.ieee.org/document/10215010)*  
 
-👉 Check out my **[Publications Page](publications.md)** for more!
-
----
+[🏠 Home](index.md) [📌 Current Status](current_status.md)
+[🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
+[📘 Education](education.md) [📄 Publications](publications.md) 
+[📢 Presentations & Academic Contributions](Presentations_Contributions.md)
 
 ## 📩 **Let’s Connect**
 📧 **Email:** [rasikahendrix@gmail.com](mailto:rasikahendrix@gmail.com)  

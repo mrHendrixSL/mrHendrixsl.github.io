@@ -1,8 +1,8 @@
-# 📄 Publications
-
 [🏠 Home](index.md) [📌 Current Status](current_status.md)
 [🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
 [📘 Education](education.md) [📄 Publications](publications.md)
+# 📄 Publications
+
 
 ## 📌 **Conference & Journal Papers**
 🔗 **Sentiment Reason Mining Framework for Analyzing Twitter Discourse on Critical Issues in US Healthcare**  

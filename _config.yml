@@ -7,6 +7,7 @@ show_downloads: false
 header_pages:
   - index.md
   - current_status.md
-  - industry_jobs.md
+  - academic_experience.md
+  - industry_experience.md
   - education.md
   - publications.md

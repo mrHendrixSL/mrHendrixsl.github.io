@@ -1,5 +1,9 @@
 # 📄 Publications
 
+[🏠 Home](index.md) [📌 Current Status](current_status.md)
+[🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
+[📘 Education](education.md) [📄 Publications](publications.md)
+
 ## 📌 **Conference & Journal Papers**
 🔗 **Sentiment Reason Mining Framework for Analyzing Twitter Discourse on Critical Issues in US Healthcare**  
 📝 *International Conference on Smart Computing and Systems Engineering, 2023*  

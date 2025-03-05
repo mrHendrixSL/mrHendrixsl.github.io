@@ -37,15 +37,3 @@ I am a researcher exploring **Natural Language Processing (NLP), Deep Learning, 
 
 ---
 
-## 📄 **Publications**
-📖 *[Sentiment Reason Mining Framework for Analyzing Twitter Discourse on Critical Issues in US Healthcare](https://ieeexplore.ieee.org/document/10215010)*  
-
-[🏠 Home](index.md) [📌 Current Status](current_status.md)
-[🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
-[📘 Education](education.md) [📄 Publications](publications.md) 
-[📢 Presentations & Academic Contributions](Presentations_Contributions.md)
-
-## 📩 **Let’s Connect**
-📧 **Email:** [rasikahendrix@gmail.com](mailto:rasikahendrix@gmail.com)  
-💼 **LinkedIn:** [linkedin.com/in/rasika-chamara](https://www.linkedin.com/in/rasika-chamara/)  
-📂 **GitHub:** [github.com/mrHendrixSL](https://github.com/mrHendrixSL/)  

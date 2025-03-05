@@ -1,3 +1,6 @@
+[🏠 Home](index.md) [📌 Current Status](current_status.md)
+[🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
+[📘 Education](education.md) [📄 Publications](publications.md)
 # 🎓 Education
 
 ## 📌 **PhD in Computer Science (Reading)**

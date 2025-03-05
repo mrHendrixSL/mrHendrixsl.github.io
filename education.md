@@ -26,11 +26,6 @@
 🗓 **Sep 2021 – Sep 2023**  
 🎓 **Final Grade: Distinction 🏆🏆🏆**  
 
-### 📌 **Thesis:** *Twitter Sentiment Reason Mining Framework to Identify Major Problems in US Healthcare Industry*  
-- Developed a **Python-based NLP framework** to analyze **Twitter discourse**.  
-- Implemented **Sentiment Analysis (VADER, TextBlob, BERT), Clustering (K-Means, Agglomerative), and Topic Modeling (LDA, NMF)**.  
-- **Final Grade: A 🏆🏆🏆**  
-
 ### 📌 **Key Modules & Grades**:
 <table>
   <tr>
@@ -66,6 +61,77 @@
     <td>C</td>
   </tr>
 </table>
+
+
+
+### 📌 **Thesis:** *Twitter Sentiment Reason Mining Framework to Identify Major Problems in US Healthcare Industry*  
+📍 **Robert Gordon University, Aberdeen, UK**  
+🗓 **2023**  
+🎓 **Final Grade: A 🏆🏆🏆**  
+
+- Developed a **Python-based NLP framework** to analyze **Twitter discourse** on critical healthcare issues.  
+- Applied **advanced sentiment analysis, topic modeling, and clustering techniques** to uncover major concerns in the **US healthcare sector**.  
+- Leveraged **machine learning and deep learning models** to extract key insights from **public social media discussions**.  
+
+---
+
+## 🔬 **Research Overview**
+This research presents a **comprehensive Natural Language Processing (NLP) framework** designed to study sentiment within the **US healthcare industry**. By analyzing **Twitter data**, the study identifies **major problems, trends, and discourse patterns** in public healthcare discussions. The goal is to **quantify sentiment variations, detect public concerns, and highlight emergent healthcare issues**.  
+
+To achieve this, multiple **text mining and NLP approaches** were integrated:  
+
+### 🏥 **Key Research Components**
+1️⃣ **Sentiment Analysis & Spike Detection**  
+   - **Sentiment Models Used:**  
+     - Pre-trained: **AFINN, TextBlob, VADER**  
+     - Trained: **Decision Trees, Logistic Regression, Random Forest, RNN_TDFVec, CNN_TDFVec, DNN_TDFVec**  
+   - **Evaluation Metrics:** Accuracy, Precision, Recall, F1 Score  
+   - **Spike Detection:** Statistical analysis using **Z-scores & Matplotlib** to identify **trends and anomalies** in sentiment over time.  
+
+2️⃣ **Clustering & Text Vectorization**  
+   - **Clustering Techniques:**  
+     - **K-Means, Agglomerative, Birch, MeanShift**  
+   - **Vectorization Methods:**  
+     - **TF-IDF, Word2Vec, CountVectorizer**  
+   - **Cluster Evaluation Metrics:**  
+     - **Silhouette Score, Davies-Bouldin Score, Calinski-Harabasz Score**  
+
+3️⃣ **Topic Modeling & Keyword Extraction**  
+   - **Algorithms Used:**  
+     - **Latent Dirichlet Allocation (LDA), Latent Semantic Analysis (LSA), Non-Negative Matrix Factorization (NMF)**  
+   - **Topic Model Evaluations:**  
+     - **Perplexity Score, Coherence CV, Coherence UMass, Coherence C_UCI, Topic Diversity, Topic Dominance Score**  
+
+4️⃣ **Textual Association & Similarity Analysis**  
+   - **Methods Applied:**  
+     - **TF-IDF, Cosine Similarity, Sequence Similarity, Levenshtein Distance**  
+   - **Objective:** Identify **recurring patterns, inter-topic connections, and emerging trends** within healthcare-related discourse.  
+
+---
+
+## 📊 **Data Collection & Processing**
+- **Social & Web Mining:**  
+  - Implemented **Python-based web scraping algorithms** to extract relevant data from:  
+    - **Twitter API (snscrape)**  
+    - **Google News (googlenews API)**  
+    - **Web Articles & Blogs (BeautifulSoup4)**  
+- **Data Preprocessing Pipeline:**  
+  - **Tokenization, Lemmatization, Stopword Removal, Named Entity Recognition (NER)**  
+  - **Handling missing data, duplicate filtering, language detection**  
+
+---
+
+## 🚀 **Impact & Applications**
+- **Healthcare Policy Analysis**: Provides **quantitative insights** for **policymakers, healthcare providers, and researchers** to track **public concerns and sentiment fluctuations**.  
+- **Crisis Management & Early Warning Systems**: Helps **detect sentiment spikes**, enabling **rapid response to emerging healthcare issues** (e.g., vaccine hesitancy, COVID-19 discussions).  
+- **Market Research & Social Media Monitoring**: Assists **healthcare organizations, pharma companies, and insurers** in understanding **public sentiment** around **medications, treatments, and policies**.  
+- **AI-Driven Decision Support**: Demonstrates how **machine learning and NLP techniques** can be used to **enhance real-time sentiment monitoring** and **improve public health communication**.  
+
+---
+
+🎯 **This thesis lays the groundwork for future research in AI-driven sentiment analysis, providing an adaptable NLP framework for studying public discourse in various domains beyond healthcare.**  
+
+
 
 ---
 

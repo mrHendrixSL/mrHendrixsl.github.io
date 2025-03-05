@@ -1,6 +1,8 @@
 [🏠 Home](index.md) [📌 Current Status](current_status.md)
 [🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
-[📘 Education](education.md) [📄 Publications](publications.md)
+[📘 Education](education.md) [📄 Publications](publications.md) 
+[📢 Presentations & Academic Contributions](Presentations_Contributions.md)
+
 # 📄 Publications
 
 
@@ -12,3 +14,8 @@
 ## 📌 **Upcoming Research**
 - 📖 *A Computational Approach to Semantic Change Detection using LLMs*  
 - 📝 *Interpretable NLP for Parallel Text Analysis: A Case Study in Hiberno-English Literature*  
+
+[🏠 Home](index.md) [📌 Current Status](current_status.md)
+[🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
+[📘 Education](education.md) [📄 Publications](publications.md) 
+[📢 Presentations & Academic Contributions](Presentations_Contributions.md)

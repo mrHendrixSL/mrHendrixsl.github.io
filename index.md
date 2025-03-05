@@ -1,5 +1,9 @@
+![Top Banner](assets/img/topper.jpg)
+
 # 🧠 Rasika Edirisinghe  
 ### *AI Researcher @ CASCADE | Horizon Europe MSCA | PhD Computer Science (Reading)*  
+
+<img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="180" style="border-radius: 50%; display: block; margin: auto;">
 
 🚀 **NLP | Machine Learning | Deep Learning | Transformers | Applied Data Visualization**  
 🔍 **Research Focus:** Language Modelling & Visualization for Parallel Text Analysis  
@@ -18,9 +22,15 @@ I am an AI researcher exploring **Natural Language Processing (NLP), Deep Learni
 - Tackling challenges in **unstable spellings, context sensitivity, and parallel text analysis**.
 - Enhancing **AI interpretability** through **interactive visualization techniques**.
 
-I love to **collaborate, share knowledge, and explore research innovations** in AI, NLP, and Computational Linguistics. Let’s connect! 🚀  
+---
 
-👉 Check out my [**Current Status**](current_status.md), [**Industry Experience**](industry_jobs.md), [**Education**](education.md), and [**Publications**](publications.md).  
+## 🏆 **Explore More**
+Click the buttons below to navigate through my work:
+
+| 📌 **Sections**  | 🔗 **Quick Links** |
+|----------------|----------------|
+| 🏛 **[Current Research](current_status.md)** | 🏆 **[Industry Experience](industry_jobs.md)** |
+| 🎓 **[Education](education.md)** | 📄 **[Publications](publications.md)** |
 
 ---
 
@@ -34,8 +44,9 @@ I love to **collaborate, share knowledge, and explore research innovations** in 
 ---
 
 ## 📄 **Publications**
-🔗 [Sentiment Reason Mining Framework for Analyzing Twitter Discourse on Critical Issues in US Healthcare](https://ieeexplore.ieee.org/document/10215010)  
-📖 More publications on [**Publications Page**](publications.md)
+📖 *[Sentiment Reason Mining Framework for Analyzing Twitter Discourse on Critical Issues in US Healthcare](https://ieeexplore.ieee.org/document/10215010)*  
+
+👉 Check out my **[Publications Page](publications.md)** for more!
 
 ---
 

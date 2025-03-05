@@ -28,15 +28,40 @@
 - **Final Grade: A**  
 
 ### 📌 **Key Modules & Grades**:
-| 📖 Module | 🏆 Grade |
-|-----------|---------|
-| Data Management | A |
-| Introduction to Big Data & Data Science | A |
-| Web Mining | A |
-| Business Intelligence Tools & Applications | A |
-| Statistics for Business Analytics | B |
-| Business Modelling & Analytics | B |
-| Fundamentals of Data Warehousing | C |
+<table>
+  <tr>
+    <th>📖 Module</th>
+    <th>🏆 Grade</th>
+  </tr>
+  <tr>
+    <td>Data Management</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>Introduction to Big Data & Data Science</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>Web Mining</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>Business Intelligence Tools & Applications</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>Statistics for Business Analytics</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Business Modelling & Analytics</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Fundamentals of Data Warehousing</td>
+    <td>C</td>
+  </tr>
+</table>
 
 ---
 

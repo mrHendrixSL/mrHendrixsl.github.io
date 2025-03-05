@@ -1,3 +1,8 @@
+[🏠 Home](index.md) [📌 Current Status](current_status.md)
+[🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
+[📘 Education](education.md) [📄 Publications](publications.md) 
+[📢 Presentations & Academic Contributions](Presentations_Contributions.md)
+
 # 📢 Presentations & Academic Contributions
 
 ---
@@ -33,3 +38,7 @@
   6. **Performance Metrics** (Precision, Recall, F1-score, Confusion Matrix, ROC Curves).  
 
 ---
+[🏠 Home](index.md) [📌 Current Status](current_status.md)
+[🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
+[📘 Education](education.md) [📄 Publications](publications.md) 
+[📢 Presentations & Academic Contributions](Presentations_Contributions.md)

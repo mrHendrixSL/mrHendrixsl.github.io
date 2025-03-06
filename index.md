@@ -8,7 +8,7 @@
 <div style="display: flex; align-items: center; gap: 20px;">
     <img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="220" style="border-radius: 50%;">
     <div>
-        <h3>🚀 NLP | Machine Learning | Deep Learning | Transformers | Applied Data Visualization</h2>
+        <h3> NLP | Machine Learning | Deep Learning | Transformers | Applied Data Visualization</h3>
         <p>🔍 <strong>Research Focus:</strong> Language Modelling & Visualization for Parallel Text Analysis</p>
         <p>📍 <strong>University College Cork, Ireland</strong></p>
         <p>📧 <a href="mailto:rasikahendrix@gmail.com">Personal</a> | <a href="mailto:rasika.edirisinghe@ucc.ie">Official</a></p>

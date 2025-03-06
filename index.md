@@ -26,12 +26,6 @@ I am a researcher exploring **Natural Language Processing (NLP), Deep Learning, 
 - Enhancing **AI interpretability** through **interactive visualization techniques**.
 
 
-## 🚀 **Top Skills**
-✔️ **Machine Learning**  
-✔️ **Deep Learning**  
-✔️ **Natural Language Processing (NLP)**  
-✔️ **Transformers & LLMs**  
-✔️ **Applied Data Visualization**  
 
 ---
 

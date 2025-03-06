@@ -4,14 +4,14 @@
 
 <h3>🔥 WELCOME TO MY PERSONAL HELLSCAPE 🔥</h3>  
 
-<h3> *Natural Language Processing*  <h3>
+<h3> *Natural Language Processing* </h3>
+
+</div>
 
 ---
 
 ### Where meaning gets mangled, logic dissolves into madness,  
 ### and the shape of my brain is twisted into forms it was never meant to hold.
-
-</div>
 
 ---
 
@@ -22,10 +22,6 @@ Every friend I have who moves anything heavier than a laptop more than twice a w
 Yeah, sure. You’re out there throwing down against gravity and entropy itself, dragging your body through the dirt. **Respect.**  
 
 But let’s not get it twisted—while you’re breaking your body, I’m cracking open the soft, quivering machinery of human language – and by extension, the human mind.  
-
----
-
-## Welcome to my personal hellscape: Natural Language Processing.  
 
 You see, our squishy biological processors were designed to recognize faces, avoid saber-toothed tigers, and maybe remember where the best berries grow. They were not meant to wrestle with the infinite fractal chaos of language—this thing that evolves over centuries as a social coordination mechanism for hairless apes, where words and meaning shapeshift across contexts, cultures, and time.  
 
@@ -53,7 +49,8 @@ I’m surrounded by people who think it’s totally normal to train a model for 
 
 And it breaks you.  
 
-It starts small—missed meals, eyes burning from the screen glow at 3 AM.But soon? Reality fractures.  
+It starts small—missed meals, eyes burning from the screen glow at 3 AM.  
+But soon? Reality fractures.  
 
 I’ve stared into the abyss of a model’s attention map so long that the model itself starts to stare back.  
 
@@ -86,7 +83,8 @@ You see an unstructured dataset—raw potential that your burnt-out brain tries 
 
 And let’s be clear—this isn’t a battle against logic or language. It’s a battle against the very wiring of your mind.  
 
-I’m not just feeding data into an LLM;mI’m scraping every inch of meaning from my own skull and serving it up into the void, one token at a time.  
+I’m not just feeding data into an LLM;  
+I’m scraping every inch of meaning from my own skull and serving it up into the void, one token at a time.  
 
 I don’t need to lift fifty-pound weights.  
 
@@ -117,9 +115,23 @@ I am dissolving the map itself.
 ---
 
 ## **📢 Share This Post!**  
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html" target="_blank"><img src="https://img.shields.io/badge/Facebook-%231877F2?style=for-the-badge&logo=facebook&logoColor=white"></a>  
-<a href="https://twitter.com/intent/tweet?text=Check%20this%20out!&url=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>  
-<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>  
-<a href="https://reddit.com/submit?url=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html&title=Check%20this%20out!" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500?style=for-the-badge&logo=reddit&logoColor=white"></a>  
+
+<p>  
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html" target="_blank">
+  <img src="https://img.shields.io/badge/Facebook-%231877F2?style=for-the-badge&logo=facebook&logoColor=white">
+</a>  
+
+<a href="https://twitter.com/intent/tweet?text=Check%20this%20out!&url=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html" target="_blank">
+  <img src="https://img.shields.io/badge/Twitter-%231DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
+</a>  
+
+<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+</a>  
+
+<a href="https://reddit.com/submit?url=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html&title=Check%20this%20out!" target="_blank">
+  <img src="https://img.shields.io/badge/Reddit-%23FF4500?style=for-the-badge&logo=reddit&logoColor=white">
+</a>  
+</p>  
 
 </div>

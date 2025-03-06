@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog
+title: Rasika Edirisinghe - Blog
 permalink: /blog/
 ---
 

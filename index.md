@@ -5,14 +5,21 @@
 
 ---
 
-<img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="180" style="border-radius: 50%; display: block; margin: auto;">
-
-
-🚀 **NLP | Machine Learning | Deep Learning | Transformers | Applied Data Visualization**  
-🔍 **Research Focus:** Language Modelling & Visualization for Parallel Text Analysis  
-
-📍 **University College Cork, Ireland**  
-📧 [Personal](mailto:rasikahendrix@gmail.com) , [Official](mailto:rasika.edirisinghe@ucc.ie) | 🔗 [LinkedIn](https://www.linkedin.com/in/rasika-chamara/) | 📂 [GitHub](https://github.com/mrHendrixSL/) | 📖 [ORCID](https://orcid.org/0009-0008-4673-0259) | 🎓 [Google Scholar](https://scholar.google.com/citations?user=o_7ZjgMAAAAJ&hl=en)
+<div style="display: flex; align-items: center; gap: 20px;">
+    <img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="180" style="border-radius: 50%;">
+    <div>
+        <h2>🚀 NLP | Machine Learning | Deep Learning | Transformers | Applied Data Visualization</h2>
+        <p>🔍 <strong>Research Focus:</strong> Language Modelling & Visualization for Parallel Text Analysis</p>
+        <p>📍 <strong>University College Cork, Ireland</strong></p>
+        <p>📧 <a href="mailto:rasikahendrix@gmail.com">Personal</a> | <a href="mailto:rasika.edirisinghe@ucc.ie">Official</a></p>
+        <p>
+            🔗 <a href="https://www.linkedin.com/in/rasika-chamara/">LinkedIn</a> | 
+            📂 <a href="https://github.com/mrHendrixSL/">GitHub</a> | 
+            📖 <a href="https://orcid.org/0009-0008-4673-0259">ORCID</a> | 
+            🎓 <a href="https://scholar.google.com/citations?user=o_7ZjgMAAAAJ&hl=en">Google Scholar</a>
+        </p>
+    </div>
+</div>
 
 ---
 

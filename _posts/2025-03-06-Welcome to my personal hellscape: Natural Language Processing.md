@@ -86,9 +86,16 @@ And let’s be clear—this isn’t a battle against logic or language. It’s a
 I’m not just feeding data into an LLM;  
 I’m scraping every inch of meaning from my own skull and serving it up into the void, one token at a time.  
 
-I don’t need to lift fifty-pound weights.  
+no—  
+I don’t need to dig tunnels under Mordor.    
 
-I traded that burden for the privilege of squeezing the essence of human language through a digital meat grinder until (hopefully) meaning oozes out in ones and zeroes.  
+I traded that burden for the privilege of squeezing the essence of human language through a digital meat grinder until (hopefully) meaning oozes out in ones and zeroes. 
+
+—I’m duct-taping together the entire messy, contradictory, glorious chaos of human language and force feeding it through transformers until they take the form of language moguls—your GPTs, BERTs, and every attention-hungry beast in between—so a kid in Tehran can ask it to write a poem about a goat who dreams of space travel, or some teenager in Tokyo can demand a breakup text that’s both cold and emotionally mature. And some sleep-deprived insomniac in New York can demand a Shakespearean sonnet about tacos at 3 AM. 
+
+So that a college kid in Dublin can ask, 
+‘What’s the meaning of life?’ and, on a good day, get something that makes them pause, something that actually makes them think, instead of just spitting back ‘42.
+
 
 ---
 

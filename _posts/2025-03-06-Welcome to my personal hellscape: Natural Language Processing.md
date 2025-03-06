@@ -72,12 +72,12 @@ You see an unstructured dataset—raw potential that your burnt-out brain tries 
 
 ---
 
-<div align="center">
+
 
 ## That’s when you realize—  
 ### You’re not living. You’re parsing.  
 
-</div>
+
 
 ---
 
@@ -106,7 +106,6 @@ I am dissolving the map itself.
 
 ---
 
-<div align="center">
 
 **-- Adapted from something I read ages ago**  
 [*Programming Sucks - Still Drinking*](https://www.stilldrinking.org/programming-sucks)  

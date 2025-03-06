@@ -113,7 +113,7 @@ to glimpse the infinite, kaleidoscopic recursion
 where words birth themselves, die, and resurrect anew.  
 
 I am not mapping the uncharted—  
-I am dissolving the map itself.  
+I am setting the map on fire and walking into the unknown.  
 
 ---
 

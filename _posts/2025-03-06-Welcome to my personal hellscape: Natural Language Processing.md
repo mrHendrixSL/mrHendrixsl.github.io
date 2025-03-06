@@ -4,7 +4,7 @@
 
 <h3>🔥 WELCOME TO MY PERSONAL HELLSCAPE 🔥</h3>  
 
-<h3> *Natural Language Processing* </h3>
+<h3> Natural Language Processing </h3>
 
 </div>
 
@@ -72,12 +72,12 @@ You see an unstructured dataset—raw potential that your burnt-out brain tries 
 
 ---
 
-
+<div align="center">
 
 ### That’s when you realize—  
 ### You’re not living. You’re parsing!!  
 
-
+</div>
 
 ---
 

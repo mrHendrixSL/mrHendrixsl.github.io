@@ -6,7 +6,7 @@
 ---
 
 <div style="display: flex; align-items: center; gap: 20px;">
-    <img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="180" style="border-radius: 50%;">
+    <img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="210" style="border-radius: 50%;">
     <div>
         <h2>🚀 NLP | Machine Learning | Deep Learning | Transformers | Applied Data Visualization</h2>
         <p>🔍 <strong>Research Focus:</strong> Language Modelling & Visualization for Parallel Text Analysis</p>

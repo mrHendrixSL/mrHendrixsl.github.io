@@ -147,9 +147,9 @@ where **words birth themselves, die, and resurrect anew**.
 ---
 
 ## **📢 Share This Post!**  
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://your-post-link-here" target="_blank"><img src="https://img.shields.io/badge/Facebook-%231877F2?style=for-the-badge&logo=facebook&logoColor=white"></a>  
-<a href="https://twitter.com/intent/tweet?text=Check%20this%20out!&url=https://your-post-link-here" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>  
-<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://your-post-link-here" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>  
-<a href="https://reddit.com/submit?url=https://your-post-link-here&title=Check%20this%20out!" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500?style=for-the-badge&logo=reddit&logoColor=white"></a>  
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html" target="_blank"><img src="https://img.shields.io/badge/Facebook-%231877F2?style=for-the-badge&logo=facebook&logoColor=white"></a>  
+<a href="https://twitter.com/intent/tweet?text=Check%20this%20out!&url=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html" target="_blank"><img src="https://img.shields.io/badge/Twitter-%231DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a>  
+<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>  
+<a href="https://reddit.com/submit?url=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html&title=Check%20this%20out!" target="_blank"><img src="https://img.shields.io/badge/Reddit-%23FF4500?style=for-the-badge&logo=reddit&logoColor=white"></a>  
 
 </div>

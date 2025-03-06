@@ -74,8 +74,8 @@ You see an unstructured dataset—raw potential that your burnt-out brain tries 
 
 
 
-That’s when you realize—  
-# You’re not living. You’re parsing!!  
+### That’s when you realize—  
+### You’re not living. You’re parsing!!  
 
 
 
@@ -133,4 +133,3 @@ I am dissolving the map itself.
 </a>  
 </p>  
 
-</div>

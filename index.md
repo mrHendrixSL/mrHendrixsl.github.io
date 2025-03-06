@@ -26,7 +26,7 @@
 ## 🔬 **About Me**  
 I am a researcher exploring **Natural Language Processing (NLP), Deep Learning, and Computational Semantics**. My research is under the **[CASCADE](https://www.horizoncascade.net/) Horizon Europe MSCA** project where we investigate **semantic change detection across different environments**.  
 
-### 📌 **[Current Work](current_status.md):**
+### 📌 **Current Work:**
 - Developing **advanced text reuse detection** systems with **Large Language Models (LLMs)**.
 - Tackling challenges in **unstable spellings, context sensitivity, and parallel text analysis**.
 - Enhancing **AI interpretability** through **interactive visualization techniques**.

@@ -12,8 +12,10 @@
 🔍 **Research Focus:** Language Modelling & Visualization for Parallel Text Analysis  
 
 📍 **University College Cork, Ireland**  
-📧 [Email Me](mailto:rasikahendrix@gmail.com)  
+📧 [Personal](mailto:rasikahendrix@gmail.com) , [Official](mailto:rasika.edirisinghe@ucc.ie)
 🔗 [LinkedIn](https://www.linkedin.com/in/rasika-chamara/) | 📂 [GitHub](https://github.com/mrHendrixSL/)  
+📖 [ORCID](https://orcid.org/0009-0008-4673-0259)  
+🎓 [Google Scholar](https://scholar.google.com/citations?user=o_7ZjgMAAAAJ&hl=en)
 
 ---
 

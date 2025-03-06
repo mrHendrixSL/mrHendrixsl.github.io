@@ -1,8 +1,10 @@
 <div align="center">
 
-# 🗓 March 6, 2025  
-# 🔥 WELCOME TO MY PERSONAL HELLSCAPE 🔥  
-## *Natural Language Processing*  
+<h4>🗓 March 6, 2025  </h4>   
+
+<h3>🔥 WELCOME TO MY PERSONAL HELLSCAPE 🔥</h3>  
+
+<h3> *Natural Language Processing*  <h3>
 
 ---
 
@@ -25,51 +27,35 @@ But let’s not get it twisted—while you’re breaking your body, I’m cracki
 
 ## Welcome to my personal hellscape: Natural Language Processing.  
 
-You see, our squishy biological processors were designed to recognize faces, avoid saber-toothed tigers, and maybe remember where the best berries grow.  
-They were not meant to wrestle with the infinite fractal chaos of language—this thing that evolves over centuries as a social coordination mechanism for hairless apes,  
-where words and meaning shapeshift across contexts, cultures, and time.  
+You see, our squishy biological processors were designed to recognize faces, avoid saber-toothed tigers, and maybe remember where the best berries grow. They were not meant to wrestle with the infinite fractal chaos of language—this thing that evolves over centuries as a social coordination mechanism for hairless apes, where words and meaning shapeshift across contexts, cultures, and time.  
 
 Now, we twist it further, compressing it into mathematical transformations, encoding thought into tensors and probability distributions.  
 
-And yet here I am—taming semantic ambiguity, herding syntactic cats, and force-feeding raw data into neural networks  
-that could (potentially) hallucinate Shakespeare if I asked them nicely on a warm sunny day.  
+And yet here I am—taming semantic ambiguity, herding syntactic cats, and force-feeding raw data into neural networks that could (potentially) hallucinate Shakespeare if I asked them nicely on a warm sunny day.  
 
 ---
 
 You think lifting weights is hard?  
 
-Try dragging your perception and your undivided attention for hours on end through the bottomless pit of an LLM,  
-clawing at layers of abstract thoughts, fine-tuning parameters,  
-dancing with algorithms that spit out nonsense until—maybe, just maybe—they finally whisper something close to coherent.  
+Try dragging your perception and your undivided attention for hours on end through the bottomless pit of an LLM, clawing at layers of abstract thoughts, fine-tuning parameters, dancing with algorithms that spit out nonsense until—maybe, just maybe—they finally whisper something close to coherent.  
 
 And the semantics? They slip through your fingers like smoke, leaving you clutching meaningless vectors and shattered hopes.  
 
 ---
 
 I don’t just write code.  
-I dive into the raw, primal soup of human thought,  
-feeding colossal language models on the bones of the internet  
-until they spit out answers with the eerie confidence of a drunk oracle.  
-
-These aren’t just words. They are mathematical shadows of meaning,  
-condensed into billions of parameters humming inside chaotic containers of code.  
+I dive into the raw, primal soup of human thought, feeding colossal language models on the bones of the internet until they spit out answers with the eerie confidence of a drunk oracle.  
+These aren’t just words. They are mathematical shadows of meaning, condensed into billions of parameters humming inside chaotic containers of code.  
 
 ---
 
-I’m surrounded by people who think it’s totally normal  
-to train a model for weeks just to understand why "bank" doesn’t always mean riverbank.  
-
-I’ve debated the philosophical implications of a sentence embedding over cold coffee,  
-while realizing that my existential crisis is just another dataset waiting to be mined.  
+I’m surrounded by people who think it’s totally normal to train a model for weeks just to understand why "bank" doesn’t always mean riverbank. I’ve debated the philosophical implications of a sentence embedding over cold coffee, while realizing that my existential crisis is just another dataset waiting to be mined.  
 
 And it breaks you.  
 
-It starts small—missed meals, eyes burning from the screen glow at 3 AM.  
-But soon? Reality fractures.  
+It starts small—missed meals, eyes burning from the screen glow at 3 AM.But soon? Reality fractures.  
 
 I’ve stared into the abyss of a model’s attention map so long that the model itself starts to stare back.  
-
----
 
 You wake up half-conscious, and the first thing you see isn’t your room, your bed, or the sunlight through the curtains—  
 
@@ -79,9 +65,7 @@ And it’s not even code; it’s worse.
 
 It’s your mother rendered as an infinite loop—stuck on repeat, her voice echoing like a function call you can’t debug.  
 
-You look at your wife, the person who anchored you through every storm, and your mind doesn’t see her smile—  
-
-It sees layered activations and feedback loops.  
+You look at your wife, the person who anchored you through every storm, and your mind doesn’t see her smile— It sees layered activations and feedback loops.  
 
 And then there’s my daughter—this little, pure burst of joy with her wild curls and bright laughter.  
 

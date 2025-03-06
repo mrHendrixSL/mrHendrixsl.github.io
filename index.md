@@ -6,9 +6,9 @@
 ---
 
 <div style="display: flex; align-items: center; gap: 20px;">
-    <img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="210" style="border-radius: 50%;">
+    <img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="220" style="border-radius: 50%;">
     <div>
-        <h2>🚀 NLP | Machine Learning | Deep Learning | Transformers | Applied Data Visualization</h2>
+        <h3>🚀 NLP | Machine Learning | Deep Learning | Transformers | Applied Data Visualization</h2>
         <p>🔍 <strong>Research Focus:</strong> Language Modelling & Visualization for Parallel Text Analysis</p>
         <p>📍 <strong>University College Cork, Ireland</strong></p>
         <p>📧 <a href="mailto:rasikahendrix@gmail.com">Personal</a> | <a href="mailto:rasika.edirisinghe@ucc.ie">Official</a></p>
@@ -26,7 +26,7 @@
 ## 🔬 **About Me**  
 I am a researcher exploring **Natural Language Processing (NLP), Deep Learning, and Computational Semantics**. My research is under the **[CASCADE](https://www.horizoncascade.net/) Horizon Europe MSCA** project where we investigate **semantic change detection across different environments**.  
 
-### 📌 **Current Work:**
+### 📌 **[Current Work](current_status.md):**
 - Developing **advanced text reuse detection** systems with **Large Language Models (LLMs)**.
 - Tackling challenges in **unstable spellings, context sensitivity, and parallel text analysis**.
 - Enhancing **AI interpretability** through **interactive visualization techniques**.

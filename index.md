@@ -17,7 +17,7 @@
             📂 <a href="https://github.com/mrHendrixSL/">GitHub</a> | 
             📖 <a href="https://orcid.org/0009-0008-4673-0259">ORCID</a> | 
             🎓 <a href="https://scholar.google.com/citations?user=o_7ZjgMAAAAJ&hl=en">Google Scholar</a> |
-            📝 <a href="/blog.md/">My Meandering Monologue</a>
+            📝 <a href="/blog/">My Meandering Monologue</a>
         </p>
     </div>
 </div>

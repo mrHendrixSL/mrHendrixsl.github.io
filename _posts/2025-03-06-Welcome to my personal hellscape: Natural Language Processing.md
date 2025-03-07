@@ -114,7 +114,7 @@ I am setting the map on fire and walking into the unknown.
 ---
 
 
-**-- Adapted from something I read ages ago**  
+**-- Very loosely adapted from something I read ages ago**  
 [*Programming Sucks - Still Drinking*](https://www.stilldrinking.org/programming-sucks)  
 **-- mrHendrixSL --**  
 

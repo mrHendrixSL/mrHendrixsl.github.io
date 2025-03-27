@@ -1,5 +1,5 @@
 [🏠 Home](index.md) [📌 Current Status](current_status.md) [🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md)  
-[📘 Education](education.md) [📄 Publications](publications.md) [📢 Presentations & Academic Contributions](Presentations_Contributions.md) [📑CV](/assetss/Rasika Edirisinghe-CV.pdf)
+[📘 Education](education.md) [📄 Publications](publications.md) [📢 Presentations & Academic Contributions](Presentations_Contributions.md) [📑CV](/assets/Rasika_Edirisinghe-CV.pdf)
 
 ---
 

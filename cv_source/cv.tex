@@ -1,0 +1,244 @@
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[a4paper, top=1.8cm, bottom=1.8cm, left=2cm, right=2cm]{geometry}
+\usepackage{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+
+% ── Colours ──────────────────────────────────────────────────────────────────
+\definecolor{accent}{RGB}{30, 100, 180}
+\definecolor{muted}{RGB}{100, 100, 100}
+\definecolor{rule}{RGB}{200, 210, 225}
+
+% ── Hyperlinks ────────────────────────────────────────────────────────────────
+\hypersetup{
+  colorlinks=true,
+  urlcolor=accent,
+  linkcolor=accent,
+  pdfauthor={Rasika Edirisinghe},
+  pdftitle={Rasika Edirisinghe — CV}
+}
+
+% ── Section formatting ────────────────────────────────────────────────────────
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0em}{}
+  [\color{rule}\titlerule]
+\titlespacing{\section}{0pt}{10pt}{6pt}
+
+% ── No page numbering ─────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\rfoot{\small\color{muted}Page \thepage\ of \pageref{LastPage}}
+
+% ── List settings ────────────────────────────────────────────────────────────
+\setlist[itemize]{leftmargin=1.5em, itemsep=1pt, topsep=2pt, parsep=0pt}
+
+% ── Custom commands ───────────────────────────────────────────────────────────
+\newcommand{\cventry}[4]{%
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & \textcolor{muted}{\small #2} \\
+    \textit{\textcolor{accent}{\small #3}} & \textcolor{muted}{\small #4}
+  \end{tabularx}%
+  \vspace{2pt}%
+}
+
+\newcommand{\cventryshort}[3]{%
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & \textcolor{muted}{\small #2} \\
+    \textit{\textcolor{accent}{\small #3}} &
+  \end{tabularx}%
+  \vspace{2pt}%
+}
+
+\newcommand{\tagsline}[1]{%
+  \vspace{2pt}%
+  \noindent\textcolor{muted}{\small \textit{Skills: #1}}%
+  \vspace{4pt}%
+}
+
+% ─────────────────────────────────────────────────────────────────────────────
+
+\begin{document}
+
+% ── Header ────────────────────────────────────────────────────────────────────
+\begin{center}
+  {\LARGE\bfseries Rasika Edirisinghe}\\[4pt]
+  {\color{accent}\large Marie Curie Early Stage Researcher \textperiodcentered\ University College Cork, Ireland}\\[6pt]
+  \small
+  \href{mailto:rasikahendrix@gmail.com}{rasikahendrix@gmail.com} \textperiodcentered\
+  \href{mailto:rasika.edirisinghe@ucc.ie}{rasika.edirisinghe@ucc.ie} \textperiodcentered\
+  +353 87 266 6627\\
+  \href{https://mrHendrixSL.github.io}{mrHendrixSL.github.io} \textperiodcentered\
+  \href{https://www.linkedin.com/in/rasikaedirisinghe/}{linkedin.com/in/rasikaedirisinghe} \textperiodcentered\
+  \href{https://github.com/mrHendrixSL/}{github.com/mrHendrixSL}\\
+  \href{https://orcid.org/0009-0008-4673-0259}{orcid.org/0009-0008-4673-0259} \textperiodcentered\
+  \href{https://scholar.google.com/citations?user=o_7ZjgMAAAAJ}{Google Scholar}
+\end{center}
+
+\vspace{4pt}
+
+% ── Summary ───────────────────────────────────────────────────────────────────
+\section{Summary}
+
+AI researcher specialising in Natural Language Processing, Machine Learning, and Transformers, with a strong foundation in applied data visualization. Currently pursuing a fully funded PhD in Computer Science at University College Cork under the CASCADE Horizon Europe MSCA programme, developing LLM-powered text reuse detection systems for diachronic corpora and low-resource textual domains. Over four years of cross-functional industry experience building cloud-based BI tools and automation pipelines. Committed to delivering explainable, human-centered AI solutions for language and data-intensive environments.
+
+% ── Education ─────────────────────────────────────────────────────────────────
+\section{Education}
+
+\cventry{PhD in Computer Science (Reading)}{Sep 2024 -- Sep 2027 (expected)}{University College Cork, Ireland}{CASCADE Horizon Europe MSCA}
+\textit{Thesis: Language Modelling and Visualization for Parallel Text Analysis}
+\begin{itemize}
+  \item Designing advanced text reuse detection systems for diachronic corpora and low-resource textual domains using LLMs and interactive visual analytics.
+  \item Addressing orthographic variation, semantic drift, and context-dependent alignment across time and textual use cases.
+\end{itemize}
+\vspace{4pt}
+
+\cventry{M.Sc. Business Analytics \textnormal{--- Distinction}}{Sep 2021 -- Sep 2023}{Robert Gordon University, Aberdeen, UK}{}
+\textit{Thesis: Twitter Sentiment Reason Mining Framework to Identify Major Problems in US Healthcare Industry} (Grade: A)\\
+Key modules: Data Management (A) \textperiodcentered\ Web Mining (A) \textperiodcentered\ BI Tools \& Applications (A) \textperiodcentered\ Intro to Big Data \& Data Science (A)
+\vspace{4pt}
+
+\cventry{B.Sc. (Hons) Business Information Systems}{Nov 2016 -- Oct 2018}{Cardiff Metropolitan University, Cardiff, UK}{}
+\textit{Thesis: Computer-Aided Diagnosis System for Lung Cancer Detection} (Java-based CADe system)
+\vspace{4pt}
+
+\cventry{BTEC Higher National Diploma, Software Development}{May 2014 -- May 2016}{Pearson Edexcel, UK}{}
+OOP \textperiodcentered\ Data Structures \& Algorithms \textperiodcentered\ Networking Technologies \textperiodcentered\ Web Applications \textperiodcentered\ Database Development
+
+% ── Academic Experience ───────────────────────────────────────────────────────
+\section{Academic Experience}
+
+\cventry{Teaching Assistant \& Co-Lecturer --- Data Visualization for Machine Learning}{2025/26}{University College Cork}{CS3205 / CS6426}
+\begin{itemize}
+  \item Revamped lecture and lab materials for the 2025/26 cohort.
+  \item Delivered lectures and hands-on Python lab sessions.
+  \item Created all lecture slide decks for 2026 delivery.
+  \item Assessed and graded student assignments and examinations.
+\end{itemize}
+\tagsline{Data Visualization, Machine Learning, Python, University Teaching, Assessment}
+
+\cventry{Visiting Lecturer}{Aug 2023 -- Sep 2024}{University of Ruhuna, Dept.\ of Electrical \& Information Engineering}{Galle, Sri Lanka}
+\begin{itemize}
+  \item \textbf{Introduction to Data Visualization with Power BI} --- DAX, dashboards, Gestalt principles, color theory.
+  \item \textbf{Excel for Data Science} --- PivotTables, time-series, statistical analysis, Solver.
+  \item \textbf{Data Preprocessing \& Cleaning} --- missing data, outlier detection, encoding.
+  \item \textbf{Data Splitting \& Cross Validation} --- overfitting, metrics, confusion matrix.
+\end{itemize}
+\tagsline{Data Science Teaching, Power BI, Excel Analytics, ML Foundations}
+
+\cventry{Visiting Lecturer}{Aug 2023 -- Sep 2024}{Sri Lanka Telecom Training Centre, Sri Lanka Telecom PLC}{Welisara, Sri Lanka}
+\begin{itemize}
+  \item \textbf{Fundamentals of AI \& Intelligent Systems} (Pearson BTEC K/618/5660) --- AI types, NLP, conversational AI, ethics.
+  \item \textbf{Big Data \& Visualization} (J/618/6251) --- Python, Jupyter, Power BI, DAX, data governance.
+  \item \textbf{Business Intelligence} (M/615/1641) --- BI systems, OLAP, descriptive \& predictive analytics.
+\end{itemize}
+\tagsline{AI Education, Big Data, Business Intelligence, Higher Education Teaching}
+
+% ── Industry Experience ───────────────────────────────────────────────────────
+\section{Industry Experience}
+
+\cventry{Data Analyst}{May 2023 -- Sep 2024}{EFL Global}{Colombo, Sri Lanka (Hybrid)}
+\begin{itemize}
+  \item Automated global finance reporting across 39 countries \& 70+ offices (Python, VBA, Advanced Excel).
+  \item Modelled and maintained Azure Databricks backend for automated MIS, AR \& AP reporting.
+  \item Built Power BI \& Tableau dashboards; implemented workflows via Power Automate \& Logic Apps.
+  \item Managed Azure Analysis Services, Data Lakes, Blob Storage, and Synapse Analytics.
+\end{itemize}
+\tagsline{Python, Azure Databricks, Power BI, Tableau, Power Automate, Azure Synapse}
+
+\cventry{Implementation Engineer}{Nov 2022 -- May 2023}{Affno Asia Pacific}{Colombo, Sri Lanka}
+\begin{itemize}
+  \item Designed and deployed BI solutions for supply chain analytics.
+  \item Acted as Technical Business Analyst, translating business needs into system designs.
+  \item Provided training and support to clients in reporting and analytics.
+  \item Worked with Amazon EC2 \& MongoDB Atlas for cloud-based solutions.
+\end{itemize}
+\tagsline{Business Intelligence, Supply Chain Analytics, MongoDB, Business Analysis}
+
+\cventry{Operations Analyst}{Sep 2019 -- Nov 2022}{SYNERGEN Health}{Colombo, Sri Lanka}
+\begin{itemize}
+  \item Managed Qlik-Sense cloud-based RCM BI platform (Doctrix) for real-time KPI \& SLA monitoring.
+  \item Led process training for multiple clients in Revenue Cycle Management.
+  \item Implemented Python \& VBA automation for financial reporting and data integrity.
+  \item Maintained Amazon DynamoDB \& Kinesis Data Streams for real-time analytics.
+\end{itemize}
+\tagsline{Healthcare BI, QlikSense, Revenue Cycle Analytics, Python, VBA}
+
+\cventry{Associate Operations Analyst \textnormal{(Intern)}}{Mar 2019 -- Sep 2019}{SYNERGEN Health}{Colombo, Sri Lanka}
+Client reporting, process monitoring, data sanity checks, and trade support.
+
+\cventry{Business Analyst \textnormal{(Intern)}}{Sep 2018 -- Mar 2019}{Global System Solutions}{Colombo, Sri Lanka}
+Requirement gathering, use case development, reporting specification, pre-sales support.
+
+% ── Publications ──────────────────────────────────────────────────────────────
+\section{Publications \& Research Output}
+
+\textbf{Rewriting Tradition: Quantifying Change in Lady Gregory's Irish Legends}\\
+Rachel McCarthy, Rasika Edirisinghe, James O'Sullivan, Clíona Ó Gallchoir, Rosane Minghim, Órla Murphy\\
+\textit{DH2025: Alliance of Digital Humanities Organizations} \textperiodcentered\ Lisbon, Portugal \textperiodcentered\ Jul 2025 \textperiodcentered\ \textcolor{accent}{Abstract Accepted}
+\vspace{6pt}
+
+\textbf{Sentiment Reason Mining Framework for Analyzing Twitter Discourse on Critical Issues in US Healthcare Industry}\\
+R. Edirisinghe, P. P. G. Dinesh Asanka\\
+\textit{International Conference on Smart Computing and Systems Engineering 2023} \textperiodcentered\ Aug 2023\\
+\href{https://ieeexplore.ieee.org/document/10215010/}{ieeexplore.ieee.org/document/10215010}
+
+\subsection*{\normalsize\color{muted}Work in Progress}
+\vspace{-4pt}
+\begin{itemize}
+  \item \textbf{Text Reuse Detection with Large Language Models} --- PhD research, UCC (CASCADE MSCA)
+  \item \textbf{Interactive Visualization for NLP Interpretability} --- open-source tool, PhD research, UCC
+  \item \textbf{Parsing Hiberno-English Dictionary Entries: A Hybrid Rule-Based and LLM Approach} --- under preparation; presentation accepted at \textit{Digital Humanities Congress 2026}, University of Sheffield, Sep 2--3 2026
+  \item \textbf{Trust \& Agency in Agentic Cyber-Physical Systems} --- Nimbus Research Centre, inTrusted project
+\end{itemize}
+
+% ── Presentations & Contributions ─────────────────────────────────────────────
+\section{Presentations \& Academic Contributions}
+
+\textbf{Beyond Translation: Rethinking `Parallel Text' Across Disciplines}\\
+\textit{UCC Digital Humanities Colloquium} \textperiodcentered\ University College Cork \textperiodcentered\ 1 October 2025
+
+\textbf{Language Modelling and Visualization for Parallel Text}\\
+\textit{CACSSS PhD Lightning Talks} \textperiodcentered\ University College Cork \textperiodcentered\ 4 April 2025
+
+\textbf{Sentiment Reason Mining Framework \ldots\ (paper presentation)}\\
+\textit{International Conference on Smart Computing and Systems Engineering 2023} \textperiodcentered\ June 2023
+\vspace{4pt}
+
+\textbf{Peer Reviewer} --- 8th International Research Conference on Smart Computing and Systems Engineering (SCSE 2025), Feb 2025\\
+\textbf{Evaluator} --- System Development Project Poster Presentation, University of Kelaniya, Oct 2023\\
+\textbf{Curriculum Reviewer} --- Foundation to Data Science, University of Ruhuna, Aug 2023
+
+% ── Skills ────────────────────────────────────────────────────────────────────
+\section{Skills \& Technologies}
+
+\begin{tabularx}{\textwidth}{@{}>{\bfseries}p{3.8cm}X@{}}
+Languages       & Python, SQL, Java, JavaScript, C\#, R, VBA \\[2pt]
+NLP \& LLMs     & HuggingFace Transformers, spaCy, Gensim, NLTK, OpenAI API, Prodigy \\[2pt]
+ML / DL         & PyTorch, TensorFlow, Keras, scikit-learn, XGBoost \\[2pt]
+Visualization   & Power BI, Tableau, QlikView/Sense, Plotly, Matplotlib, Seaborn, DAX \\[2pt]
+Cloud           & Azure (Databricks, Synapse, Blob, Logic Apps), AWS (EC2, DynamoDB, Kinesis), MongoDB Atlas \\[2pt]
+Databases       & MySQL, MongoDB, Amazon DynamoDB \\[2pt]
+Dev Tools       & Git, Jupyter, Weka, Orange, HTML/CSS, ASP.NET, Power Automate, Bash \\[2pt]
+Soft Skills     & Technical communication with non-technical audiences, tutoring \& mentoring, business process design, collaborative team player \\
+\end{tabularx}
+
+% ── Current Secondment ────────────────────────────────────────────────────────
+\section{Current Secondment}
+
+\cventry{Research Secondment --- inTrusted Project}{Apr 2026 -- Jul 2026}{Nimbus Research Centre}{Cork, Ireland}
+Working with Tharindu Ranathunga on the \href{https://nimbuscentre.ie/project/intrusted/}{inTrusted} project --- exploring trust frameworks for agentic cyber-physical systems, and the gap between human intentionality, AI interpretation, and real-world actions.
+
+\end{document}

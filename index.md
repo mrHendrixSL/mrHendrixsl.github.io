@@ -51,7 +51,9 @@ title: Home
 
 ## About Me
 
-I am a PhD researcher at University College Cork investigating **semantic change detection, text reuse, and computational approaches to parallel text analysis**. My work is funded by the [CASCADE](https://www.horizoncascade.net/) Horizon Europe Marie Skłodowska-Curie Actions project.
+I am an AI researcher specialising in **Natural Language Processing, Machine Learning, and Transformers**, with a strong foundation in applied data visualization. I am currently pursuing a fully funded PhD in Computer Science at University College Cork under the [CASCADE](https://www.horizoncascade.net/) Horizon Europe MSCA programme, developing **LLM-powered text reuse detection systems** for diachronic corpora and low-resource textual domains.
+
+I bring over four years of cross-functional industry experience as a data analyst and implementation engineer — building cloud-based BI tools, automation pipelines, and real-time analytics platforms. I thrive at the intersection of research and real-world application, aiming to deliver **explainable, human-centered AI solutions** for language and data-intensive environments.
 
 I am currently on secondment at **Nimbus Research Centre** (Apr–Jul 2026), collaborating with Tharindu Ranathunga on the [inTrusted](https://nimbuscentre.ie/project/intrusted/) project — exploring trust frameworks for agentic cyber-physical systems and the gap between human intentionality and AI interpretation.
 

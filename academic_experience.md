@@ -5,6 +5,32 @@ title: Academic Experience
 
 # Academic Experience
 
+<div class="section-label">Teaching at UCC</div>
+
+<div class="exp-entry">
+  <div class="exp-title">Teaching Assistant &amp; Co-Lecturer — Data Visualization for Machine Learning</div>
+  <div class="exp-org">School of Computer Science &amp; IT, University College Cork</div>
+  <div class="exp-meta">2025/26 Academic Year · CS3205 / CS6426 · Cork, Ireland</div>
+
+  Co-taught the undergraduate and postgraduate Data Visualization for ML module. Responsibilities covered the full teaching lifecycle:
+
+  - **Revamped learning material** — redesigned and updated lecture content and lab materials for the 2025/26 cohort
+  - **Delivered lectures** — presented core topics including data preprocessing, ML visualization pipelines, and interpretation techniques
+  - **Designed and delivered lab sessions** — hands-on Python labs covering visualization libraries and ML model output analysis
+  - **Created slide decks** — produced all lecture slides for the 2026 delivery
+  - **Paper marking** — assessed and graded student assignments and examinations
+
+  <div class="skills">
+    <span class="tag">Data Visualization</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">Python</span>
+    <span class="tag">Curriculum Development</span>
+    <span class="tag">University Teaching</span>
+    <span class="tag">Lab Facilitation</span>
+    <span class="tag">Assessment & Marking</span>
+  </div>
+</div>
+
 <div class="section-label">Visiting Lecturer</div>
 
 <div class="exp-entry">

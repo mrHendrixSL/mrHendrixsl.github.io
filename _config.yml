@@ -1,13 +1,9 @@
 title: "Rasika Edirisinghe"
-theme: jekyll-theme-cayman
-description: "Marie Curie Early Career Researcher"
+description: "Marie Curie Early Career Researcher · NLP · University College Cork"
 show_downloads: false
 
-# Navigation Bar
-header_pages:
-  - index.md
-  - current_status.md
-  - academic_experience.md
-  - industry_experience.md
-  - education.md
-  - publications.md
+# Use our custom layout — no external theme
+# theme: jekyll-theme-cayman
+
+plugins:
+  - jekyll-seo-tag

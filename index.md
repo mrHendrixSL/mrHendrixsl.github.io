@@ -1,38 +1,83 @@
-[🏠 Home](index.md) [📌 Current Status](current_status.md) [🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md)  
-[📘 Education](education.md) [📄 Publications](publications.md) [📢 Presentations & Academic Contributions](Presentations_Contributions.md) [📑CV](/assets/Rasika_Edirisinghe-CV.pdf)
-
+---
+layout: default
+title: Home
 ---
 
----
-
-<div style="display: flex; align-items: center; gap: 20px;">
-    <img src="assets/img/headshot.jpg" alt="Rasika Edirisinghe" width="220" style="border-radius: 50%;">
-    <div>
-        <h3> NLP | Machine Learning | Deep Learning | Transformers | Applied Data Visualization</h3>
-        <p>🔍 <strong>Research Focus:</strong> Language Modelling & Visualization for Parallel Text Analysis</p>
-        <p>📍 <strong>University College Cork, Ireland</strong></p>
-        <p>📧 <a href="mailto:rasikahendrix@gmail.com">Personal</a> | <a href="mailto:rasika.edirisinghe@ucc.ie">Official</a></p>
-        <p>
-            🔗 <a href="https://www.linkedin.com/in/rasika-chamara/">LinkedIn</a> | 
-            📂 <a href="https://github.com/mrHendrixSL/">GitHub</a> | 
-            📖 <a href="https://orcid.org/0009-0008-4673-0259">ORCID</a> | 
-            🎓 <a href="https://scholar.google.com/citations?user=o_7ZjgMAAAAJ&hl=en">Google Scholar</a> | 
-            📝 <a href="/blog/">My Meandering Monologue</a>
-        </p>
+<div class="hero">
+  <img src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="Rasika Edirisinghe" class="hero-avatar">
+  <div class="hero-info">
+    <h1 class="hero-name">Rasika Edirisinghe</h1>
+    <div class="hero-title">Marie Curie Early Stage Researcher &middot; CASCADE Horizon Europe MSCA</div>
+    <div class="hero-location">📍 University College Cork, Ireland</div>
+    <div class="hero-tags">
+      <span class="tag">NLP</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">Text Reuse Detection</span>
+      <span class="tag">Semantic Change</span>
+      <span class="tag">Transformers</span>
+      <span class="tag">Data Visualization</span>
     </div>
+    <div class="hero-links">
+      <a href="mailto:rasikahendrix@gmail.com">✉ Personal</a>
+      <a href="mailto:rasika.edirisinghe@ucc.ie">✉ UCC</a>
+      <a href="https://www.linkedin.com/in/rasika-chamara/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/mrHendrixSL/" target="_blank">GitHub</a>
+      <a href="https://orcid.org/0009-0008-4673-0259" target="_blank">ORCID</a>
+      <a href="https://scholar.google.com/citations?user=o_7ZjgMAAAAJ&hl=en" target="_blank">Scholar</a>
+      <a href="/blog/">Blog</a>
+    </div>
+  </div>
 </div>
 
+<div class="news-strip">
+  <h2>Recent Updates</h2>
+  <div class="news-item">
+    <span class="news-date">Apr 2026</span>
+    <span>Started secondment at <a href="https://nimbuscentre.ie/project/intrusted/" target="_blank">Nimbus Research Centre</a> — working on the <strong>inTrusted</strong> project (trust in digital ecosystems, agentic cyber-physical systems).</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">Jul 2025</span>
+    <span>Paper accepted at <strong>DH2025</strong> (Lisbon) — <em>Rewriting Tradition: Quantifying Change in Lady Gregory's Irish Legends</em>.</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">Feb 2025</span>
+    <span>Served as peer reviewer at the <strong>8th International Research Conference on Smart Computing and Systems Engineering</strong>.</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">Sep 2024</span>
+    <span>Commenced PhD in Computer Science at <strong>University College Cork</strong> under the CASCADE MSCA project.</span>
+  </div>
+</div>
+
+## About Me
+
+I am a PhD researcher at University College Cork investigating **semantic change detection, text reuse, and computational approaches to parallel text analysis**. My work is funded by the [CASCADE](https://www.horizoncascade.net/) Horizon Europe Marie Skłodowska-Curie Actions project.
+
+I am currently on secondment at **Nimbus Research Centre** (Apr–Jul 2026), collaborating with Tharindu Ranathunga on the [inTrusted](https://nimbuscentre.ie/project/intrusted/) project — exploring trust frameworks for agentic cyber-physical systems and the gap between human intentionality and AI interpretation.
+
 ---
 
-## 🔬 **About Me**  
-I am a researcher exploring **Natural Language Processing (NLP), Deep Learning, and Computational Semantics**. My research is under the **[CASCADE](https://www.horizoncascade.net/) Horizon Europe MSCA** project where we investigate **semantic change detection across different environments**.  
+## Research Focus
 
-### 📌 **Current Work:**
-- Developing **advanced text reuse detection** systems with **Large Language Models (LLMs)**.
-- Tackling challenges in **unstable spellings, context sensitivity, and parallel text analysis**.
-- Enhancing **AI interpretability** through **interactive visualization techniques**.
-
-
-
----
-
+<div class="card-grid">
+  <div class="card">
+    <div class="card-label">Primary</div>
+    <h3>Text Reuse Detection</h3>
+    <p>Advanced systems using LLMs to detect reuse across unstable spellings and historical texts.</p>
+  </div>
+  <div class="card">
+    <div class="card-label">Primary</div>
+    <h3>Semantic Change Detection</h3>
+    <p>Computational approaches to tracking meaning shift across time and parallel corpora.</p>
+  </div>
+  <div class="card">
+    <div class="card-label">Secondary</div>
+    <h3>AI Interpretability &amp; Viz</h3>
+    <p>Interactive visualization techniques to make NLP model outputs explainable to researchers.</p>
+  </div>
+  <div class="card">
+    <div class="card-label">Secondment</div>
+    <h3>Agentic Cyber-Physical Systems</h3>
+    <p>Trust, compliance, and accountability in AI-driven systems — inTrusted project at Nimbus.</p>
+  </div>
+</div>

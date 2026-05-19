@@ -1,47 +1,38 @@
-[🏠 Home](index.md) [📌 Current Status](current_status.md) [🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md)  
-[📘 Education](education.md) [📄 Publications](publications.md) [📢 Presentations & Academic Contributions](Presentations_Contributions.md)
-
+---
+layout: default
+title: Talks & Contributions
 ---
 
----
+# Presentations & Academic Contributions
 
+<div class="section-label">Research Presentations</div>
 
-# 📢 Presentations & Academic Contributions
+<div class="exp-entry">
+  <div class="exp-title">Sentiment Reason Mining Framework for Analyzing Twitter Discourse on Critical Issues in US Healthcare Industry</div>
+  <div class="exp-org">International Conference on Smart Computing and Systems Engineering 2023</div>
+  <div class="exp-meta">June 2023</div>
+  <p>Presented the research paper at SCSE 2023.</p>
+</div>
 
----
+<div class="section-label">Academic Contributions</div>
 
-## 🎤 **Research Presentations**
-### 🏛 INTERNATIONAL CONFERENCE ON SMART COMPUTING AND SYSTEMS ENGINEERING 2023  
-🗓 **June 2023**  
-- Presented the research paper **“Sentiment Reason Mining Framework for Analyzing Twitter Discourse on Critical Issues in US Healthcare Industry”**.  
+<div class="exp-entry">
+  <div class="exp-title">Peer Reviewer</div>
+  <div class="exp-org">8th International Research Conference on Smart Computing and Systems Engineering (SCSE 2025)</div>
+  <div class="exp-meta">Feb 2025</div>
+  <p>Evaluated academic papers on AI, NLP, and Machine Learning research; provided technical assessments and constructive feedback.</p>
+</div>
 
----
+<div class="exp-entry">
+  <div class="exp-title">Evaluator — System Development Project Poster Presentation</div>
+  <div class="exp-org">Department of Industrial Management, Faculty of Science, University of Kelaniya</div>
+  <div class="exp-meta">October 2023</div>
+  <p>Served as evaluator for student projects in System Development & Data Science.</p>
+</div>
 
-## 🏆 **Academic Contributions**
-### 🏛 **Peer Reviewer - 8ᵗʰ International Research Conference on Smart Computing and Systems Engineering (2025)**  
-🗓 **Feb 2025**  
-- Served as a **peer reviewer**, evaluating **academic papers** for the **Smart Computing and Systems Engineering** conference.  
-- Provided **technical assessments and constructive feedback** on **AI, NLP, and Machine Learning research papers**.  
-
-### 🏛 **Evaluator - System Development Project Poster Presentation**  
-📍 **Department of Industrial Management, Faculty of Science, University of Kelaniya**  
-🗓 **October 2023**  
-- Served as an **evaluator** for student projects related to **System Development & Data Science**.  
-
-### 🏛 **Curriculum Development - Foundation to Data Science**  
-📍 **Department of Electrical & Information Engineering, University of Ruhuna**  
-🗓 **August 2023**  
-- Contributed as an **external consultant/reviewer** in **curriculum design** for the **Foundation to Data Science Unit**.  
-- Reviewed and structured course topics, including:  
-  1. **Introduction to Python** with **Google Colab/Jupyter Notebooks**.  
-  2. **Data Preprocessing & Acquisition**, including handling **missing data, outliers, and categorical encoding**.  
-  3. **Dimensionality Reduction** (PCA, ICA, etc.).  
-  4. **Data Splitting & Cross-validation** for training models.  
-  5. **Overfitting & Underfitting**, and handling **imbalanced datasets**.  
-  6. **Performance Metrics** (Precision, Recall, F1-score, Confusion Matrix, ROC Curves).  
-
----
-[🏠 Home](index.md) [📌 Current Status](current_status.md)
-[🎓 Academic Experience](academic_experience.md) [💼 Industry Experience](industry_experience.md) 
-[📘 Education](education.md) [📄 Publications](publications.md) 
-[📢 Presentations & Academic Contributions](Presentations_Contributions.md)
+<div class="exp-entry">
+  <div class="exp-title">Curriculum Development — Foundation to Data Science</div>
+  <div class="exp-org">Department of Electrical & Information Engineering, University of Ruhuna</div>
+  <div class="exp-meta">August 2023</div>
+  <p>External consultant/reviewer for curriculum design. Covered: Introduction to Python, Data Preprocessing & Acquisition, Dimensionality Reduction, Data Splitting & Cross-validation, Overfitting & Underfitting, Performance Metrics.</p>
+</div>

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.26)  19 MAY 2026 13:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.26)  19 MAY 2026 14:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -871,14 +871,14 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
-* v-part:(T,H,B)=(39.83368pt, 765.37949pt, 39.83368pt)
+* v-part:(T,H,B)=(22.76228pt, 782.45088pt, 39.83368pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=512.14963pt
-* \textheight=765.37949pt
+* \textheight=782.45088pt
 * \oddsidemargin=-29.59087pt
 * \evensidemargin=-29.59087pt
-* \topmargin=-69.43631pt
+* \topmargin=-86.5077pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -902,61 +902,59 @@ Package hyperref Info: Link coloring OFF on input line 28.
 \openout4 = `cv.out'.
 
 \pagenumberwidth=\skip108
+<../assets/img/headshot.jpg, id=43, 912.40875pt x 925.95938pt>
+File: ../assets/img/headshot.jpg Graphic file (type jpg)
+<use ../assets/img/headshot.jpg>
+Package pdftex.def Info: ../assets/img/headshot.jpg  used on input line 32.
+(pdftex.def)             Requested size: 78.0pt x 79.15056pt.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 29.
+nput line 39.
 
 (C:\Users\sup3r\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontaweso
 mefree2.fd)
-LaTeX Font Info:    Trying to load font information for TS1+qpl on input line 2
-9.
-
-(C:\Users\sup3r\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ts1qpl.fd
-File: ts1qpl.fd 2009/09/25 v1.2 font definition file for TS1/qpl
-)
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 29.
+nput line 43.
 
 (C:\Users\sup3r\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontaweso
 mefree1.fd)
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 29.
+ input line 45.
 
 (C:\Users\sup3r\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontaweso
 mebrands0.fd)
-LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <9> not a
+LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <8> not a
 vailable
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 29.
+n input line 45.
 
 (C:\Users\sup3r\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 29.
+(Font)              <7> on input line 71.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 29.
+(Font)              <5> on input line 71.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 56.
+(Font)              <9> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 56.
+(Font)              <6> on input line 76.
 
 [1
 
 {C:/Users/sup3r/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/sup3
 r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc}{C:/Users/sup
 3r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free2.enc}{C:/
-Users/sup3r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}{C
-:/Users/sup3r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5fre
-e1.enc}{C:/Users/sup3r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesom
-e5/fa5brands0.enc}{C:/Users/sup3r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips
-/fontawesome5/fa5free0.enc}]
+Users/sup3r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5free1
+.enc}{C:/Users/sup3r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5
+/fa5brands0.enc}{C:/Users/sup3r/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/f
+ontawesome5/fa5free0.enc} <../assets/img/headshot.jpg>]
 
 LaTeX Font Warning: Font shape `T1/qpl/sb/n' undefined
-(Font)              using `T1/qpl/b/n' instead on input line 147.
+(Font)              using `T1/qpl/b/n' instead on input line 167.
 
 
-Underfull \hbox (badness 10000) detected at line 147
+Underfull \hbox (badness 10000) detected at line 167
 \T1/qpl/m/n/7 .
  []
 
@@ -969,13 +967,13 @@ Package rerunfilecheck Info: File `cv.out' has not changed.
 (rerunfilecheck)             Checksum: FF8A8C5B6E95C8A43D491960A9C0F298;1330.
  ) 
 Here is how much of TeX's memory you used:
- 26871 strings out of 467691
- 518639 string characters out of 5414987
- 949909 words of memory out of 5000000
- 55415 multiletter control sequences out of 15000+600000
- 677690 words of font info for 106 fonts, out of 8000000 for 9000
+ 26829 strings out of 467691
+ 518071 string characters out of 5414987
+ 950801 words of memory out of 5000000
+ 55391 multiletter control sequences out of 15000+600000
+ 673895 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 129i,12n,136p,1001b,460s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 129i,13n,136p,1001b,491s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/sup3r/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome5
 /FontAwesome5Brands-Regular.pfb><C:/Users/sup3r/AppData/Local/Programs/MiKTeX/f
 onts/type1/public/fontawesome5/FontAwesome5Free-Regular.pfb><C:/Users/sup3r/App
@@ -985,9 +983,9 @@ s/cm/cmsy9.pfb><C:/Users/sup3r/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /tex-gyre/qplb.pfb><C:/Users/sup3r/AppData/Local/Programs/MiKTeX/fonts/type1/pu
 blic/tex-gyre/qplr.pfb><C:/Users/sup3r/AppData/Local/Programs/MiKTeX/fonts/type
 1/public/tex-gyre/qplri.pfb>
-Output written on cv.pdf (3 pages, 293325 bytes).
+Output written on cv.pdf (3 pages, 657200 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
+ 117 PDF objects out of 1000 (max. 8388607)
  13 named destinations out of 1000 (max. 500000)
- 33365 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 29274 words of extra memory for PDF output out of 29859 (max. 10000000)
 

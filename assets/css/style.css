@@ -313,6 +313,48 @@ li { margin-bottom: 0.25rem; }
   margin-top: 0.75rem;
 }
 
+.skill-block {
+  margin-bottom: 2rem;
+}
+
+.edu-table {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-top: 1rem;
+  font-size: 0.84rem;
+}
+
+.edu-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 4rem;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.45rem 0.7rem;
+  border-top: 1px solid var(--border);
+}
+
+.edu-row:first-child {
+  border-top: 0;
+}
+
+.edu-row:nth-child(even) {
+  background: var(--bg2);
+}
+
+.edu-head {
+  background: var(--bg3);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.edu-row strong {
+  color: var(--accent2);
+  text-align: right;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+
 /* ── Footer ── */
 .site-footer {
   border-top: 1px solid var(--border);

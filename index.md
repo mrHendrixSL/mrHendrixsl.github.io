@@ -36,8 +36,16 @@ title: Home
     <span>Started secondment at <a href="https://nimbuscentre.ie/project/intrusted/" target="_blank">Nimbus Research Centre</a> — working on the <strong>inTrusted</strong> project (trust in digital ecosystems, agentic cyber-physical systems).</span>
   </div>
   <div class="news-item">
+    <span class="news-date">Oct 2025</span>
+    <span>Presented <em>Beyond Translation: Rethinking 'Parallel Text' Across Disciplines</em> at the <strong>UCC Digital Humanities Colloquium</strong>.</span>
+  </div>
+  <div class="news-item">
     <span class="news-date">Jul 2025</span>
     <span>Paper accepted at <strong>DH2025</strong> (Lisbon) — <em>Rewriting Tradition: Quantifying Change in Lady Gregory's Irish Legends</em>.</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">Apr 2025</span>
+    <span>Lightning talk at <strong>CACSSS PhD Lightning Talks</strong> — <em>Language Modelling and Visualization for Parallel Text</em>.</span>
   </div>
   <div class="news-item">
     <span class="news-date">Feb 2025</span>

@@ -8,6 +8,20 @@ title: Talks & Contributions
 <div class="section-label">Research Presentations</div>
 
 <div class="exp-entry">
+  <div class="exp-title">Beyond Translation: Rethinking 'Parallel Text' Across Disciplines</div>
+  <div class="exp-org">UCC Digital Humanities Colloquium</div>
+  <div class="exp-meta">1 October 2025 · University College Cork</div>
+  <p>Presented a cross-disciplinary reframing of the concept of 'parallel text', examining how the term is understood differently across NLP, translation studies, and digital humanities — and what a unified computational treatment would require.</p>
+</div>
+
+<div class="exp-entry">
+  <div class="exp-title">Language Modelling and Visualization for Parallel Text</div>
+  <div class="exp-org">CACSSS PhD Lightning Talks · University College Cork</div>
+  <div class="exp-meta">4 April 2025 · University College Cork</div>
+  <p>Lightning talk introducing PhD research on LLM-powered text reuse detection and interactive visualization for parallel text analysis, presented to the College of Arts, Celtic Studies and Social Sciences research community.</p>
+</div>
+
+<div class="exp-entry">
   <div class="exp-title">Sentiment Reason Mining Framework for Analyzing Twitter Discourse on Critical Issues in US Healthcare Industry</div>
   <div class="exp-org">International Conference on Smart Computing and Systems Engineering 2023</div>
   <div class="exp-meta">June 2023</div>

@@ -20,7 +20,7 @@ title: Home
     <div class="hero-links">
       <a href="mailto:rasikahendrix@gmail.com">✉ Personal</a>
       <a href="mailto:rasika.edirisinghe@ucc.ie">✉ UCC</a>
-      <a href="https://www.linkedin.com/in/rasika-chamara/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/rasikaedirisinghe/" target="_blank">LinkedIn</a>
       <a href="https://github.com/mrHendrixSL/" target="_blank">GitHub</a>
       <a href="https://orcid.org/0009-0008-4673-0259" target="_blank">ORCID</a>
       <a href="https://scholar.google.com/citations?user=o_7ZjgMAAAAJ&hl=en" target="_blank">Scholar</a>

@@ -20,8 +20,8 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|
 | Git remote | `https://github.com/mrHendrixSL/mrHendrixsl.github.io.git` |
 | Git branch | main |
-| Latest commit | This session — Expand publications and recent updates |
-| Uncommitted work | Pre-existing changes in `skills.md` remain outside this session's commit |
+| Latest commit | This session — Link CASCADE abstract PDF |
+| Uncommitted work | None |
 | Active work | None |
 | Live URL | `https://mrHendrixSL.github.io` |
 
@@ -37,6 +37,7 @@ Purpose: durable record of work across coding/writing assistants.
 | D6 | Hiberno-English paper added as WIP entry | ✅ Done |
 | D7 | Publications page expanded with 2026 outputs, DOI/link metadata, and updated research descriptions | ✅ Done |
 | D8 | Recent Updates includes Digital History Autumn School 2026 participant acceptance | ✅ Done |
+| D9 | CASCADE × MECANO abstract PDF linked from Publications and Recent Updates | ✅ Done |
 
 ### Pending Actions
 
@@ -148,9 +149,23 @@ Purpose: durable record of work across coding/writing assistants.
 
 **Not done / future:**
 - Did not update the CV or other site pages; their older publication/status wording may now need alignment.
-- Did not modify the pre-existing uncommitted changes in `skills.md`.
+- Did not modify `skills.md`.
 
 **Risks:**
 - The Nimbus secondment status in `current_status.md` is now date-stale and requires owner confirmation before changing.
+
+---
+
+### Session 3 — 2026-09-11 — Codex
+
+**Scope:** Add the owner-supplied source link for the CASCADE × MECANO Convention 1 abstract
+
+**Done:**
+- Linked the official short-abstracts PDF from the publication entry and its homepage Recent Updates item.
+- Used the supplied CASCADE website URL without changing publication metadata.
+- Committed the link updates and handoff record to `main` and pushed them to `origin`.
+
+**Not done / future:**
+- Did not modify `skills.md`.
 
 ---

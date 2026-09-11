@@ -41,7 +41,7 @@ title: Home
   </div>
   <div class="news-item">
     <span class="news-date">2026</span>
-    <span>Published the abstract <em>Modeling Parallel Text: A Multidimensional Typology of Authorship and Transformation</em> for <strong>CASCADE × MECANO Convention 1</strong>.</span>
+    <span>Published the abstract <a href="https://www.horizoncascade.net/wp-content/uploads/sites/42/2026/01/CASCADExMECANO_Convention1_ShortAbstracts-Jan-2026.pdf" target="_blank"><em>Modeling Parallel Text: A Multidimensional Typology of Authorship and Transformation</em></a> for <strong>CASCADE × MECANO Convention 1</strong>.</span>
   </div>
   <div class="news-item">
     <span class="news-date">Apr 2026</span>

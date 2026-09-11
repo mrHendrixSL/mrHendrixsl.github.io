@@ -82,6 +82,7 @@ title: Publications
     <span class="tag">Text Reuse</span>
     <span class="tag">Digital Humanities</span>
     <span class="tag">Computational Literary Studies</span>
+    <a href="https://www.horizoncascade.net/wp-content/uploads/sites/42/2026/01/CASCADExMECANO_Convention1_ShortAbstracts-Jan-2026.pdf" target="_blank" class="badge badge-published">Abstract PDF ↗</a>
   </div>
   <p>
     Proposes a multidimensional framework for describing relationships between parallel

@@ -32,6 +32,18 @@ title: Home
 <div class="news-strip">
   <h2>Recent Updates</h2>
   <div class="news-item">
+    <span class="news-date">Sep 2026</span>
+    <span>Presented <a href="https://www.dhi.ac.uk/dhc/2026/paper/320" target="_blank"><em>Evaluating Lexical Extraction in Hiberno-English: Rule-Based and LLM-Assisted Approaches</em></a> at <strong>Digital Humanities Congress 2026</strong>, University of Sheffield.</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">Aug 2026</span>
+    <span>Accepted to participate in the Digital History Autumn School, <em>From Data Acquisition to Data Publication: Quality Control, Tool Assessment, and Methodological Challenges in Digital History</em>, at the <strong>Herder Institute</strong> in Marburg, Germany (Sep 28–Oct 2, 2026).</span>
+  </div>
+  <div class="news-item">
+    <span class="news-date">2026</span>
+    <span>Published the abstract <em>Modeling Parallel Text: A Multidimensional Typology of Authorship and Transformation</em> for <strong>CASCADE × MECANO Convention 1</strong>.</span>
+  </div>
+  <div class="news-item">
     <span class="news-date">Apr 2026</span>
     <span>Started secondment at <a href="https://nimbuscentre.ie/project/intrusted/" target="_blank">Nimbus Research Centre</a> — working on the <strong>inTrusted</strong> project (trust in digital ecosystems, agentic cyber-physical systems).</span>
   </div>
@@ -41,7 +53,7 @@ title: Home
   </div>
   <div class="news-item">
     <span class="news-date">Jul 2025</span>
-    <span>Paper accepted at <strong>DH2025</strong> (Lisbon) — <em>Rewriting Tradition: Quantifying Change in Lady Gregory's Irish Legends</em>.</span>
+    <span>Published the conference abstract <a href="https://doi.org/10.5281/zenodo.18340803" target="_blank"><em>Rewriting Tradition: Quantifying Change in Lady Gregory's Irish Legends</em></a> at <strong>DH2025</strong> in Lisbon.</span>
   </div>
   <div class="news-item">
     <span class="news-date">Apr 2025</span>

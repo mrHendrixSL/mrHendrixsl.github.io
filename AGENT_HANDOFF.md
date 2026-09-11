@@ -1,8 +1,8 @@
 ---
 name: AGENT_HANDOFF
 type: operational
-last_updated: 2026-05-19
-updated_by: Claude Sonnet 4.6
+last_updated: 2026-09-11
+updated_by: Codex
 ---
 
 # Agent Handoff Log — mrHendrixSL.github.io
@@ -20,8 +20,8 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|
 | Git remote | `https://github.com/mrHendrixSL/mrHendrixsl.github.io.git` |
 | Git branch | main |
-| Latest commit | `2020058` — Revamp site with dark card theme and content updates |
-| Uncommitted work | None |
+| Latest commit | This session — Expand publications and recent updates |
+| Uncommitted work | Pre-existing changes in `skills.md` remain outside this session's commit |
 | Active work | None |
 | Live URL | `https://mrHendrixSL.github.io` |
 
@@ -35,13 +35,14 @@ Purpose: durable record of work across coding/writing assistants.
 | D4 | Current Status — Nimbus secondment | ✅ Done |
 | D5 | Publications — Work in Progress section | ✅ Done |
 | D6 | Hiberno-English paper added as WIP entry | ✅ Done |
+| D7 | Publications page expanded with 2026 outputs, DOI/link metadata, and updated research descriptions | ✅ Done |
+| D8 | Recent Updates includes Digital History Autumn School 2026 participant acceptance | ✅ Done |
 
 ### Pending Actions
 
 1. **Zenodo DOI** — When the Hiberno-English dataset is uploaded to Zenodo, update `publications.md` WIP entry with the DOI link.
-2. **Nimbus secondment end** — After Jul 20 2026, update `current_status.md` secondment badge from WIP → completed, and move it to a past experience section if appropriate.
-3. **DHC 2026 presentation** — After Sep 2026, update the Hiberno-English WIP entry with paper status (submitted / published).
-4. **DH2025 paper** — After Jul 2025 conference, update `publications.md` badge from `Abstract Accepted` → `Published` and add proceedings link.
+2. **Nimbus secondment end** — Confirm its final status, then update `current_status.md` from WIP and move it to past experience if appropriate.
+3. **CV publication status** — `cv_source/cv.tex` still describes DH2025 as accepted and the Hiberno-English output as under preparation; update it when the owner requests CV alignment.
 
 ### Key Files
 
@@ -128,5 +129,28 @@ Purpose: durable record of work across coding/writing assistants.
 **Risks:**
 - If GitHub Pages shows a blank page: check that `theme:` line is fully commented out and `_layouts/default.html` exists in root
 - Google Fonts load from CDN — will fail in offline/local preview without internet
+
+---
+
+### Session 2 — 2026-09-11 — Codex
+
+**Scope:** Expand the Publications & Research Output page and add an owner-confirmed Recent Update
+
+**Done:**
+- Reorganised `publications.md` into published/conference outputs, conference abstracts/research frameworks, and research in progress.
+- Added the DHC 2026 Hiberno-English conference paper and its conference link.
+- Updated the DH2025 abstract to published status and added its DOI.
+- Added the CASCADE × MECANO parallel-text framework abstract.
+- Replaced the earlier broad WIP descriptions with the supplied intertextual-relations, visual-analytics, and trust/grounding research entries.
+- Preserved clean UTF-8 names and punctuation and verified balanced HTML containers.
+- Expanded homepage Recent Updates with the Aug 2026 Digital History Autumn School acceptance, the DHC 2026 paper/presentation, the CASCADE × MECANO abstract, and DH2025's published abstract status and DOI.
+- Committed the site and handoff updates to `main` and pushed them to `origin`.
+
+**Not done / future:**
+- Did not update the CV or other site pages; their older publication/status wording may now need alignment.
+- Did not modify the pre-existing uncommitted changes in `skills.md`.
+
+**Risks:**
+- The Nimbus secondment status in `current_status.md` is now date-stale and requires owner confirmation before changing.
 
 ---

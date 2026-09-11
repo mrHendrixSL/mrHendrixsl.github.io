@@ -71,11 +71,14 @@ title: Home
 
 ## About Me
 
-I am an AI researcher specialising in **Natural Language Processing, Machine Learning, and Transformers**, with a strong foundation in applied data visualization. I am currently pursuing a fully funded PhD in Computer Science at University College Cork under the [CASCADE](https://www.horizoncascade.net/) Horizon Europe MSCA programme, developing **LLM-powered text reuse detection systems** for diachronic corpora and low-resource textual domains.
 
-I bring over four years of cross-functional industry experience as a data analyst and implementation engineer — building cloud-based BI tools, automation pipelines, and real-time analytics platforms. I thrive at the intersection of research and real-world application, aiming to deliver **explainable, human-centered AI solutions** for language and data-intensive environments.
+I am a doctoral researcher in Computer Science at University College Cork, funded through the [CASCADE](https://www.horizoncascade.net/) Horizon Europe Marie Skłodowska-Curie Doctoral Network. My research focuses on the **computational representation and retrieval of textual relations under transformation**, with particular attention to cases in which lexical similarity is weakened or lost through paraphrase, adaptation, obfuscation, allusion, historical variation, and other forms of textual change.
 
-I am currently on secondment at **Nimbus Research Centre** (Apr–Jul 2026), collaborating with Tharindu Ranathunga on the [inTrusted](https://nimbuscentre.ie/project/intrusted/) project — exploring trust frameworks for agentic cyber-physical systems and the gap between human intentionality and AI interpretation.
+My current work examines how such relations can be encoded, retrieved, ranked, and evaluated at scale across large textual collections. This includes research on semantic retrieval, parallel-text modelling, relation classification, benchmark construction, and visual analytics. A central concern is the extent to which computational systems can preserve evidence of textual relatedness across different degrees and forms of transformation.
+
+Prior to my doctoral research, I worked for more than four years in data analytics and implementation engineering, developing business intelligence systems, automation pipelines, and real-time analytical platforms.
+
+From April to July 2026, I completed a research secondment at Nimbus Research Centre, MTU, on the [inTrusted](https://nimbuscentre.ie/project/intrusted/) project —  investigating grounding and trust in agentic cyber-physical systems. The work examined how conversational AI failures can propagate from language understanding through planning and tool use into physical robotic action.
 
 ---
 

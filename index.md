@@ -30,6 +30,18 @@ description: "MSCA Doctoral Researcher at University College Cork studying textu
   </div>
 </div>
 
+## About Me
+
+<div class="about-copy">
+  <p>I am a doctoral researcher in Computer Science at University College Cork, funded through the <a href="https://www.horizoncascade.net/">CASCADE</a> Horizon Europe Marie Skłodowska-Curie Doctoral Network. My research focuses on the <strong>computational representation and retrieval of textual relations under transformation</strong>, with particular attention to cases in which lexical similarity is weakened or lost through paraphrase, adaptation, obfuscation, allusion, historical variation, and other forms of textual change.</p>
+
+  <p>My current work examines how such relations can be encoded, retrieved, ranked, and evaluated at scale across large textual collections. This includes research on semantic retrieval, parallel-text modelling, relation judgement, benchmark construction, and visual analytics. A central concern is how computational methods can recover evidence of textual relatedness across different degrees and forms of transformation.</p>
+
+  <p>Prior to my doctoral research, I worked for more than four years in data analytics and implementation engineering, developing business intelligence systems, automation pipelines, and real-time analytical platforms.</p>
+
+  <p>From April to July 2026, I completed a research secondment at Nimbus Research Centre, MTU, on the <a href="https://nimbuscentre.ie/project/intrusted/">inTrusted</a> project, investigating grounding and trust in agentic cyber-physical systems. The work examined how conversational AI failures can propagate from language understanding through planning and tool use into physical robotic action.</p>
+</div>
+
 <div class="news-strip">
   <h2>Recent Updates</h2>
   <div class="news-item">
@@ -45,25 +57,14 @@ description: "MSCA Doctoral Researcher at University College Cork studying textu
     <span>Completed a research secondment at <a href="https://nimbuscentre.ie/project/intrusted/" target="_blank" rel="noopener noreferrer">Nimbus Research Centre, MTU</a>, working on grounding and trust in agentic cyber-physical systems within the <strong>inTrusted</strong> project.</span>
   </div>
   <div class="news-item">
-    <span class="news-date">2026</span>
-    <span>Published the abstract <a href="https://www.horizoncascade.net/wp-content/uploads/sites/42/2026/01/CASCADExMECANO_Convention1_ShortAbstracts-Jan-2026.pdf" target="_blank" rel="noopener noreferrer"><em>Modeling Parallel Text: A Multidimensional Typology of Authorship and Transformation</em></a> for <strong>CASCADE × MECANO Convention 1</strong>.</span>
+    <span class="news-date">Jan 2026</span>
+    <span>Published and presented the abstract <a href="https://www.horizoncascade.net/wp-content/uploads/sites/42/2026/01/CASCADExMECANO_Convention1_ShortAbstracts-Jan-2026.pdf" target="_blank" rel="noopener noreferrer"><em>Modeling Parallel Text: A Multidimensional Typology of Authorship and Transformation</em></a> at <strong>CASCADE × MECANO Convention 1</strong> on 28 January 2026.</span>
   </div>
   <div class="news-item">
     <span class="news-date">Jul 2025</span>
-    <span>Published the conference abstract <a href="https://doi.org/10.5281/zenodo.18340803" target="_blank" rel="noopener noreferrer"><em>Rewriting Tradition: Quantifying Change in Lady Gregory's Irish Legends</em></a> at <strong>DH2025</strong> in Lisbon.</span>
+    <span>Published and presented the conference abstract <a href="https://doi.org/10.5281/zenodo.18340803" target="_blank" rel="noopener noreferrer"><em>Rewriting Tradition: Quantifying Change in Lady Gregory's Irish Legends</em></a> at <strong>DH2025</strong> in Lisbon.</span>
   </div>
 </div>
-
-## About Me
-
-
-I am a doctoral researcher in Computer Science at University College Cork, funded through the [CASCADE](https://www.horizoncascade.net/) Horizon Europe Marie Skłodowska-Curie Doctoral Network. My research focuses on the **computational representation and retrieval of textual relations under transformation**, with particular attention to cases in which lexical similarity is weakened or lost through paraphrase, adaptation, obfuscation, allusion, historical variation, and other forms of textual change.
-
-My current work examines how such relations can be encoded, retrieved, ranked, and evaluated at scale across large textual collections. This includes research on semantic retrieval, parallel-text modelling, relation judgement, benchmark construction, and visual analytics. A central concern is how computational methods can recover evidence of textual relatedness across different degrees and forms of transformation.
-
-Prior to my doctoral research, I worked for more than four years in data analytics and implementation engineering, developing business intelligence systems, automation pipelines, and real-time analytical platforms.
-
-From April to July 2026, I completed a research secondment at Nimbus Research Centre, MTU, on the [inTrusted](https://nimbuscentre.ie/project/intrusted/) project, investigating grounding and trust in agentic cyber-physical systems. The work examined how conversational AI failures can propagate from language understanding through planning and tool use into physical robotic action.
 
 ---
 

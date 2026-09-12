@@ -14,13 +14,14 @@ description: "Publications, conference presentations, and current research by Ra
   <div class="pub-authors">Rachel McCarthy, Rasika Edirisinghe, James O'Sullivan, Clíona Ó Gallchoir, Rosane Minghim, Órla Murphy</div>
   <div class="pub-meta">
     <span class="badge badge-published">Published Conference Abstract</span>
+    <span class="badge badge-published">Conference Presentation</span>
     <span class="tag">Digital Humanities</span>
     <span class="tag">NLP</span>
     <span class="tag">Literary Analysis</span>
     <span class="tag">Textual Transformation</span>
     <a href="https://doi.org/10.5281/zenodo.18340803" target="_blank" rel="noopener noreferrer" class="badge badge-published">DOI ↗</a>
   </div>
-  <p>Examines textual transformation in Lady Gregory's retellings of Irish legend through computational comparison. The study uses quantitative text analysis to investigate changes in language, style, and textual structure while connecting computational measurements with questions of literary adaptation and transmission.</p>
+  <p>Published and presented at DH2025, this work examines textual transformation in Lady Gregory's retellings of Irish legend through computational comparison. The study uses quantitative text analysis to investigate changes in language, style, and textual structure while connecting computational measurements with questions of literary adaptation and transmission.</p>
 </div>
 
 <div class="pub-entry">
@@ -58,17 +59,18 @@ description: "Publications, conference presentations, and current research by Ra
 
 <div class="pub-entry">
   <h3>Modeling Parallel Text: A Multidimensional Typology of Authorship and Transformation</h3>
-  <div class="pub-venue">CASCADE × MECANO Convention 1 · 2026</div>
+  <div class="pub-venue">CASCADE × MECANO Convention 1 · 28 Jan 2026</div>
   <div class="pub-authors">Rasika Edirisinghe</div>
   <div class="pub-meta">
     <span class="badge badge-published">Published Abstract</span>
+    <span class="badge badge-published">Conference Presentation</span>
     <span class="tag">Parallel Text</span>
     <span class="tag">Text Reuse</span>
     <span class="tag">Digital Humanities</span>
     <span class="tag">Computational Literary Studies</span>
     <a href="https://www.horizoncascade.net/wp-content/uploads/sites/42/2026/01/CASCADExMECANO_Convention1_ShortAbstracts-Jan-2026.pdf" target="_blank" rel="noopener noreferrer" class="badge badge-published">Abstract PDF ↗</a>
   </div>
-  <p>Proposes a multidimensional framework for describing relationships between parallel texts by separating questions of authorship from the degree and nature of textual transformation. The model connects literary-theoretical accounts of textual relation with computational approaches to similarity, reuse, adaptation, and transformation.</p>
+  <p>Published and presented at CASCADE × MECANO Convention 1, this work proposes a multidimensional framework for describing relationships between parallel texts by separating questions of authorship from the degree and nature of textual transformation. The model connects literary-theoretical accounts of textual relation with computational approaches to similarity, reuse, adaptation, and transformation.</p>
 </div>
 
 <div class="section-label">Current Research</div>

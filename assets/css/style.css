@@ -227,6 +227,12 @@ main ul, main ol { margin-bottom: 1rem; }
 }
 .hero-links a:hover { color: var(--accent); border-color: var(--accent); text-decoration: none; }
 
+/* ── About (home page) ── */
+.about-copy p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* ── News / updates strip ── */
 .news-strip {
   background: var(--bg2);

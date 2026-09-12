@@ -16,10 +16,24 @@ description: "Research presentations, peer review, evaluation, and curriculum co
 </div>
 
 <div class="exp-entry">
+  <div class="exp-title">Modeling Parallel Text: A Multidimensional Typology of Authorship and Transformation</div>
+  <div class="exp-org">CASCADE × MECANO Convention 1</div>
+  <div class="exp-meta">28 January 2026</div>
+  <p>Presented the multidimensional framework published in the <a href="https://www.horizoncascade.net/wp-content/uploads/sites/42/2026/01/CASCADExMECANO_Convention1_ShortAbstracts-Jan-2026.pdf" target="_blank" rel="noopener noreferrer">Convention 1 short abstracts ↗</a>.</p>
+</div>
+
+<div class="exp-entry">
   <div class="exp-title">Beyond Translation: Rethinking 'Parallel Text' Across Disciplines</div>
   <div class="exp-org">UCC Digital Humanities Colloquium</div>
   <div class="exp-meta">1 October 2025 · University College Cork</div>
   <p>Presented a cross-disciplinary reframing of the concept of 'parallel text', examining how the term is understood differently across NLP, translation studies, and digital humanities — and what a unified computational treatment would require.</p>
+</div>
+
+<div class="exp-entry">
+  <div class="exp-title">Rewriting Tradition: Quantifying Change in Lady Gregory's Irish Legends</div>
+  <div class="exp-org">DH2025: Alliance of Digital Humanities Organizations</div>
+  <div class="exp-meta">July 2025 · Lisbon, Portugal</div>
+  <p>Presented the published conference abstract on computational comparison of textual transformation in Lady Gregory's retellings of Irish legend. <a href="https://doi.org/10.5281/zenodo.18340803" target="_blank" rel="noopener noreferrer">Published abstract ↗</a></p>
 </div>
 
 <div class="exp-entry">

@@ -20,8 +20,9 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|
 | Git remote | `https://github.com/mrHendrixSL/mrHendrixsl.github.io.git` |
 | Git branch | main |
-| Latest commit | Comprehensive editorial, accessibility, SEO, CV, and repository-hygiene pass (this commit) |
-| Rollback baseline | Annotated tag `pre-editorial-pass-2026-09-12` → `73b3d88` |
+| Latest commit | Homepage Recent Updates cleanup and About Me layout adjustment (this commit) |
+| Full-pass rollback | Annotated tag `pre-editorial-pass-2026-09-12` → `73b3d88` |
+| Homepage rollback | Annotated tag `pre-homepage-update-2026-09-12` → `fa50138` |
 | Uncommitted work | None |
 | Active work | None |
 | Live URL | `https://mrHendrixSL.github.io` |
@@ -201,5 +202,28 @@ Purpose: durable record of work across coding/writing assistants.
 **Risks:**
 - Tracked LaTeX artefacts were restored after the verified build, but future builds will continue to modify them until repository cleanup is approved.
 - `assets/css/style.scss` is inactive but remains a maintenance liability until deletion is approved.
+
+---
+
+### Session 5 — 2026-09-12 — Codex
+
+**Scope:** Simplify and reposition homepage Recent Updates and justify the About Me copy
+
+**Done:**
+- Confirmed that four owner-listed historical items were already absent, then restored the Jul 2025 DH2025 item after the owner clarified that its abstract was both published and presented.
+- Retained five updates: four from 2026 and the restored Jul 2025 DH2025 publication and presentation.
+- Recorded that the CASCADE × MECANO Convention 1 abstract was published and presented on 28 January 2026.
+- Moved Recent Updates from above About Me to immediately below the About Me copy.
+- Added a scoped `.about-copy` style so only the About Me paragraphs use justified alignment.
+- Converted the About Me paragraphs to explicit HTML inside a semantic styling wrapper without changing their wording.
+- Aligned the publication/presentation statuses and dates across `publications.md`, `Presentations_Contributions.md`, and the LaTeX CV source.
+- Rebuilt the public CV with two successful `pdflatex` passes and verified the updated three-page PDF text and page-two layout.
+- Created the annotated rollback tag `pre-homepage-update-2026-09-12` at `fa50138` so this homepage-only change can be reversed independently.
+
+**Not done / future:**
+- No unrelated homepage, publication, talk, or CV content was changed.
+
+**Risks:**
+- Justified text can produce uneven word spacing on narrow screens, depending on the browser and line breaks.
 
 ---

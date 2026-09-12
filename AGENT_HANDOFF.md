@@ -20,15 +20,16 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|
 | Git remote | `https://github.com/mrHendrixSL/mrHendrixsl.github.io.git` |
 | Git branch | main |
-| Latest commit | Qualitative research interaction semantics (this commit) |
+| Latest commit | Milton–Shelley transformation demonstration (this commit) |
 | Full-pass rollback | Annotated tag `pre-editorial-pass-2026-09-12` → `73b3d88` |
 | Homepage rollback | Annotated tag `pre-homepage-update-2026-09-12` → `fa50138` |
 | Skip-link rollback | Annotated tag `pre-skip-link-fix-2026-09-12` → `70646ba` |
 | Redesign rollback | Annotated tag `pre-editorial-research-redesign-2026-09-12` → `9d83c15` |
 | Astro rollback | Annotated tag `pre-astro-migration-2026-09-12` → `1974f4b`; published to origin with migration |
 | Interaction-semantics rollback | Annotated tag `pre-interaction-semantics-2026-09-12` → `fa9fb0b`; published with the interaction pass |
-| Uncommitted work | None after the interaction-semantics commit |
-| Active work | None; qualitative research interactions are deployed through GitHub Actions |
+| Milton–Shelley demo rollback | Annotated tag `pre-milton-shelley-demo-2026-09-12` → `6c152b6`; published with the focused demonstration redesign |
+| Uncommitted work | None after the Milton–Shelley demonstration commit |
+| Active work | None; focused transformation demonstration is deployed through GitHub Actions |
 | Live URL | `https://mrHendrixSL.github.io` |
 
 ### Deliverable Status
@@ -50,6 +51,7 @@ Purpose: durable record of work across coding/writing assistants.
 | D13 | D3 relation field and research architecture, GSAP transformation sequence, selective OGL depth | ✅ Done |
 | D14 | Astro GitHub Pages workflow and documented rollback procedure | ✅ Deployed |
 | D15 | Qualitative relation field, token-level transformation sequence, and research-object pipeline | ✅ Deployed |
+| D16 | Integrated Milton source, transformation path, and Shelley relation-trace demonstration | ✅ Deployed |
 
 ### Pending Actions
 
@@ -369,5 +371,47 @@ Purpose: durable record of work across coding/writing assistants.
 
 **Risks:**
 - The demonstration passage and category placement are explanatory models, not experimental outputs; retain qualitative labelling until real project data is connected.
+
+---
+
+### Session 10 — 2026-09-12 — Codex
+
+**Scope:** Focused redesign of the transformation demonstration around the historical Milton–Shelley relation
+
+**Done:**
+- Replaced the generic invented passage with the owner-supplied historical anchors from John Milton's *Paradise Lost*, Book X, and Mary Shelley's *Frankenstein*.
+- Explicitly labelled the Milton–Shelley relation as historical and the paraphrase, adaptation, and obfuscation states as constructed demonstrations of changing retrieval conditions.
+- Framed the sequence as one illustrative path through a multidimensional transformation space rather than a universal linear taxonomy.
+- Rebuilt the section as an integrated three-part comparison: persistent Milton source anchor, selectable transformation path, and conceptual relation trace with the Shelley destination always present.
+- Added five concise transformation states with plain-language explanations of what remains visible, what changes, and how a computational system might recover the relation.
+- Preserved restrained GSAP token-level substitution, reordering, disappearance, fragmentation, and allusive re-anchoring while removing the ScrollTrigger dependency and all scroll-driven activation.
+- Added keyboard-operable state controls supporting focus, click, arrow keys, Home, and End; active state and destination emphasis remain textually explicit and do not rely on colour alone.
+- Added a D3 tree for the persistent creator/created-being conceptual structure, including Adam and fallen angel re-anchoring at the allusion state.
+- Added D3-positioned qualitative continua for surface wording, transformation distance, and relation evidence, explicitly labelled as categories rather than measurements.
+- Applied stable shape, line-style, and colour encodings to created being, creator/maker, consent, origin/emergence, and responsibility/accusation concepts.
+- Added a static reduced-motion mode showing all five passages while retaining both historical anchors and the complete concept map.
+- Added responsive layouts: three simultaneous panels on desktop, a full-width source plus two panels on tablet, and source → transformation → trace stacking on mobile.
+- Kept the existing Astro/Svelte/D3/GSAP/OGL architecture, `client:visible` hydration, page structure, dependencies, RelationField, and factual research content elsewhere unchanged.
+
+**Validation:**
+- `npm run build`: 35 source files checked with zero errors, warnings, or hints; all 14 routes generated.
+- Chrome DevTools checks passed at 1440, 820, and 390 px; the 390 px document width equals the viewport width and the panels retain the intended semantic order.
+- Keyboard End navigation selected and focused ALLUSION, emphasized the Shelley destination, and left exactly one animated text layer visible.
+- Reduced-motion mode hid the animated stage, exposed all five static passages, retained both quotations and the D3 trace, and produced no horizontal overflow.
+- Confirmed the generated interface contains the constructed-step disclosure and both author anchors, with no decimals or percentage metrics.
+- Lighthouse desktop: Performance 100, Accessibility 100, Best Practices 100, SEO 100; LCP 0.4 s, CLS 0.027, TBT 0 ms.
+- Lighthouse mobile: Performance 99, Accessibility 100, Best Practices 100, SEO 100; LCP 1.7 s, CLS 0.03, TBT 0 ms.
+- Removing ScrollTrigger reduced the deferred GSAP chunk from approximately 113 KB to 70 KB; the richer transformation island remains `client:visible` and the combined deferred component/GSAP payload is smaller than before this redesign.
+
+**Deployment:**
+- The owner explicitly authorised the completed focused redesign to be committed and pushed.
+- Created the annotated rollback tag `pre-milton-shelley-demo-2026-09-12` at the exact pre-pass commit, `6c152b6`.
+- Recorded the implementation and validation in one atomic commit and pushed `main` plus the rollback tag to origin.
+
+**Not done / future:**
+- No framework, dependency, route, page information architecture, RelationField behavior, or factual research record outside the demonstration was changed.
+
+**Risks:**
+- The intermediate paraphrase, adaptation, and obfuscation passages are explanatory constructions, not historical transmission stages; the interface disclosure must remain if the example is edited later.
 
 ---

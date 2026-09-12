@@ -20,14 +20,15 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|
 | Git remote | `https://github.com/mrHendrixSL/mrHendrixsl.github.io.git` |
 | Git branch | main |
-| Latest commit | Astro architectural migration (this commit) |
+| Latest commit | Qualitative research interaction semantics (this commit) |
 | Full-pass rollback | Annotated tag `pre-editorial-pass-2026-09-12` → `73b3d88` |
 | Homepage rollback | Annotated tag `pre-homepage-update-2026-09-12` → `fa50138` |
 | Skip-link rollback | Annotated tag `pre-skip-link-fix-2026-09-12` → `70646ba` |
 | Redesign rollback | Annotated tag `pre-editorial-research-redesign-2026-09-12` → `9d83c15` |
 | Astro rollback | Annotated tag `pre-astro-migration-2026-09-12` → `1974f4b`; published to origin with migration |
-| Uncommitted work | None after the Astro migration commit |
-| Active work | None; Astro is deployed through GitHub Actions |
+| Interaction-semantics rollback | Annotated tag `pre-interaction-semantics-2026-09-12` → `fa9fb0b`; published with the interaction pass |
+| Uncommitted work | None after the interaction-semantics commit |
+| Active work | None; qualitative research interactions are deployed through GitHub Actions |
 | Live URL | `https://mrHendrixSL.github.io` |
 
 ### Deliverable Status
@@ -48,6 +49,7 @@ Purpose: durable record of work across coding/writing assistants.
 | D12 | Astro 7 static architecture with Svelte islands and structured content | ✅ Done |
 | D13 | D3 relation field and research architecture, GSAP transformation sequence, selective OGL depth | ✅ Done |
 | D14 | Astro GitHub Pages workflow and documented rollback procedure | ✅ Deployed |
+| D15 | Qualitative relation field, token-level transformation sequence, and research-object pipeline | ✅ Deployed |
 
 ### Pending Actions
 
@@ -328,5 +330,44 @@ Purpose: durable record of work across coding/writing assistants.
 **Risks:**
 - OGL/WebGL availability varies by browser and device; the D3/SVG field remains the primary non-WebGL and mobile rendering.
 - Restoring the preserved Jekyll build requires both reverting the Astro migration and switching GitHub Pages back to branch publishing, as documented in `MIGRATION_ROLLBACK.md`.
+
+---
+
+### Session 9 — 2026-09-12 — Codex
+
+**Scope:** Replace invented research metrics and decorative interactions with qualitative, intellectually meaningful visualisation semantics
+
+**Done:**
+- Removed all invented similarity, relation, depth, and percentage-evidence readouts from the interactive research components.
+- Rebuilt RelationField around qualitative surface-overlap, transformation-distance, and relation-evidence categories; D3 now derives node positions from categorical dimensions and generates the transformation paths.
+- Retained OGL only as a dynamically imported, low-opacity desktop depth layer derived from the D3 layout; mobile and reduced-motion modes continue without WebGL.
+- Replaced the row-shift sequence with an original, non-copyrighted demonstration passage and five explicit textual states: quotation, paraphrase, adaptation, obfuscation, and allusion.
+- Added GSAP token-level substitution, reordering, fading, fragmentation, and semantic reconnection without pinning, scrubbing, or scroll hijacking.
+- Added a robust reduced-motion rendering that displays all five passages statically without importing GSAP, including a CSS fallback before island hydration.
+- Rebuilt ResearchArchitecture as a six-object pipeline — texts, representations, candidate space, ranked relations, evidence, and visual exploration — with REPRESENT, RETRIEVE, JUDGE, and EXPLORE spanning the relevant object transitions.
+- Used D3 to lay out the pipeline, operation spans, connectors, representation matrix, candidate cluster, and ranked ordering; added concise focus/hover descriptions and a textual mobile fallback.
+- Changed homepage `.about-copy` alignment from justified to left-aligned while retaining automatic hyphenation.
+- Corrected the homepage relation field's responsive flow and minimum-content sizing so the true 390 px viewport has no horizontal overflow or portrait/readout collision.
+- Preserved all factual research records, Astro architecture, page information architecture, dependencies, `client:visible` hydration directives, and deployment configuration.
+
+**Validation:**
+- `npm run build`: 35 files checked with zero errors, warnings, or hints; all 14 routes generated.
+- Chrome DevTools emulation at 390 × 844 reported document width equal to viewport width (390 px).
+- Standard-motion browser check observed 32 token elements in motion during the tested transition, activated OBFUSCATION, and left exactly one passage layer visible after completion.
+- Reduced-motion browser check displayed all five static passages, hid the animated trace panel, and added no horizontal overflow.
+- Lighthouse mobile: Performance 99, Accessibility 100, Best Practices 100, SEO 100; LCP 1.7 s, CLS 0.03, TBT 0 ms.
+- Lighthouse desktop: 100 in all four categories; LCP 0.4 s, CLS 0.027, TBT 0 ms.
+- Lighthouse produced valid reports but returned a Windows EPERM warning while attempting to remove its temporary Chrome profiles after each completed audit.
+
+**Deployment:**
+- After local review, the owner explicitly authorised the completed pass to be committed and pushed.
+- Created the annotated rollback tag `pre-interaction-semantics-2026-09-12` at the exact pre-pass commit, `fa9fb0b`.
+- Recorded the implementation and validation in one atomic commit and pushed `main` plus the rollback tag to origin.
+
+**Not done / future:**
+- The conceptual states are deliberately qualitative and are not presented as empirical findings; connecting them to project data remains future work.
+
+**Risks:**
+- The demonstration passage and category placement are explanatory models, not experimental outputs; retain qualitative labelling until real project data is connected.
 
 ---

@@ -1,0 +1,20 @@
+<footer class="site-footer">
+  <div class="footer-shell">
+    <p class="footer-thesis">Surface form changes.<br><em>Relation persists.</em></p>
+    <div>
+      <p>Rasika Edirisinghe<br>MSCA Doctoral Researcher<br>University College Cork</p>
+      <a href="mailto:rasika.edirisinghe@ucc.ie">rasika.edirisinghe@ucc.ie</a>
+    </div>
+    <p class="footer-note">Textual relations under transformation<br>Representation · Retrieval · Judgement · Interpretation</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer { margin-top: var(--space-section); border-top: 1px solid var(--rule); }
+  .footer-shell { display: grid; grid-template-columns: 1.4fr .8fr 1fr; gap: 3rem; width: min(calc(100% - clamp(2rem, 6vw, 7rem)), var(--content)); margin-inline: auto; padding: 4rem 0 5rem; }
+  .footer-thesis { color: var(--paper); font-family: var(--serif); font-size: clamp(1.9rem, 3.5vw, 3.2rem); line-height: 1.05; }
+  .footer-thesis em { color: var(--indigo); font-weight: 350; }
+  .footer-shell div, .footer-note { color: var(--paper-dim); font-family: var(--mono); font-size: .68rem; letter-spacing: .04em; line-height: 1.85; }
+  .footer-shell div p { margin-bottom: .8rem; }
+  @media (max-width: 760px) { .footer-shell { grid-template-columns: 1fr; width: calc(100% - 2rem); } }
+</style>

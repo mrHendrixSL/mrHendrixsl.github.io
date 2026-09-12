@@ -1,0 +1,33 @@
+---
+import type { Publication } from '../../data/publications';
+interface Props { publication: Publication; index: number; }
+const { publication: item, index } = Astro.props;
+---
+<article class="publication-entry">
+  <span class="publication-index" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span>
+  <div class="publication-main">
+    <h3>{item.title}</h3>
+    <p class="publication-venue">{item.venue}</p>
+    {item.authors && <p class="publication-authors">{item.authors.join(', ')}</p>}
+    <p class="publication-description">{item.description}</p>
+    <ul class="tag-list" aria-label="Topics">{item.tags.map(tag => <li>{tag}</li>)}</ul>
+  </div>
+  <aside class="publication-meta">
+    {item.statuses.map(status => <span>{status}</span>)}
+    {item.href && <a class="text-link" href={item.href} target="_blank" rel="noopener noreferrer">{item.sourceLabel}</a>}
+  </aside>
+</article>
+
+<style>
+  .publication-entry { display: grid; grid-template-columns: 3rem minmax(0,1fr) 12rem; gap: clamp(1.5rem,4vw,4rem); padding: clamp(2.5rem,5vw,4.5rem) 0; border-top: 1px solid var(--rule); }
+  .publication-entry:last-child { border-bottom: 1px solid var(--rule); }
+  .publication-index { color: var(--indigo); font-family: var(--mono); font-size: .65rem; }
+  h3 { max-width: 27ch; }
+  .publication-venue, .publication-authors { margin: 1.15rem 0 0; color: var(--paper-dim); font-family: var(--mono); font-size: .68rem; line-height: 1.65; }
+  .publication-authors { color: var(--paper-soft); }
+  .publication-description { max-width: 46rem; margin: 1.6rem 0 0; }
+  .publication-meta { display: flex; flex-direction: column; align-items: flex-start; gap: .8rem; }
+  .publication-meta span { color: var(--amber); font-family: var(--mono); font-size: .62rem; letter-spacing: .06em; line-height: 1.45; text-transform: uppercase; }
+  .publication-meta .text-link { margin-top: auto; }
+  @media (max-width: 760px) { .publication-entry { grid-template-columns: 2rem 1fr; } .publication-meta { grid-column: 2; } .publication-meta .text-link { margin-top: .5rem; } }
+</style>

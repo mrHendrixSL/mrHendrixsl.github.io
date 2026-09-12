@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PublicationList from '../components/publications/PublicationList.astro';
+import { publications, type PublicationGroup } from '../data/publications';
+const groups: Array<{key: PublicationGroup; label: string; title: string}> = [
+  { key: 'published', label: 'Peer-reviewed and published', title: 'Published work' },
+  { key: 'conference', label: 'Research communicated', title: 'Abstracts & presentations' },
+  { key: 'research', label: 'Active and completed strands', title: 'Research projects' }
+];
+---
+<BaseLayout title="Publications" description="Publications, conference presentations, and current research by Rasika Edirisinghe.">
+  <header class="page-header site-shell"><p class="section-kicker">Research output</p><h1 class="page-title">Publications & research</h1><p class="page-deck">Published work, conference contributions, and research strands—kept as structured, reusable records.</p></header>
+  {groups.map((group, index) => <section class="content-section site-shell" aria-labelledby={`${group.key}-heading`}><header class="output-heading"><span>{String(index + 1).padStart(2,'0')}</span><div><p class="section-kicker">{group.label}</p><h2 id={`${group.key}-heading`}>{group.title}</h2></div></header><PublicationList items={publications.filter(item => item.group === group.key)} /></section>)}
+</BaseLayout>
+<style>
+  .output-heading { display: grid; grid-template-columns: 3rem 1fr; gap: clamp(1.5rem,4vw,4rem); margin-bottom: 3.5rem; }
+  .output-heading > span { color: var(--indigo); font-family: var(--serif); font-size: 2.5rem; font-style: italic; }
+  .output-heading h2 { margin-top: .6rem; }
+</style>

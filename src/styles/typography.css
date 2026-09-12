@@ -1,0 +1,70 @@
+body {
+  font-family: var(--sans);
+  font-size: clamp(1rem, .94rem + .18vw, 1.1rem);
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--paper-soft);
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  color: var(--paper);
+  font-family: var(--serif);
+  font-weight: 420;
+  line-height: .98;
+  letter-spacing: -.035em;
+  text-wrap: balance;
+}
+
+h1 { font-size: clamp(3.7rem, 9vw, 8.8rem); }
+h2 { font-size: clamp(2.4rem, 5.5vw, 5rem); }
+h3 { font-size: clamp(1.55rem, 2.6vw, 2.4rem); line-height: 1.08; }
+
+p { margin: 0 0 1.15em; }
+
+a {
+  color: inherit;
+  text-decoration-color: rgba(141, 150, 216, .55);
+  text-decoration-thickness: .08em;
+  text-underline-offset: .22em;
+}
+
+a:hover { color: var(--paper); text-decoration-color: var(--amber); }
+
+.eyebrow,
+.section-kicker,
+.meta,
+.label {
+  color: var(--paper-dim);
+  font-family: var(--mono);
+  font-size: .69rem;
+  font-weight: 500;
+  letter-spacing: .14em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.page-title { max-width: 12ch; }
+.page-deck {
+  max-width: 43rem;
+  margin-top: 2rem;
+  color: var(--paper-soft);
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  line-height: 1.32;
+}
+
+.prose { max-width: var(--reading); }
+.prose h2 { margin: 2.4em 0 .65em; font-size: clamp(2rem, 4vw, 3.25rem); }
+.prose h3 { margin: 2em 0 .65em; }
+.prose blockquote {
+  margin: 2.2rem 0;
+  padding-left: 1.5rem;
+  border-left: 1px solid var(--amber);
+  color: var(--paper);
+  font-family: var(--serif);
+  font-size: 1.25em;
+}
+.prose hr { margin: 3rem 0; border: 0; border-top: 1px solid var(--rule); }
+.prose ul, .prose ol { padding-left: 1.3rem; }
+.prose strong { color: var(--paper); font-weight: 600; }

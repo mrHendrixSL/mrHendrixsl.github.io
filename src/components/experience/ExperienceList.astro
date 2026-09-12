@@ -1,0 +1,32 @@
+---
+import type { ExperienceEntry } from '../../data/experience';
+interface Props { items: ExperienceEntry[]; }
+const { items } = Astro.props;
+---
+<div class="experience-list">
+  {items.map((item, index) => (
+    <article class="experience-entry">
+      <span class="entry-index">{String(index + 1).padStart(2,'0')}</span>
+      <div>
+        <h3>{item.title}</h3>
+        <p class="organisation">{item.organisation}</p>
+        <p class="meta">{item.meta}</p>
+        {item.summary && <p>{item.summary}</p>}
+        {item.details && <ul>{item.details.map(detail => <li>{detail}</li>)}</ul>}
+        {item.tags && <ul class="tag-list" aria-label="Methods and skills">{item.tags.map(tag => <li>{tag}</li>)}</ul>}
+      </div>
+    </article>
+  ))}
+</div>
+
+<style>
+  .experience-entry { display: grid; grid-template-columns: 2.5rem minmax(0,1fr); gap: 1.5rem; padding: 3rem 0; border-top: 1px solid var(--rule); }
+  .experience-entry:last-child { border-bottom: 1px solid var(--rule); }
+  .entry-index { color: var(--indigo); font-family: var(--mono); font-size: .65rem; }
+  h3 { max-width: 30ch; }
+  .organisation { margin: 1rem 0 .2rem; color: var(--amber); }
+  .meta { margin: 0 0 1.4rem; }
+  article p:not(.organisation):not(.meta), article ul:not(.tag-list) { max-width: 46rem; }
+  article ul:not(.tag-list) { padding-left: 1.1rem; }
+  article li + li { margin-top: .45rem; }
+</style>

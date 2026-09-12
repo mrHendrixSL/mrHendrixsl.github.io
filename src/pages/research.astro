@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SectionHeading from '../components/layout/SectionHeading.astro';
+import ResearchArchitecture from '../components/relation/ResearchArchitecture.svelte';
+import TransformationSequence from '../components/relation/TransformationSequence.svelte';
+import { projects } from '../data/projects';
+const doctoral = projects.find(project => project.id === 'doctoral')!;
+const nimbus = projects.find(project => project.id === 'nimbus-intrusted')!;
+---
+<BaseLayout title="Research" description="Current doctoral research on textual relations under transformation, retrieval, judgement, and visual analytics.">
+  <header class="page-header site-shell"><p class="section-kicker">Research programme</p><h1 class="page-title">Textual relations under transformation</h1><p class="page-deck">How textual relations can be represented, retrieved, judged, and explored when their surface evidence changes.</p></header>
+  <section class="content-section site-shell split-section" aria-labelledby="doctoral-heading">
+    <div class="section-index"><span class="number">01</span><p class="section-kicker">Doctoral research</p><p class="meta">{doctoral.context}<br />{doctoral.dates}</p></div>
+    <div><h2 id="doctoral-heading">{doctoral.title}</h2><div class="research-prose"><p>{doctoral.description}</p><p>{doctoral.secondaryDescription}</p></div></div>
+  </section>
+  <section class="content-section site-shell" aria-labelledby="system-heading"><SectionHeading index="02" kicker="Research architecture" title="One connected line of inquiry" id="system-heading" description="The stages form a trajectory from representing an unstable relation to interpreting the evidence around it." /><ResearchArchitecture client:visible /></section>
+  <div class="site-shell"><TransformationSequence client:visible /></div>
+  <section class="content-section site-shell context-grid" aria-label="Research contexts">
+    <article><p class="section-kicker">Upcoming engagement · 28 Sep–2 Oct 2026</p><h2>Digital History Autumn School 2026</h2><p class="context-meta">Herder Institute · Marburg, Germany</p><p>Accepted participant in <em>From Data Acquisition to Data Publication: Quality Control, Tool Assessment, and Methodological Challenges in Digital History</em>.</p></article>
+    <article><p class="section-kicker">Completed research experience · {nimbus.dates}</p><h2>{nimbus.title}</h2><p class="context-meta"><a href={nimbus.href} target="_blank" rel="noopener noreferrer">{nimbus.context}</a></p><p>{nimbus.description}</p></article>
+  </section>
+</BaseLayout>
+<style>
+  .research-prose { max-width: 48rem; margin-top: 2.5rem; }
+  .research-prose p:first-child { color: var(--paper); font-family: var(--serif); font-size: 1.45rem; }
+  .section-index .meta { margin-top: 1.5rem; line-height: 1.8; }
+  .context-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(3rem,7vw,8rem); }
+  .context-grid article { padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+  .context-grid h2 { margin: 1rem 0 1.4rem; font-size: clamp(2rem,4vw,3.5rem); }
+  .context-meta { color: var(--amber); font-family: var(--mono); font-size: .66rem; letter-spacing: .05em; text-transform: uppercase; }
+  @media (max-width: 760px) { .context-grid { grid-template-columns: 1fr; } }
+</style>

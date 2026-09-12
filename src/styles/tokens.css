@@ -1,0 +1,22 @@
+:root {
+  color-scheme: dark;
+  --ink-0: #080b12;
+  --ink-1: #0d111b;
+  --ink-2: #141a27;
+  --ink-3: #202839;
+  --paper: #e8e3d8;
+  --paper-soft: #bdb9b0;
+  --paper-dim: #85858a;
+  --indigo: #8d96d8;
+  --indigo-soft: #5e668f;
+  --amber: #c9a46b;
+  --rule: rgba(232, 227, 216, 0.14);
+  --rule-strong: rgba(232, 227, 216, 0.28);
+  --serif: 'Newsreader Variable', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --sans: 'DM Sans Variable', Inter, system-ui, sans-serif;
+  --mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+  --content: 76rem;
+  --reading: 48rem;
+  --space-section: clamp(5.5rem, 11vw, 10rem);
+  --ease: cubic-bezier(.22, 1, .36, 1);
+}

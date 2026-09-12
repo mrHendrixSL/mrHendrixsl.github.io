@@ -1,0 +1,37 @@
+---
+import BaseLayout from './BaseLayout.astro';
+interface Props { title: string; description: string; date: Date; tags: string[]; }
+const { title, description, date, tags } = Astro.props;
+const formatted = new Intl.DateTimeFormat('en-IE', { day: 'numeric', month: 'long', year: 'numeric' }).format(date);
+const shareUrl = encodeURIComponent(new URL(Astro.url.pathname, Astro.site).href);
+const shareTitle = encodeURIComponent(title);
+---
+<BaseLayout title={title} description={description} type="article">
+  <article class="note site-shell">
+    <header class="note-header">
+      <p class="section-kicker">Note · <time datetime={date.toISOString()}>{formatted}</time></p>
+      <h1>{title}</h1>
+      <p class="page-deck">{description}</p>
+      {tags.length > 0 && <ul class="tag-list" aria-label="Topics">{tags.map(tag => <li>{tag}</li>)}</ul>}
+    </header>
+    <div class="note-body prose"><slot /></div>
+    <footer class="share-links">
+      <p class="section-kicker">Share this note</p>
+      <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      <a href={`https://twitter.com/intent/tweet?text=${shareTitle}&url=${shareUrl}`} target="_blank" rel="noopener noreferrer">X / Twitter ↗</a>
+      <a href={`https://reddit.com/submit?url=${shareUrl}&title=${shareTitle}`} target="_blank" rel="noopener noreferrer">Reddit ↗</a>
+    </footer>
+  </article>
+</BaseLayout>
+<style>
+  .note { padding: clamp(5rem,12vw,10rem) 0; }
+  .note-header { max-width: 62rem; padding-bottom: clamp(4rem,8vw,7rem); border-bottom: 1px solid var(--rule); }
+  .note-header h1 { max-width: 13ch; margin-top: 1rem; font-size: clamp(3.4rem,8vw,7rem); }
+  .note-body { margin: clamp(4rem,8vw,7rem) auto 0; color: var(--paper-soft); }
+  .note-body :global(.hellscape-title) { color: var(--paper); text-align: center; text-transform: uppercase; }
+  .note-body :global(.hellscape-subtitle) { margin: 2rem auto; color: var(--paper); font-family: var(--serif); font-size: 1.45rem; font-style: italic; text-align: center; }
+  .note-body :global(.centered) { text-align: center; }
+  .share-links { display: flex; flex-wrap: wrap; gap: .8rem 1.5rem; max-width: var(--reading); margin: 5rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+  .share-links p { flex-basis: 100%; margin: 0; }
+  .share-links a { font-family: var(--mono); font-size: .68rem; letter-spacing: .07em; text-transform: uppercase; }
+</style>

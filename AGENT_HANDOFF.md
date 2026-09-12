@@ -20,13 +20,14 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|
 | Git remote | `https://github.com/mrHendrixSL/mrHendrixsl.github.io.git` |
 | Git branch | main |
-| Latest commit | Editorial research-environment redesign (this commit) |
+| Latest commit | Astro architectural migration (this commit) |
 | Full-pass rollback | Annotated tag `pre-editorial-pass-2026-09-12` → `73b3d88` |
 | Homepage rollback | Annotated tag `pre-homepage-update-2026-09-12` → `fa50138` |
 | Skip-link rollback | Annotated tag `pre-skip-link-fix-2026-09-12` → `70646ba` |
 | Redesign rollback | Annotated tag `pre-editorial-research-redesign-2026-09-12` → `9d83c15` |
-| Uncommitted work | None |
-| Active work | None |
+| Astro rollback | Annotated tag `pre-astro-migration-2026-09-12` → `1974f4b`; published to origin with migration |
+| Uncommitted work | None after the Astro migration commit |
+| Active work | None; Astro is deployed through GitHub Actions |
 | Live URL | `https://mrHendrixSL.github.io` |
 
 ### Deliverable Status
@@ -44,50 +45,53 @@ Purpose: durable record of work across coding/writing assistants.
 | D9 | CASCADE × MECANO abstract PDF linked from Publications and Recent Updates | ✅ Done |
 | D10 | 2026 editorial, information-architecture, accessibility, SEO, and repository-hygiene pass | ✅ Done |
 | D11 | Editorial researcher × cognitive cartography visual redesign | ✅ Done |
+| D12 | Astro 7 static architecture with Svelte islands and structured content | ✅ Done |
+| D13 | D3 relation field and research architecture, GSAP transformation sequence, selective OGL depth | ✅ Done |
+| D14 | Astro GitHub Pages workflow and documented rollback procedure | ✅ Deployed |
 
 ### Pending Actions
 
-1. **Zenodo DOI** — When the Hiberno-English dataset is uploaded to Zenodo, update `publications.md` WIP entry with the DOI link.
+1. **Zenodo DOI** — When the Hiberno-English dataset is uploaded to Zenodo, update its record in `src/data/publications.ts` with the DOI link.
 2. **Stale SCSS deletion** — `assets/css/style.scss` has been made non-compiling but remains tracked pending owner approval for deletion.
 3. **LaTeX artefact cleanup** — approve removal from version control of `cv_source/cv.aux`, `cv_source/cv.log`, `cv_source/cv.out`, `cv_source/texput.log`, and `cv_source/cv.pdf`; `.gitignore` now excludes future generated output.
 4. **Public CV privacy** — decide whether the public-web CV should use the UCC email and omit the mobile number; the verified PDF currently retains the existing personal email and mobile number.
-5. **Navigation consolidation** — decide whether to consolidate Current Work, Academic, Industry, Education, and Skills into a smaller Research/Experience structure with redirects.
 
 ### Key Files
 
 | File | Purpose |
 |---|---|
-| `_layouts/default.html` | Single layout — grouped navigation, ambient field, footer, metadata, and accessible menu behaviour |
-| `assets/css/style.css` | Authoritative nocturnal editorial design system; CSS variables at `:root` |
-| `index.md` | Home — conceptual hero, relation map, editorial About, Recent timeline, research spine, and secondary strand |
-| `current_status.md` | Current work — doctoral research, research threads, upcoming engagement, and completed secondment |
-| `publications.md` | Published work, conference abstracts/presentations, and current research |
-| `_config.yml` | Jekyll config — theme line commented out (custom layout used) |
-| `assets/img/` | Source and responsive headshots, SVG favicon, and social-preview source/export |
+| `astro.config.mjs` | Static root-site output, integrations, code splitting, and canonical site URL |
+| `src/layouts/BaseLayout.astro` | Global semantic shell, SEO metadata, navigation, and footer |
+| `src/pages/` | Canonical pages and thin compatibility routes |
+| `src/components/relation/` | D3 relation field/research map and GSAP transformation-sequence Svelte islands |
+| `src/data/` | Typed profile, updates, publications, talks, projects, experience, and skills |
+| `src/content/notes/` | Notes MDX content collection |
+| `public/assets/` | URL-stable CV, portrait, favicon, and social-preview assets |
+| `.github/workflows/deploy.yml` | Astro build and GitHub Pages artifact deployment |
+| `MIGRATION_ROLLBACK.md` | Deployment-source switch and rollback procedure |
+| `_layouts/`, `_posts/`, root `*.md` | Preserved pre-migration Jekyll source for rollback |
 | `STANDING_INSTRUCTIONS.md` | Rules for all agents on this project |
 
 ### Site Architecture
 
-- **Jekyll static site** — GitHub Pages, no build step needed, pushes auto-deploy
-- **No external theme** — `theme: jekyll-theme-cayman` is commented out in `_config.yml`; all layout is in `_layouts/default.html`
-- **No Gemfile / bundler required** — GitHub Pages handles Jekyll automatically
-- **All pages** use `layout: default` front matter
-- **Nav** is centralised in `_layouts/default.html` — do not add nav links inside page content
-- **CSS classes to know:** `.hero`, `.relation-map`, `.editorial-section`, `.recent-section`, `.news-item`, `.research-programme`, `.secondary-strand`, `.pub-entry`, `.exp-entry`, `.badge`, `.tag`, `.section-label`, `.skills`
+- **Current production architecture:** Astro 7 static output, with page source in `src/pages/`, shared layouts/styles/components in `src/`, and static assets in `public/`.
+- **Client islands:** Svelte components hydrate with `client:visible`; D3 maps relations and research stages; GSAP/ScrollTrigger controls the transformation sequence; OGL is dynamically imported only for the homepage desktop field.
+- **Structured content:** typed data under `src/data/`; Notes under `src/content/notes/` through an Astro MDX content collection.
+- **Deployment:** `.github/workflows/deploy.yml` uses `withastro/action@v6` and `actions/deploy-pages@v5`; GitHub Pages uses the Actions artifact.
+- **Preserved fallback:** all prior Jekyll root Markdown, `_layouts/`, `_posts/`, `_config.yml`, and original `assets/` remain present for rollback.
+- **Recovery:** `MIGRATION_ROLLBACK.md` documents a revert-first rollback and the Pages-source switch needed to restore Jekyll.
 
 ### Content Map
 
 | Page | File | Notes |
 |---|---|---|
-| Home | `index.md` | Conceptual hero + relation map + editorial About + Recent timeline + research spine |
-| Current Work | `current_status.md` | Doctoral research, current threads, Autumn School, and completed Nimbus secondment |
-| Teaching & Academic Experience | `academic_experience.md` | UCC teaching and two visiting lecturer roles |
-| Industry Experience | `industry_experience.md` | EFL Global, Affno, SYNERGEN + internships |
-| Education | `education.md` | PhD UCC, MSc RGU (Distinction), BSc Cardiff Met, HND |
-| Publications | `publications.md` | Published work + conference outputs + current research |
-| Talks & Contributions | `Presentations_Contributions.md` | Presentations, reviewer roles, curriculum dev |
-| Notes | `blog.md` | Jekyll `site.posts` loop — posts in `_posts/`; permalink remains `/blog/` |
-| CV | `assets/Rasika_Edirisinghe-CV.pdf` | Linked from nav; replace file to update |
+| Home | `src/pages/index.astro` | Identity, D3/OGL relation field, About, structured Recent, architecture, and transformation sequence |
+| Research | `src/pages/research.astro` | Doctoral programme, D3 architecture, transformation model, and research contexts |
+| Publications | `src/pages/publications.astro` + `src/data/publications.ts` | Published work, conference output, and projects |
+| Talks | `src/pages/talks.astro` + `src/data/talks.ts` | Presentations and academic contributions |
+| Experience | `src/pages/experience.astro` + `src/data/experience.ts` | Academic, industry, education, and methods/skills |
+| Notes | `src/pages/notes/` + `src/content/notes/` | MDX collection and editorial note layout; `/blog/` redirects here |
+| CV | `public/assets/Rasika_Edirisinghe-CV.pdf` | Stable `/assets/Rasika_Edirisinghe-CV.pdf` URL |
 
 ### Owner Profile
 
@@ -283,5 +287,46 @@ Purpose: durable record of work across coding/writing assistants.
 - The social-preview default should be confirmed in generated Open Graph metadata after the first GitHub Pages/Jekyll build.
 - The site still depends on Google Fonts for Inter, Newsreader, and JetBrains Mono; system fallbacks remain configured.
 - The Experience disclosure simplifies the current navigation but URL consolidation remains a separate owner decision.
+
+---
+
+### Session 8 — 2026-09-12 — Codex
+
+**Scope:** Architectural migration from the preserved Jekyll site to an Astro/Svelte/D3/GSAP/OGL static research environment
+
+**Done:**
+- Created local annotated rollback tag `pre-astro-migration-2026-09-12` at clean baseline `1974f4b2a7e9f017d40b3c537ab759b52734fb0e` before migration edits.
+- Added Astro 7.3.2 with strict TypeScript, static output, root-site canonical configuration, Svelte and MDX integrations, an Astro Content Collection for Notes, and a filtered XML sitemap.
+- Added typed single-source data for the profile, five approved Recent updates, publications, talks and academic contributions, research projects, academic/industry experience, education, and methods/skills.
+- Built static Home, Research, Publications, Talks, Experience, Notes index, and migrated Note routes with reusable Astro layouts and components.
+- Migrated the existing NLP Hellscape post to MDX without sanitising its voice and provided a compatibility redirect from its prior dated Jekyll URL.
+- Built three Svelte islands: an accessible D3 relation field, a D3 research-architecture trajectory, and a GSAP/ScrollTrigger transformation sequence. The relation field uses one dynamically imported OGL point layer to encode shallow semantic depth on capable desktop browsers.
+- Kept all interaction progressive: server-rendered HTML remains available before hydration; SVGs have titles/descriptions; conceptual nodes are keyboard focusable; mobile receives the textual/2D fallback; reduced motion disables OGL and makes the transformation sequence static.
+- Replaced remote Google Fonts with self-hosted Newsreader and DM Sans variable font subsets and changed the portrait to Astro-generated 96/192 px WebP output (2.4/6.2 KB).
+- Preserved extensionless legacy routes for Current Work, academic/industry experience, education, skills, Talks & Contributions, and `/blog/`; also emitted matching legacy `.html` redirects where the previous Jekyll build may have exposed them.
+- Added the current official Astro GitHub Pages workflow pattern (`actions/checkout@v7`, `withastro/action@v6`, `actions/deploy-pages@v5`) and documented the deployment-source switch and rollback procedure in `MIGRATION_ROLLBACK.md`.
+- Preserved every Jekyll content/source file and all original factual titles, collaborators, dates, affiliations, URLs, and publication/presentation statuses.
+
+**Validation:**
+- `npm install`: 371 packages audited, zero vulnerabilities.
+- `npm run build`: 35 source files checked with zero errors, warnings, or hints; 14 Astro routes plus static compatibility files generated; sitemap includes only canonical content routes.
+- Local preview returned HTTP 200 for all primary pages, the migrated post, every extensionless compatibility route, and the dated `.html` post route.
+- Chrome DevTools emulation checked 1440, 1280, 1024, 768, 430, 390, and 360 px widths. No horizontal overflow occurred; every content page had one H1; the mobile menu opened, closed with Escape, and returned focus.
+- Verified one initial homepage island hydration and all three after scrolling; GSAP changed the active transformation; desktop OGL produced one canvas; 430/390/360 px and reduced-motion modes produced none; no runtime exceptions occurred.
+- Lighthouse 13.4.1 mobile: Performance 99, Accessibility 100, Best Practices 100, SEO 100. Desktop: 100 in all four categories.
+- Generated internal link/asset targets all resolve, and every generated `target="_blank"` link includes `noopener`.
+
+**Deployment:**
+- After the local validation pass, the owner explicitly authorised migration to the live `.io` site.
+- The migration was committed atomically, pushed to `origin/main`, and the rollback tag was published to origin.
+- GitHub Pages was switched from the legacy branch/Jekyll build to GitHub Actions, and the deployment workflow was monitored through completion.
+
+**Not done / future:**
+- The future browser-only Relation Lab is documented as an architectural extension point, but Transformers.js/ONNX Runtime Web and `/lab/` were intentionally not built or installed.
+- The existing public CV privacy decision, stale SCSS removal, and LaTeX artefact cleanup remain outside this migration.
+
+**Risks:**
+- OGL/WebGL availability varies by browser and device; the D3/SVG field remains the primary non-WebGL and mobile rendering.
+- Restoring the preserved Jekyll build requires both reverting the Astro migration and switching GitHub Pages back to branch publishing, as documented in `MIGRATION_ROLLBACK.md`.
 
 ---

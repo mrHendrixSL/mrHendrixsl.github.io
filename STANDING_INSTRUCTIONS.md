@@ -27,10 +27,10 @@ These rules apply to every session, every agent, without exception.
 ## Workflow Rules
 
 - Read `AGENT_HANDOFF.md` before starting any session — the snapshot section is always up to date
-- The site is **Jekyll on GitHub Pages** — push to `main` and it auto-deploys; no build step needed
-- All pages must have `layout: default` front matter
-- **Never add ad hoc navigation lists inside page content** — navigation is centralised in `_layouts/default.html`; the owner-approved homepage hero profile links (including CV and Notes) are the only current exception
-- CSS variables are defined in `:root` in `assets/css/style.css` — use them; do not hardcode hex colours
+- The production site is **Astro static output on GitHub Pages**, deployed through `.github/workflows/deploy.yml`; run `npm run build` before any authorised push
+- Canonical pages live under `src/pages/` and use `src/layouts/BaseLayout.astro`; the preserved root Jekyll files are rollback source, not the production implementation
+- **Never add ad hoc navigation lists inside page content** — primary navigation is centralised in `src/components/layout/Navigation.astro`; the homepage profile links are the intended exception
+- CSS variables are defined in `src/styles/tokens.css`; component-specific CSS stays scoped with its component
 
 ---
 
@@ -47,26 +47,13 @@ These rules apply to every session, every agent, without exception.
 
 ## Site Architecture
 
-- Layout: `_layouts/default.html` — single layout, all pages
-- Styles: `assets/css/style.css` — nocturnal editorial research environment, CSS custom properties
-- Config: `_config.yml` — `theme:` line is commented out; custom layout is active
-- No Gemfile required — GitHub Pages handles Jekyll
-
-## CSS Classes Quick Reference
-
-| Class | Use |
-|---|---|
-| `.hero` | Home page identity and relation-map field |
-| `.editorial-section` | Numbered homepage editorial section |
-| `.recent-section` | Lightweight Recent timeline |
-| `.news-item` | Single Recent timeline row |
-| `.research-programme` | Four-stage doctoral research spine |
-| `.secondary-strand` | Secondary research-experience block |
-| `.pub-entry` | Publication block |
-| `.exp-entry` | Timeline experience entry |
-| `.section-label` | Small uppercase section divider |
-| `.badge-published` | Indigo — published work |
-| `.badge-accepted` | Neutral — accepted work |
-| `.badge-wip` | Amber — work in progress |
-| `.tag` | Lightweight metadata term |
-| `.skills` | Flex row of `.tag` items |
+- Framework/config: `astro.config.mjs` — static output at the GitHub user-site root
+- Layouts: `src/layouts/` — base page and editorial Note shells
+- Pages: `src/pages/` — canonical routes plus compatibility redirects
+- Components: `src/components/` — static Astro components and scoped Svelte client islands
+- Structured data: `src/data/` — profile, updates, publications, talks, projects, and experience
+- Notes: `src/content/notes/` with schema in `src/content.config.ts`
+- Styles: `src/styles/` plus component-scoped styles
+- Public assets: `public/assets/`; original Jekyll-era source remains under root `assets/`
+- Deployment: `.github/workflows/deploy.yml`; generated `dist/`, `.astro/`, and `node_modules/` must remain ignored
+- Rollback: `MIGRATION_ROLLBACK.md` and tag `pre-astro-migration-2026-09-12`

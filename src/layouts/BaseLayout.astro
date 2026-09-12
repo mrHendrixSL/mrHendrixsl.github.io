@@ -1,0 +1,57 @@
+---
+import Navigation from '../components/layout/Navigation.astro';
+import Footer from '../components/layout/Footer.astro';
+import '@fontsource-variable/newsreader/wght.css';
+import '@fontsource-variable/dm-sans/wght.css';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  type?: 'website' | 'article';
+}
+const {
+  title = 'Rasika Edirisinghe',
+  description = 'Doctoral researcher at University College Cork working on the computational representation, retrieval, and visual analysis of textual relations under transformation.',
+  image = '/assets/img/social-preview.png',
+  type = 'website'
+} = Astro.props;
+const pageTitle = title === 'Rasika Edirisinghe' ? title : `${title} — Rasika Edirisinghe`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const socialImage = new URL(image, Astro.site);
+---
+<!doctype html>
+<html lang="en-IE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={socialImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org', '@type': 'Person', name: 'Rasika Edirisinghe',
+      url: 'https://mrhendrixsl.github.io/', jobTitle: 'MSCA Doctoral Researcher',
+      affiliation: { '@type': 'CollegeOrUniversity', name: 'University College Cork' },
+      sameAs: ['https://orcid.org/0009-0008-4673-0259','https://github.com/mrHendrixSL/','https://www.linkedin.com/in/rasikaedirisinghe/']
+    })} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <Navigation />
+    <main id="main-content" class="page-main"><slot /></main>
+    <Footer />
+  </body>
+</html>

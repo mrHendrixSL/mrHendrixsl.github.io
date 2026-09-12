@@ -1,0 +1,16 @@
+---
+interface Props { target: string; label: string; }
+const { target, label } = Astro.props;
+---
+<!doctype html>
+<html lang="en-IE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="refresh" content={`0;url=${target}`} />
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href={new URL(target, Astro.site)} />
+    <title>{label} — Rasika Edirisinghe</title>
+  </head>
+  <body><main><p>This page has moved to <a href={target}>{label}</a>.</p></main><script is:inline define:vars={{ target }}>window.location.replace(target);</script></body>
+</html>

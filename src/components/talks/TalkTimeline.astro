@@ -1,0 +1,30 @@
+---
+import type { TimelineItem } from '../../data/talks';
+interface Props { items: TimelineItem[]; }
+const { items } = Astro.props;
+---
+<ol class="talk-timeline">
+  {items.map((item) => (
+    <li>
+      <time datetime={item.date}>{item.dateLabel}</time>
+      <article>
+        <h3>{item.title}</h3>
+        <p class="event">{item.event}{item.location && ` · ${item.location}`}</p>
+        <p>{item.description} {item.href && <a href={item.href} target="_blank" rel="noopener noreferrer">{item.linkLabel} ↗</a>}</p>
+      </article>
+    </li>
+  ))}
+</ol>
+
+<style>
+  .talk-timeline { margin: 0; padding: 0; list-style: none; }
+  .talk-timeline li { position: relative; display: grid; grid-template-columns: 10rem minmax(0,1fr); gap: clamp(2rem,6vw,7rem); padding: 0 0 4rem; }
+  .talk-timeline li::before { position: absolute; top: .45rem; left: calc(10rem + clamp(2rem,6vw,7rem) / 2); bottom: 0; width: 1px; background: var(--rule); content: ''; }
+  .talk-timeline li::after { position: absolute; top: .4rem; left: calc(10rem + clamp(2rem,6vw,7rem) / 2 - 3px); width: 7px; height: 7px; border: 1px solid var(--indigo); border-radius: 50%; background: var(--ink-0); content: ''; }
+  time, .event { color: var(--paper-dim); font-family: var(--mono); font-size: .66rem; letter-spacing: .06em; text-transform: uppercase; }
+  article { padding-left: 1rem; }
+  h3 { max-width: 30ch; }
+  .event { margin: 1rem 0 1.2rem; color: var(--amber); }
+  article > p:last-child { max-width: 45rem; margin-bottom: 0; }
+  @media (max-width: 650px) { .talk-timeline li { grid-template-columns: 1fr; gap: .8rem; padding-left: 1.5rem; } .talk-timeline li::before { left: 0; } .talk-timeline li::after { left: -3px; } article { padding-left: 0; } }
+</style>

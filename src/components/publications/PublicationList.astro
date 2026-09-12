@@ -1,0 +1,7 @@
+---
+import PublicationEntry from './PublicationEntry.astro';
+import type { Publication } from '../../data/publications';
+interface Props { items: Publication[]; }
+const { items } = Astro.props;
+---
+<div class="publication-list">{items.map((item, index) => <PublicationEntry publication={item} index={index} />)}</div>

@@ -6,7 +6,7 @@ export const profile = {
   programme: 'CASCADE Horizon Europe Marie Skłodowska-Curie Doctoral Network',
   researchStatement: 'Textual relations under transformation',
   conceptualStatement: 'Representation · Retrieval · Judgement · Interpretation',
-  question: 'How can relationships between texts be recovered when the words that once made them visible have changed?',
+  question: 'How can relationships between texts be computationally recovered when the wording that once made those relationships visible has changed?',
   description: 'Doctoral researcher at University College Cork working on the computational representation, retrieval, and visual analysis of textual relations under transformation.',
   links: [
     { label: 'UCC email', href: 'mailto:rasika.edirisinghe@ucc.ie', external: false },

@@ -13,6 +13,8 @@
     tree
   } from 'd3';
 
+  export let chapterIndex: string | undefined = undefined;
+
   type ConceptFamily = 'being' | 'creator' | 'origin' | 'grievance';
   type ConceptState = 'visible' | 'equivalent' | 'conceptual' | 'implicit' | 'literary';
   type Token = { text: string; concept?: ConceptFamily; direct?: boolean; breakAfter?: boolean };
@@ -294,7 +296,7 @@
 
 <section class="transformation-sequence" class:static={staticMode} bind:this={sequence} aria-labelledby="transformation-heading">
   <header class="sequence-intro">
-    <p class="section-kicker">Intertextual transformation · demonstration</p>
+    <p class="section-kicker">{chapterIndex ? `${chapterIndex} · ` : ''}Intertextual transformation · demonstration</p>
     <h2 id="transformation-heading">Watch lexical evidence recede while a relation trace remains.</h2>
     <p>Milton and Shelley are the historical anchors; stages 02–04 are constructed to show how changing wording alters the conditions for recognising their relation.</p>
   </header>

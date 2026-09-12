@@ -20,7 +20,7 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|
 | Git remote | `https://github.com/mrHendrixSL/mrHendrixsl.github.io.git` |
 | Git branch | main |
-| Latest commit | Progressive-disclosure Milton–Shelley transformation demonstration (this commit) |
+| Latest commit | Five-chapter homepage information architecture (this commit) |
 | Full-pass rollback | Annotated tag `pre-editorial-pass-2026-09-12` → `73b3d88` |
 | Homepage rollback | Annotated tag `pre-homepage-update-2026-09-12` → `fa50138` |
 | Skip-link rollback | Annotated tag `pre-skip-link-fix-2026-09-12` → `70646ba` |
@@ -29,8 +29,9 @@ Purpose: durable record of work across coding/writing assistants.
 | Interaction-semantics rollback | Annotated tag `pre-interaction-semantics-2026-09-12` → `fa9fb0b`; published with the interaction pass |
 | Milton–Shelley demo rollback | Annotated tag `pre-milton-shelley-demo-2026-09-12` → `6c152b6`; published with the focused demonstration redesign |
 | Transformation-reduction rollback | Annotated tag `pre-transformation-reduction-2026-09-12` → `2d6956c`; published with the progressive-disclosure pass |
-| Uncommitted work | None after the progressive-disclosure transformation commit |
-| Active work | None; simplified transformation demonstration is deployed through GitHub Actions |
+| Homepage-IA rollback | Annotated tag `pre-homepage-ia-correction-2026-09-12` → `a40b75d`; published with the five-chapter homepage pass |
+| Uncommitted work | None after the five-chapter homepage commit |
+| Active work | None; corrected homepage narrative is deployed through GitHub Actions |
 | Live URL | `https://mrHendrixSL.github.io` |
 
 ### Deliverable Status
@@ -54,6 +55,7 @@ Purpose: durable record of work across coding/writing assistants.
 | D15 | Qualitative relation field, token-level transformation sequence, and research-object pipeline | ✅ Deployed |
 | D16 | Integrated Milton source, transformation path, and Shelley relation-trace demonstration | ✅ Deployed |
 | D17 | Radically simplified transformation story with progressive disclosure | ✅ Deployed |
+| D18 | Five-chapter homepage narrative with quiet identity hero and compact Now exit surface | ✅ Deployed |
 
 ### Pending Actions
 
@@ -81,7 +83,7 @@ Purpose: durable record of work across coding/writing assistants.
 ### Site Architecture
 
 - **Current production architecture:** Astro 7 static output, with page source in `src/pages/`, shared layouts/styles/components in `src/`, and static assets in `public/`.
-- **Client islands:** Svelte components hydrate with `client:visible`; D3 maps relations and research stages; GSAP controls opt-in token transitions without scroll hijacking; OGL is dynamically imported only for the homepage desktop field.
+- **Client islands:** Home hydrates only the transformation sequence and research architecture with `client:visible`; GSAP controls opt-in token transitions without scroll hijacking. RelationField remains preserved but unmounted, so its dynamically imported OGL layer is absent from current page output.
 - **Structured content:** typed data under `src/data/`; Notes under `src/content/notes/` through an Astro MDX content collection.
 - **Deployment:** `.github/workflows/deploy.yml` uses `withastro/action@v6` and `actions/deploy-pages@v5`; GitHub Pages uses the Actions artifact.
 - **Preserved fallback:** all prior Jekyll root Markdown, `_layouts/`, `_posts/`, `_config.yml`, and original `assets/` remain present for rollback.
@@ -91,7 +93,7 @@ Purpose: durable record of work across coding/writing assistants.
 
 | Page | File | Notes |
 |---|---|---|
-| Home | `src/pages/index.astro` | Identity, D3/OGL relation field, About, structured Recent, architecture, and transformation sequence |
+| Home | `src/pages/index.astro` | Five chapters: Identity, Research Position, Relation under Transformation, Research Architecture, and Now / Additional Work |
 | Research | `src/pages/research.astro` | Doctoral programme, D3 architecture, transformation model, and research contexts |
 | Publications | `src/pages/publications.astro` + `src/data/publications.ts` | Published work, conference output, and projects |
 | Talks | `src/pages/talks.astro` + `src/data/talks.ts` | Presentations and academic contributions |
@@ -457,5 +459,48 @@ Purpose: durable record of work across coding/writing assistants.
 
 **Risks:**
 - The intermediate stages remain explanatory constructions rather than a claimed historical transmission sequence; retain the visible historical-anchor/constructed-demonstration disclosure.
+
+---
+
+### Session 12 — 2026-09-12 — Codex
+
+**Scope:** Final homepage information-architecture correction and removal of RelationField from the identity hero
+
+**Done:**
+- Reordered the homepage into the exact narrative sequence `#intro` → `#position` → `#transformation` → `#architecture` → `#now`.
+- Rebuilt chapter 00 as a quiet identity-first hero containing the owner’s name, MSCA/UCC role, research direction, conceptual statement, seven profile links, and portrait—with no graph, conceptual axes, metrics, or substitute visualisation.
+- Removed the RelationField import and mount from Home without deleting or editing the preserved RelationField component.
+- Condensed chapter 01 around the owner-supplied research question and two focused paragraphs covering textual transformation, paraphrase, adaptation, obfuscation, allusion, historical variation, and retrieval after lexical overlap weakens.
+- Moved the existing simplified Milton–Shelley TransformationSequence ahead of ResearchArchitecture and added an optional chapter index prop so Home labels it as chapter 02 without changing its presentation on Research.
+- Renumbered ResearchArchitecture as chapter 03 and reframed its short introduction as the research response to the transformation problem.
+- Combined the latest three featured updates, the completed Nimbus/inTrusted secondary research experience, and links to Research, Publications, Talks, and Experience into one compact chapter 04 exit surface.
+- Added restrained `NEXT` links from Position to Transformation, Transformation to Architecture, and Architecture to Now.
+- Added an accessible desktop chapter rail with exactly `00 INTRO`, `01 POSITION`, `02 TRANSFORMATION`, `03 ARCHITECTURE`, and `04 NOW`; its current location follows section intersection and ordinary hash links remain keyboard operable.
+- Applied native CSS `scroll-snap-type: y proximity` to the homepage chapters, with no wheel/touch interception or scroll hijacking; reduced-motion mode disables snapping and inherits non-smooth scrolling.
+- Kept the rail out of narrower layouts and preserved a one-column mobile narrative.
+
+**Validation:**
+- `npm run build`: 36 source files checked with zero errors, warnings, or hints; all 14 static routes generated.
+- Generated HTML places the five required IDs in the specified order, contains exactly three featured updates, and has no RelationField markup or OGL reference.
+- The generated homepage now contains two `client:visible` islands instead of three; the prior RelationField and OGL chunks are absent from the output bundle.
+- Chrome checks at 1440, 820, and 390 px found no page-level horizontal overflow; the tablet portrait does not overlap the profile links, and the mobile hero, Now grid, and exit links collapse to one column.
+- Desktop rail activation followed direct scrolling and hash navigation for every chapter; a rail click landed the selected chapter at the viewport boundary and updated `aria-current="location"`.
+- Reduced-motion emulation reported no scroll snapping, automatic rather than smooth scrolling, and effectively disabled rail transitions.
+- Visual inspection covered the desktop Identity, Research Position, and Now chapters plus the complete mobile identity hero.
+- Lighthouse desktop: Performance 100, Accessibility 100, Best Practices 100, SEO 100; LCP 0.4 s.
+- Lighthouse mobile: Performance 99, Accessibility 100, Best Practices 100, SEO 100; LCP 1.7 s.
+- Both Lighthouse reports are valid; the CLI additionally emitted a Lantern `NO_LCP` diagnostic despite recording LCP values, followed by the known Windows EPERM temporary-profile cleanup warning.
+
+**Deployment:**
+- The owner explicitly authorised the completed homepage correction to be committed and pushed after reviewing the local result.
+- Created the annotated rollback tag `pre-homepage-ia-correction-2026-09-12` at the exact pre-pass commit, `a40b75d`.
+- Recorded the implementation and validation in one atomic commit and pushed `main` plus the rollback tag to origin.
+
+**Not done / future:**
+- RelationField was not moved to Research because the owner requested a focused homepage correction and its current deeper purpose there was optional rather than required.
+- No research record, publication status, route, dependency, or non-homepage information architecture was changed.
+
+**Risks:**
+- The desktop chapter rail intentionally hides at 1360 px and below to protect the content column; chapter-to-chapter `NEXT` links remain available at every width.
 
 ---

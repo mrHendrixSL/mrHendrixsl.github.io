@@ -20,10 +20,11 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|
 | Git remote | `https://github.com/mrHendrixSL/mrHendrixsl.github.io.git` |
 | Git branch | main |
-| Latest commit | Skip-link visibility fix (this commit) |
+| Latest commit | Editorial research-environment redesign (this commit) |
 | Full-pass rollback | Annotated tag `pre-editorial-pass-2026-09-12` → `73b3d88` |
 | Homepage rollback | Annotated tag `pre-homepage-update-2026-09-12` → `fa50138` |
 | Skip-link rollback | Annotated tag `pre-skip-link-fix-2026-09-12` → `70646ba` |
+| Redesign rollback | Annotated tag `pre-editorial-research-redesign-2026-09-12` → `9d83c15` |
 | Uncommitted work | None |
 | Active work | None |
 | Live URL | `https://mrHendrixSL.github.io` |
@@ -42,6 +43,7 @@ Purpose: durable record of work across coding/writing assistants.
 | D8 | Recent Updates includes Digital History Autumn School 2026 participant acceptance | ✅ Done |
 | D9 | CASCADE × MECANO abstract PDF linked from Publications and Recent Updates | ✅ Done |
 | D10 | 2026 editorial, information-architecture, accessibility, SEO, and repository-hygiene pass | ✅ Done |
+| D11 | Editorial researcher × cognitive cartography visual redesign | ✅ Done |
 
 ### Pending Actions
 
@@ -55,12 +57,13 @@ Purpose: durable record of work across coding/writing assistants.
 
 | File | Purpose |
 |---|---|
-| `_layouts/default.html` | Single layout for all pages — nav, footer, Google Fonts |
-| `assets/css/style.css` | All styling — CSS variables at `:root`, dark card theme |
-| `index.md` | Home page — hero, news strip, research focus cards |
+| `_layouts/default.html` | Single layout — grouped navigation, ambient field, footer, metadata, and accessible menu behaviour |
+| `assets/css/style.css` | Authoritative nocturnal editorial design system; CSS variables at `:root` |
+| `index.md` | Home — conceptual hero, relation map, editorial About, Recent timeline, research spine, and secondary strand |
 | `current_status.md` | Current work — doctoral research, research threads, upcoming engagement, and completed secondment |
 | `publications.md` | Published work, conference abstracts/presentations, and current research |
 | `_config.yml` | Jekyll config — theme line commented out (custom layout used) |
+| `assets/img/` | Source and responsive headshots, SVG favicon, and social-preview source/export |
 | `STANDING_INSTRUCTIONS.md` | Rules for all agents on this project |
 
 ### Site Architecture
@@ -70,13 +73,13 @@ Purpose: durable record of work across coding/writing assistants.
 - **No Gemfile / bundler required** — GitHub Pages handles Jekyll automatically
 - **All pages** use `layout: default` front matter
 - **Nav** is centralised in `_layouts/default.html` — do not add nav links inside page content
-- **CSS classes to know:** `.hero`, `.news-strip`, `.news-item`, `.card-grid`, `.card`, `.pub-entry`, `.exp-entry`, `.badge`, `.badge-wip`, `.badge-accepted`, `.badge-published`, `.tag`, `.section-label`, `.skills`
+- **CSS classes to know:** `.hero`, `.relation-map`, `.editorial-section`, `.recent-section`, `.news-item`, `.research-programme`, `.secondary-strand`, `.pub-entry`, `.exp-entry`, `.badge`, `.tag`, `.section-label`, `.skills`
 
 ### Content Map
 
 | Page | File | Notes |
 |---|---|---|
-| Home | `index.md` | Hero + news strip + research card grid |
+| Home | `index.md` | Conceptual hero + relation map + editorial About + Recent timeline + research spine |
 | Current Work | `current_status.md` | Doctoral research, current threads, Autumn School, and completed Nimbus secondment |
 | Teaching & Academic Experience | `academic_experience.md` | UCC teaching and two visiting lecturer roles |
 | Industry Experience | `industry_experience.md` | EFL Global, Affno, SYNERGEN + internships |
@@ -244,5 +247,41 @@ Purpose: durable record of work across coding/writing assistants.
 
 **Risks:**
 - The visible keyboard-focus treatment depends on `:focus-visible`, which is supported by current major browsers.
+
+---
+
+### Session 7 — 2026-09-12 — Codex
+
+**Scope:** End-to-end design-led rethink: editorial researcher × cognitive cartography × restrained psychonautic depth
+
+**Done:**
+- Rebuilt the visual system around a nocturnal archival palette, Newsreader editorial typography, broader composition, low-contrast depth fields, thin relation lines, and amber/indigo conceptual accents.
+- Reworked the global layout with a relation-graph monogram, five-link primary navigation, an Experience disclosure grouping the four supporting profile pages, an accessible mobile menu, and a deliberate research-signature footer.
+- Preserved every existing page file and URL while making the navigation lean toward Home, Research, Publications, Talks, Experience, Notes, and CV.
+- Completely redesigned the homepage around an identity-led hero, an accessible inline relation-map SVG, an editorial About section with left-aligned prose, a lightweight Recent timeline, a four-stage doctoral research spine, and a visually secondary Nimbus strand.
+- Rebuilt Current Work as a deeper Research page with a doctoral-research lead, three connected inquiry lines, and separate upcoming/completed context blocks.
+- Restyled publications, talks, academic experience, industry experience, education, and skills through the shared design system, replacing repeated dashboard cards and pill-heavy metadata with editorial rows, rules, and timelines.
+- Rebuilt Notes as an essay index and replaced third-party image badges in the existing post with lightweight text sharing links without changing the post voice.
+- Replaced legacy presentational heading `<div>` elements across publications, talks, experience, education, and skills with a proper `h1`/`h2`/`h3` hierarchy; corrected the existing post hierarchy without changing its wording.
+- Added `assets/img/favicon.svg`, maintainable `assets/img/social-preview.svg`, and its verified 1200 × 630 PNG export; configured the social preview as the default page image.
+- Created 240 px and 480 px responsive headshot derivatives (14.6 KB and 44.8 KB) while preserving the 388 KB high-resolution source unchanged.
+- Added reduced-motion behaviour and retained semantic headings, skip navigation, alt text, keyboard focus styles, secure external links, and screen-reader labelling for the relation map.
+- Previewed Home, Current Work, and Publications in headless Chrome at desktop and mobile breakpoints; corrected mobile min-content overflow before completion.
+- Verified 11 layout/content files for structural tag balance, all target-blank links for secure `rel` values, all images for alt text, CSS braces/comments, SVG XML, output image dimensions, navigation JavaScript syntax and interaction, and absence of hard-coded CSS colours outside `:root`.
+- Measured WCAG contrast against the base field: main text 16.61:1, soft text 11.97:1, muted text 7.64:1, indigo 7.75:1, and amber 9.11:1.
+- Updated `README.md` and `STANDING_INSTRUCTIONS.md` to document the new system and derived visual assets.
+- Created the annotated rollback tag `pre-editorial-research-redesign-2026-09-12` at the exact pre-redesign commit, `9d83c15`.
+- Recorded the complete redesign in one atomic, extensively documented commit so it can be reviewed or reverted as a single unit.
+
+**Not done / future:**
+- Did not rename, consolidate, redirect, or delete any URL-bearing page.
+- Did not delete the stale SCSS or tracked LaTeX artefacts.
+- Did not change factual research, publication, employment, education, or collaborator data.
+- Could not run Jekyll itself because Ruby/Jekyll is unavailable locally; browser previews used a static assembly of the actual layout and page content.
+
+**Risks:**
+- The social-preview default should be confirmed in generated Open Graph metadata after the first GitHub Pages/Jekyll build.
+- The site still depends on Google Fonts for Inter, Newsreader, and JetBrains Mono; system fallbacks remain configured.
+- The Experience disclosure simplifies the current navigation but URL consolidation remains a separate owner decision.
 
 ---

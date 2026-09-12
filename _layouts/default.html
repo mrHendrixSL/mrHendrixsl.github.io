@@ -1,61 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.lang | default: 'en' }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% seo %}
+  <meta name="theme-color" content="#0a0d14">
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="site-shell page-{{ page.title | default: 'untitled' | slugify }}">
 
   <a class="skip-link" href="#main-content">Skip to main content</a>
 
-  <nav class="topnav" aria-label="Primary navigation">
-    <div class="nav-inner">
-      <a class="nav-brand" href="{{ '/' | relative_url }}">RE</a>
-      <div class="nav-links" id="primary-navigation">
-        <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active" aria-current="page"{% endif %}>Home</a>
-        <a href="{{ '/current_status' | relative_url }}" {% if page.url contains 'current_status' %}class="active" aria-current="page"{% endif %}>Current Work</a>
-        <a href="{{ '/academic_experience' | relative_url }}" {% if page.url contains 'academic_experience' %}class="active" aria-current="page"{% endif %}>Academic</a>
-        <a href="{{ '/industry_experience' | relative_url }}" {% if page.url contains 'industry_experience' %}class="active" aria-current="page"{% endif %}>Industry</a>
-        <a href="{{ '/education' | relative_url }}" {% if page.url contains 'education' %}class="active" aria-current="page"{% endif %}>Education</a>
-        <a href="{{ '/publications' | relative_url }}" {% if page.url contains 'publications' %}class="active" aria-current="page"{% endif %}>Publications</a>
-        <a href="{{ '/Presentations_Contributions' | relative_url }}" {% if page.url contains 'Presentations' %}class="active" aria-current="page"{% endif %}>Talks</a>
-        <a href="{{ '/skills' | relative_url }}" {% if page.url contains 'skills' %}class="active" aria-current="page"{% endif %}>Skills</a>
-        <a href="{{ '/blog' | relative_url }}" {% if page.url contains 'blog' or page.collection == 'posts' %}class="active" aria-current="page"{% endif %}>Notes</a>
-        <a href="{{ '/assets/Rasika_Edirisinghe-CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" class="nav-cv">CV</a>
-      </div>
-      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">&#9776;</button>
-    </div>
-  </nav>
+  <div class="site-field" aria-hidden="true">
+    <span class="field-orbit field-orbit-one"></span>
+    <span class="field-orbit field-orbit-two"></span>
+    <span class="field-node field-node-one"></span>
+    <span class="field-node field-node-two"></span>
+  </div>
 
-  <main class="page-content" id="main-content">
+  <header class="site-header">
+    <nav class="topnav" aria-label="Primary navigation">
+      <div class="nav-inner">
+        <a class="nav-brand" href="{{ '/' | relative_url }}" aria-label="Rasika Edirisinghe — Home">
+          <svg class="brand-sigil" viewBox="0 0 42 42" aria-hidden="true" focusable="false">
+            <path d="M8 29.5 18.5 11 34 25.5 25 33Z"></path>
+            <circle cx="8" cy="29.5" r="2.2"></circle>
+            <circle cx="18.5" cy="11" r="2.2"></circle>
+            <circle cx="34" cy="25.5" r="2.2"></circle>
+          </svg>
+          <span class="brand-copy"><strong>Rasika Edirisinghe</strong><small>Text · relation · transformation</small></span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-links" id="primary-navigation">
+          <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active" aria-current="page"{% endif %}>Home</a>
+          <a href="{{ '/current_status' | relative_url }}" {% if page.url contains 'current_status' %}class="active" aria-current="page"{% endif %}>Research</a>
+          <a href="{{ '/publications' | relative_url }}" {% if page.url contains 'publications' %}class="active" aria-current="page"{% endif %}>Publications</a>
+          <a href="{{ '/Presentations_Contributions' | relative_url }}" {% if page.url contains 'Presentations' %}class="active" aria-current="page"{% endif %}>Talks</a>
+          <a href="{{ '/blog' | relative_url }}" {% if page.url contains 'blog' or page.collection == 'posts' %}class="active" aria-current="page"{% endif %}>Notes</a>
+
+          <details class="nav-group">
+            <summary {% if page.url contains 'academic_experience' or page.url contains 'industry_experience' or page.url contains 'education' or page.url contains 'skills' %}class="active"{% endif %}>Experience</summary>
+            <div class="nav-submenu">
+              <a href="{{ '/academic_experience' | relative_url }}" {% if page.url contains 'academic_experience' %}class="active" aria-current="page"{% endif %}>Academic</a>
+              <a href="{{ '/industry_experience' | relative_url }}" {% if page.url contains 'industry_experience' %}class="active" aria-current="page"{% endif %}>Industry</a>
+              <a href="{{ '/education' | relative_url }}" {% if page.url contains 'education' %}class="active" aria-current="page"{% endif %}>Education</a>
+              <a href="{{ '/skills' | relative_url }}" {% if page.url contains 'skills' %}class="active" aria-current="page"{% endif %}>Methods &amp; Skills</a>
+            </div>
+          </details>
+
+          <a href="{{ '/assets/Rasika_Edirisinghe-CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer" class="nav-cv">CV <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-content" id="main-content" tabindex="-1">
     {{ content }}
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
-      <span>&copy; {{ site.time | date: '%Y' }} Rasika Edirisinghe &middot; MSCA Doctoral Researcher &middot; University College Cork</span>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/rasikaedirisinghe/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/mrHendrixSL/" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <div class="footer-signature">
+        <span class="footer-mark">RE</span>
+        <p><strong>Surface form changes. Relation persists.</strong><br>Rasika Edirisinghe · MSCA Doctoral Researcher · University College Cork</p>
+      </div>
+      <div class="footer-links" aria-label="External profiles">
+        <a href="mailto:rasika.edirisinghe@ucc.ie">UCC email</a>
         <a href="https://orcid.org/0009-0008-4673-0259" target="_blank" rel="noopener noreferrer">ORCID</a>
         <a href="https://scholar.google.com/citations?user=o_7ZjgMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Scholar</a>
+        <a href="https://github.com/mrHendrixSL/" target="_blank" rel="noopener noreferrer">GitHub</a>
       </div>
+      <p class="footer-meta">&copy; {{ site.time | date: '%Y' }} · Built as a lightweight Jekyll research environment.</p>
     </div>
   </footer>
 
   <script>
     const navToggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
+    const navGroup = document.querySelector('.nav-group');
 
     function setMenuState(open) {
       navLinks.classList.toggle('open', open);
       navToggle.setAttribute('aria-expanded', String(open));
       navToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+      if (!open) navGroup.removeAttribute('open');
     }
 
     navToggle.addEventListener('click', function() {
@@ -67,15 +103,25 @@
     });
 
     document.addEventListener('keydown', function(event) {
-      if (event.key === 'Escape' && navToggle.getAttribute('aria-expanded') === 'true') {
-        setMenuState(false);
-        navToggle.focus();
+      if (event.key === 'Escape') {
+        if (navGroup.open) navGroup.removeAttribute('open');
+        if (navToggle.getAttribute('aria-expanded') === 'true') {
+          setMenuState(false);
+          navToggle.focus();
+        }
       }
     });
 
-    window.matchMedia('(min-width: 921px)').addEventListener('change', function(event) {
-      if (event.matches) setMenuState(false);
+    document.addEventListener('click', function(event) {
+      if (navGroup.open && !navGroup.contains(event.target)) navGroup.removeAttribute('open');
     });
+
+    const desktopQuery = window.matchMedia('(min-width: 981px)');
+    const closeMobileMenu = function(event) {
+      if (event.matches) setMenuState(false);
+    };
+    if (desktopQuery.addEventListener) desktopQuery.addEventListener('change', closeMobileMenu);
+    else desktopQuery.addListener(closeMobileMenu);
   </script>
 
 </body>

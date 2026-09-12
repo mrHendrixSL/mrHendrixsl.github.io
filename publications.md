@@ -6,7 +6,7 @@ description: "Publications, conference presentations, and current research by Ra
 
 # Publications & Research Output
 
-<div class="section-label">Published Work</div>
+<h2 class="section-label">Published Work</h2>
 
 <div class="pub-entry">
   <h3>Rewriting Tradition: Quantifying Change in Lady Gregory's Irish Legends</h3>
@@ -39,7 +39,7 @@ description: "Publications, conference presentations, and current research by Ra
   <p>Presents a machine-learning framework for identifying sentiment and the reasons associated with those opinions in social-media discourse about the US healthcare industry. The approach combines NLP, sentiment analysis, clustering, and topic modelling to extract interpretable patterns from public discussion.</p>
 </div>
 
-<div class="section-label">Conference Abstracts &amp; Presentations</div>
+<h2 class="section-label">Conference Abstracts &amp; Presentations</h2>
 
 <div class="pub-entry">
   <h3>Evaluating Lexical Extraction in Hiberno-English: Rule-Based and LLM-Assisted Approaches</h3>
@@ -73,7 +73,7 @@ description: "Publications, conference presentations, and current research by Ra
   <p>Published and presented at CASCADE × MECANO Convention 1, this work proposes a multidimensional framework for describing relationships between parallel texts by separating questions of authorship from the degree and nature of textual transformation. The model connects literary-theoretical accounts of textual relation with computational approaches to similarity, reuse, adaptation, and transformation.</p>
 </div>
 
-<div class="section-label">Current Research</div>
+<h2 class="section-label">Current Research</h2>
 
 <div class="pub-entry">
   <h3>Modelling Intertextual Relations under Transformation</h3>

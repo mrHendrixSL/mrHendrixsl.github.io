@@ -8,7 +8,7 @@ description: "Research methods and technical skills in information retrieval, NL
 
 <p class="page-intro">Methods and technologies used across doctoral research, teaching, and prior industry work.</p>
 
-<div class="section-label">Research Methods</div>
+<h2 class="section-label">Research Methods</h2>
 
 <div class="skills skill-block">
   <span class="tag">Information Retrieval</span>
@@ -22,7 +22,7 @@ description: "Research methods and technical skills in information retrieval, NL
   <span class="tag">Experimental Evaluation</span>
 </div>
 
-<div class="section-label">NLP &amp; Retrieval</div>
+<h2 class="section-label">NLP &amp; Retrieval</h2>
 
 <div class="skills skill-block">
   <span class="tag">Hugging Face Transformers</span>
@@ -37,7 +37,7 @@ description: "Research methods and technical skills in information retrieval, NL
   <span class="tag">Rule-Based Parsing</span>
 </div>
 
-<div class="section-label">Data &amp; Research Engineering</div>
+<h2 class="section-label">Data &amp; Research Engineering</h2>
 
 <div class="skills skill-block">
   <span class="tag">Python</span>
@@ -54,7 +54,7 @@ description: "Research methods and technical skills in information retrieval, NL
   <span class="tag">Jupyter</span>
 </div>
 
-<div class="section-label">Visualisation &amp; Analytics</div>
+<h2 class="section-label">Visualisation &amp; Analytics</h2>
 
 <div class="skills skill-block">
   <span class="tag">Plotly</span>
@@ -66,7 +66,7 @@ description: "Research methods and technical skills in information retrieval, NL
   <span class="tag">DAX</span>
 </div>
 
-<div class="section-label">Cloud &amp; Systems</div>
+<h2 class="section-label">Cloud &amp; Systems</h2>
 
 <div class="skills skill-block">
   <span class="tag">Azure Databricks</span>

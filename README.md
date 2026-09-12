@@ -2,7 +2,9 @@
 
 Source for Rasika Edirisinghe's academic website, published with Jekyll and GitHub Pages at [mrHendrixSL.github.io](https://mrhendrixsl.github.io).
 
-The site uses a custom layout in `_layouts/default.html` and the authoritative dark-theme stylesheet at `assets/css/style.css`; no external Jekyll theme is enabled. The main content is maintained in the root Markdown files, with posts under `_posts/`.
+The site uses a custom layout in `_layouts/default.html` and the authoritative editorial research-environment stylesheet at `assets/css/style.css`; no external Jekyll theme is enabled. The main content is maintained in the root Markdown files, with posts under `_posts/`.
+
+Visual identity assets live in `assets/img/`. `favicon.svg` and the maintainable `social-preview.svg` relation-field artwork belong to the current design system; `social-preview.png` is the 1200 × 630 social-card export. `headshot-240.jpg` and `headshot-480.jpg` are responsive web derivatives of the preserved high-resolution `headshot.jpg` source.
 
 The CV source is `cv_source/cv.tex`. Its public distributable is `assets/Rasika_Edirisinghe-CV.pdf`; transient LaTeX build output should not be committed.
 

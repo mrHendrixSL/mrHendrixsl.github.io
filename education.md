@@ -7,7 +7,7 @@ description: "Doctoral and prior education in computer science, business analyti
 # Education
 
 <div class="exp-entry">
-  <div class="exp-title">PhD in Computer Science</div>
+  <h2 class="exp-title">PhD in Computer Science</h2>
   <div class="exp-org">University College Cork, Ireland</div>
   <div class="exp-meta">Sep 2024 – Sep 2027 (expected) · CASCADE Horizon Europe MSCA Doctoral Network</div>
   <p><strong>Research focus:</strong> <em>Modelling Intertextual Relations under Transformation: Retrieval, Judgement, and Visual Analytics across the Parallel Text Spectrum</em></p>
@@ -20,7 +20,7 @@ description: "Doctoral and prior education in computer science, business analyti
 </div>
 
 <div class="exp-entry">
-  <div class="exp-title">M.Sc. Business Analytics</div>
+  <h2 class="exp-title">M.Sc. Business Analytics</h2>
   <div class="exp-org">Robert Gordon University, Aberdeen, UK</div>
   <div class="exp-meta">Sep 2021 – Sep 2023 · Distinction</div>
   <p><strong>Thesis:</strong> <em>Twitter Sentiment Reason Mining Framework to Identify Major Problems in US Healthcare Industry</em> · Grade: <strong>A</strong></p>
@@ -28,14 +28,14 @@ description: "Doctoral and prior education in computer science, business analyti
 </div>
 
 <div class="exp-entry">
-  <div class="exp-title">B.Sc. (Hons) Business Information Systems</div>
+  <h2 class="exp-title">B.Sc. (Hons) Business Information Systems</h2>
   <div class="exp-org">Cardiff Metropolitan University, Cardiff, UK</div>
   <div class="exp-meta">Nov 2016 – Oct 2018</div>
   <p><strong>Thesis:</strong> <em>Computer-Aided Diagnosis System for Lung Cancer Detection</em> — a Java-based CADe system using image processing and machine learning.</p>
 </div>
 
 <div class="exp-entry">
-  <div class="exp-title">BTEC Higher National Diploma in Software Development</div>
+  <h2 class="exp-title">BTEC Higher National Diploma in Software Development</h2>
   <div class="exp-org">Pearson Edexcel, UK</div>
   <div class="exp-meta">May 2014 – May 2016</div>
   <p>Coursework included object-oriented programming, data structures and algorithms, IT security, networking technologies, web application development, and database development.</p>

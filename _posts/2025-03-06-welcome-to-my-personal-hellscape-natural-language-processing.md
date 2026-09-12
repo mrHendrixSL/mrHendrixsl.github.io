@@ -6,19 +6,15 @@ description: "A deliberately irreverent reflection on working with natural langu
 ---
 
 <div align="center">
+<p class="post-date">🗓 March 6, 2025</p>
 
-<h4>🗓 March 6, 2025  </h4>   
-
-<h3>🔥 WELCOME TO MY PERSONAL HELLSCAPE 🔥</h3>  
-
-<h3> Natural Language Processing </h3>
+<h1 class="post-title">🔥 WELCOME TO MY PERSONAL HELLSCAPE 🔥<span>Natural Language Processing</span></h1>
 
 </div>
 
 ---
 
-### Where meaning gets mangled, logic dissolves into madness,  
-### and the shape of my brain is twisted into forms it was never meant to hold.
+<h2 class="post-subtitle">Where meaning gets mangled, logic dissolves into madness,<br>and the shape of my brain is twisted into forms it was never meant to hold.</h2>
 
 ---
 
@@ -127,26 +123,15 @@ I am setting the map on fire and walking into the unknown.
 
 ---
 
-## **📢 Share This Post!**  
+## Share this post
 
 {% assign share_url = page.url | absolute_url | url_encode %}
 {% assign share_title = page.title | url_encode %}
 
-<p>  
-<a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Facebook-%231877F2?style=for-the-badge&amp;logo=facebook&amp;logoColor=white" alt="Share on Facebook">
-</a>  
-
-<a href="https://twitter.com/intent/tweet?text={{ share_title }}&amp;url={{ share_url }}" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Twitter-%231DA1F2?style=for-the-badge&amp;logo=twitter&amp;logoColor=white" alt="Share on Twitter">
-</a>  
-
-<a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="Share on LinkedIn">
-</a>  
-
-<a href="https://reddit.com/submit?url={{ share_url }}&amp;title={{ share_title }}" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.shields.io/badge/Reddit-%23FF4500?style=for-the-badge&amp;logo=reddit&amp;logoColor=white" alt="Share on Reddit">
-</a>  
-</p>  
+<p class="share-links">
+  <a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+  <a href="https://twitter.com/intent/tweet?text={{ share_title }}&amp;url={{ share_url }}" target="_blank" rel="noopener noreferrer">X / Twitter ↗</a>
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+  <a href="https://reddit.com/submit?url={{ share_url }}&amp;title={{ share_title }}" target="_blank" rel="noopener noreferrer">Reddit ↗</a>
+</p>
 

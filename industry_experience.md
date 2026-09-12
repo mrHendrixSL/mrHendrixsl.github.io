@@ -6,10 +6,10 @@ description: "Professional experience in data analytics, business intelligence, 
 
 # Industry Experience
 
-<div class="section-label">Full-time Roles</div>
+<h2 class="section-label">Full-time Roles</h2>
 
 <div class="exp-entry">
-  <div class="exp-title">Data Analyst</div>
+  <h3 class="exp-title">Data Analyst</h3>
   <div class="exp-org">EFL Global</div>
   <div class="exp-meta">May 2023 – Sep 2024 · Colombo, Sri Lanka · Hybrid</div>
   <ul>
@@ -29,7 +29,7 @@ description: "Professional experience in data analytics, business intelligence, 
 </div>
 
 <div class="exp-entry">
-  <div class="exp-title">Implementation Engineer</div>
+  <h3 class="exp-title">Implementation Engineer</h3>
   <div class="exp-org">Affno Asia Pacific</div>
   <div class="exp-meta">Nov 2022 – May 2023 · Colombo, Sri Lanka</div>
   <ul>
@@ -47,7 +47,7 @@ description: "Professional experience in data analytics, business intelligence, 
 </div>
 
 <div class="exp-entry">
-  <div class="exp-title">Operations Analyst</div>
+  <h3 class="exp-title">Operations Analyst</h3>
   <div class="exp-org">SYNERGEN Health</div>
   <div class="exp-meta">Sep 2019 – Nov 2022 · Colombo, Sri Lanka</div>
   <ul>
@@ -65,10 +65,10 @@ description: "Professional experience in data analytics, business intelligence, 
   </div>
 </div>
 
-<div class="section-label">Internships</div>
+<h2 class="section-label">Internships</h2>
 
 <div class="exp-entry">
-  <div class="exp-title">Associate Operations Analyst (Intern)</div>
+  <h3 class="exp-title">Associate Operations Analyst (Intern)</h3>
   <div class="exp-org">SYNERGEN Health</div>
   <div class="exp-meta">Mar 2019 – Sep 2019 · Colombo, Sri Lanka</div>
   <ul>
@@ -78,7 +78,7 @@ description: "Professional experience in data analytics, business intelligence, 
 </div>
 
 <div class="exp-entry">
-  <div class="exp-title">Business Analyst (Intern)</div>
+  <h3 class="exp-title">Business Analyst (Intern)</h3>
   <div class="exp-org">Global System Solutions</div>
   <div class="exp-meta">Sep 2018 – Mar 2019 · Colombo, Sri Lanka</div>
   <ul>

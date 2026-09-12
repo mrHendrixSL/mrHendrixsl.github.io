@@ -7,6 +7,12 @@ author:
   name: "Rasika Edirisinghe"
 show_downloads: false
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: "/assets/img/social-preview.png"
+
 # Use our custom layout — no external theme
 # theme: jekyll-theme-cayman
 

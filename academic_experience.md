@@ -6,10 +6,10 @@ description: "University teaching and academic experience at University College 
 
 # Teaching & Academic Experience
 
-<div class="section-label">University College Cork</div>
+<h2 class="section-label">University College Cork</h2>
 
 <div class="exp-entry">
-  <div class="exp-title">Teaching Assistant &amp; Co-Lecturer — Data Visualization for Machine Learning</div>
+  <h3 class="exp-title">Teaching Assistant &amp; Co-Lecturer — Data Visualization for Machine Learning</h3>
   <div class="exp-org">School of Computer Science &amp; IT, University College Cork</div>
   <div class="exp-meta">2025/26 Academic Year · CS3205 / CS6426 · Cork, Ireland</div>
   <p>Co-taught the undergraduate and postgraduate Data Visualization for Machine Learning module. Responsibilities included revision of lecture and laboratory material, lecture delivery, practical laboratory teaching, preparation of teaching materials, and assessment.</p>
@@ -28,10 +28,10 @@ description: "University teaching and academic experience at University College 
   </div>
 </div>
 
-<div class="section-label">Visiting Lectureships</div>
+<h2 class="section-label">Visiting Lectureships</h2>
 
 <div class="exp-entry">
-  <div class="exp-title">Visiting Lecturer</div>
+  <h3 class="exp-title">Visiting Lecturer</h3>
   <div class="exp-org">Department of Electrical &amp; Information Engineering, University of Ruhuna</div>
   <div class="exp-meta">Aug 2023 – Sep 2024 · Galle, Sri Lanka · Hybrid</div>
   <p><strong>Courses taught:</strong></p>
@@ -49,7 +49,7 @@ description: "University teaching and academic experience at University College 
 </div>
 
 <div class="exp-entry">
-  <div class="exp-title">Visiting Lecturer</div>
+  <h3 class="exp-title">Visiting Lecturer</h3>
   <div class="exp-org">Sri Lanka Telecom Training Centre · Sri Lanka Telecom PLC</div>
   <div class="exp-meta">Aug 2023 – Sep 2024 · Welisara, Sri Lanka · On-site</div>
   <p><strong>Pearson BTEC courses taught:</strong></p>

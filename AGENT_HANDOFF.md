@@ -20,9 +20,10 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|
 | Git remote | `https://github.com/mrHendrixSL/mrHendrixsl.github.io.git` |
 | Git branch | main |
-| Latest commit | Homepage Recent Updates cleanup and About Me layout adjustment (this commit) |
+| Latest commit | Skip-link visibility fix (this commit) |
 | Full-pass rollback | Annotated tag `pre-editorial-pass-2026-09-12` → `73b3d88` |
 | Homepage rollback | Annotated tag `pre-homepage-update-2026-09-12` → `fa50138` |
+| Skip-link rollback | Annotated tag `pre-skip-link-fix-2026-09-12` → `70646ba` |
 | Uncommitted work | None |
 | Active work | None |
 | Live URL | `https://mrHendrixSL.github.io` |
@@ -225,5 +226,23 @@ Purpose: durable record of work across coding/writing assistants.
 
 **Risks:**
 - Justified text can produce uneven word spacing on narrow screens, depending on the browser and line breaks.
+
+---
+
+### Session 6 — 2026-09-12 — Codex
+
+**Scope:** Fix the skip-navigation link remaining visible after pointer interaction
+
+**Done:**
+- Confirmed that the deployed page and stylesheet both contained the intended skip-navigation markup and CSS.
+- Replaced transform-only hiding with a robust visually-hidden clipping pattern.
+- Changed the visible state from generic `:focus` to `:focus-visible`, keeping the link available to keyboard users without leaving it visible after mouse clicks.
+- Created the annotated rollback tag `pre-skip-link-fix-2026-09-12` at `70646ba`.
+
+**Not done / future:**
+- No navigation labels, destinations, or other page styling were changed.
+
+**Risks:**
+- The visible keyboard-focus treatment depends on `:focus-visible`, which is supported by current major browsers.
 
 ---

@@ -1,5 +1,8 @@
----
----
+/*
+ * Deprecated stylesheet retained pending owner approval for deletion.
+ * This file deliberately has no YAML front matter, so Jekyll does not compile it
+ * over the authoritative assets/css/style.css dark theme.
+ */
 
 @import "{{ site.theme }}";
 

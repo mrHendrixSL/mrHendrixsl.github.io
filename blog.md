@@ -1,15 +1,16 @@
 ---
 layout: default
-title: Rasika Edirisinghe - Blog
+title: Notes
 permalink: /blog/
+description: "Occasional notes on research, computational language work, academia, and related topics."
 ---
 
-# 📝 Personal Blog
+# Notes
 
-Welcome to my personal monologue space. Here, I share my thoughts on research, NLP, academia, and life.
+Occasional notes on research, computational language work, academia, and related topics.
 
-## 📌 Latest Posts
+## Latest Posts
 
 {% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+- [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: "%-d %B %Y" }}
 {% endfor %}

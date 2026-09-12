@@ -1,5 +1,10 @@
 title: "Rasika Edirisinghe"
-description: "Marie Curie Early Career Researcher · NLP · University College Cork"
+description: "Doctoral researcher at University College Cork working on the computational representation, retrieval, and visual analysis of textual relations under transformation."
+url: "https://mrhendrixsl.github.io"
+baseurl: ""
+lang: "en-IE"
+author:
+  name: "Rasika Edirisinghe"
 show_downloads: false
 
 # Use our custom layout — no external theme

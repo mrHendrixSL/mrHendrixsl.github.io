@@ -1,7 +1,7 @@
 ---
 name: STANDING_INSTRUCTIONS
 type: operational
-last_updated: 2026-05-19
+last_updated: 2026-09-12
 ---
 
 # Standing Instructions — mrHendrixSL.github.io
@@ -40,6 +40,8 @@ These rules apply to every session, every agent, without exception.
 - **Dates** — always use absolute dates (e.g. `Apr 2026`) not relative ones ("recently", "last month")
 - **Collaborator names** — only name people the owner has explicitly mentioned
 - **Unpublished findings / numbers** — do not include specific results or data from unpublished papers
+- **Research status** — do not conflate conference presentations, abstracts, proceedings papers, datasets, and works in progress; status must match the underlying source
+- **Official titles** — preserve exact publication, presentation, project, and course titles unless the owner confirms a correction
 
 ---
 

@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Welcome to My Personal Hellscape: Natural Language Processing"
+date: 2025-03-06
+description: "A deliberately irreverent reflection on working with natural language processing and language models."
+---
+
 <div align="center">
 
 <h4>🗓 March 6, 2025  </h4>   
@@ -122,21 +129,24 @@ I am setting the map on fire and walking into the unknown.
 
 ## **📢 Share This Post!**  
 
+{% assign share_url = page.url | absolute_url | url_encode %}
+{% assign share_title = page.title | url_encode %}
+
 <p>  
-<a href="https://www.facebook.com/sharer/sharer.php?u=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html" target="_blank">
-  <img src="https://img.shields.io/badge/Facebook-%231877F2?style=for-the-badge&logo=facebook&logoColor=white">
+<a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Facebook-%231877F2?style=for-the-badge&amp;logo=facebook&amp;logoColor=white" alt="Share on Facebook">
 </a>  
 
-<a href="https://twitter.com/intent/tweet?text=Check%20this%20out!&url=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html" target="_blank">
-  <img src="https://img.shields.io/badge/Twitter-%231DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
+<a href="https://twitter.com/intent/tweet?text={{ share_title }}&amp;url={{ share_url }}" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Twitter-%231DA1F2?style=for-the-badge&amp;logo=twitter&amp;logoColor=white" alt="Share on Twitter">
 </a>  
 
-<a href="https://www.linkedin.com/sharing/share-offsite/?url=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&logo=linkedin&logoColor=white">
+<a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url }}" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/LinkedIn-%230A66C2?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="Share on LinkedIn">
 </a>  
 
-<a href="https://reddit.com/submit?url=https://mrhendrixsl.github.io/2025/03/06/Welcome-to-my-personal-hellscape-Natural-Language-Processing.html&title=Check%20this%20out!" target="_blank">
-  <img src="https://img.shields.io/badge/Reddit-%23FF4500?style=for-the-badge&logo=reddit&logoColor=white">
+<a href="https://reddit.com/submit?url={{ share_url }}&amp;title={{ share_title }}" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.shields.io/badge/Reddit-%23FF4500?style=for-the-badge&amp;logo=reddit&amp;logoColor=white" alt="Share on Reddit">
 </a>  
 </p>  
 

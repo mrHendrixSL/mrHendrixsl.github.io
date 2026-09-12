@@ -1,0 +1,17 @@
+# Jekyll output and caches
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# LaTeX build artefacts
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+cv_source/cv.pdf
+
+# Operating-system files
+.DS_Store
+Thumbs.db

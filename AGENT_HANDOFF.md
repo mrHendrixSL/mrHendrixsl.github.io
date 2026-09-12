@@ -20,7 +20,7 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|
 | Git remote | `https://github.com/mrHendrixSL/mrHendrixsl.github.io.git` |
 | Git branch | main |
-| Latest commit | Milton–Shelley transformation demonstration (this commit) |
+| Latest commit | Progressive-disclosure Milton–Shelley transformation demonstration (this commit) |
 | Full-pass rollback | Annotated tag `pre-editorial-pass-2026-09-12` → `73b3d88` |
 | Homepage rollback | Annotated tag `pre-homepage-update-2026-09-12` → `fa50138` |
 | Skip-link rollback | Annotated tag `pre-skip-link-fix-2026-09-12` → `70646ba` |
@@ -28,8 +28,9 @@ Purpose: durable record of work across coding/writing assistants.
 | Astro rollback | Annotated tag `pre-astro-migration-2026-09-12` → `1974f4b`; published to origin with migration |
 | Interaction-semantics rollback | Annotated tag `pre-interaction-semantics-2026-09-12` → `fa9fb0b`; published with the interaction pass |
 | Milton–Shelley demo rollback | Annotated tag `pre-milton-shelley-demo-2026-09-12` → `6c152b6`; published with the focused demonstration redesign |
-| Uncommitted work | None after the Milton–Shelley demonstration commit |
-| Active work | None; focused transformation demonstration is deployed through GitHub Actions |
+| Transformation-reduction rollback | Annotated tag `pre-transformation-reduction-2026-09-12` → `2d6956c`; published with the progressive-disclosure pass |
+| Uncommitted work | None after the progressive-disclosure transformation commit |
+| Active work | None; simplified transformation demonstration is deployed through GitHub Actions |
 | Live URL | `https://mrHendrixSL.github.io` |
 
 ### Deliverable Status
@@ -52,6 +53,7 @@ Purpose: durable record of work across coding/writing assistants.
 | D14 | Astro GitHub Pages workflow and documented rollback procedure | ✅ Deployed |
 | D15 | Qualitative relation field, token-level transformation sequence, and research-object pipeline | ✅ Deployed |
 | D16 | Integrated Milton source, transformation path, and Shelley relation-trace demonstration | ✅ Deployed |
+| D17 | Radically simplified transformation story with progressive disclosure | ✅ Deployed |
 
 ### Pending Actions
 
@@ -79,7 +81,7 @@ Purpose: durable record of work across coding/writing assistants.
 ### Site Architecture
 
 - **Current production architecture:** Astro 7 static output, with page source in `src/pages/`, shared layouts/styles/components in `src/`, and static assets in `public/`.
-- **Client islands:** Svelte components hydrate with `client:visible`; D3 maps relations and research stages; GSAP/ScrollTrigger controls the transformation sequence; OGL is dynamically imported only for the homepage desktop field.
+- **Client islands:** Svelte components hydrate with `client:visible`; D3 maps relations and research stages; GSAP controls opt-in token transitions without scroll hijacking; OGL is dynamically imported only for the homepage desktop field.
 - **Structured content:** typed data under `src/data/`; Notes under `src/content/notes/` through an Astro MDX content collection.
 - **Deployment:** `.github/workflows/deploy.yml` uses `withastro/action@v6` and `actions/deploy-pages@v5`; GitHub Pages uses the Actions artifact.
 - **Preserved fallback:** all prior Jekyll root Markdown, `_layouts/`, `_posts/`, `_config.yml`, and original `assets/` remain present for rollback.
@@ -413,5 +415,47 @@ Purpose: durable record of work across coding/writing assistants.
 
 **Risks:**
 - The intermediate paraphrase, adaptation, and obfuscation passages are explanatory constructions, not historical transmission stages; the interface disclosure must remain if the example is edited later.
+
+---
+
+### Session 11 — 2026-09-12 — Codex
+
+**Scope:** Radical information reduction and progressive disclosure for the Milton–Shelley transformation demonstration
+
+**Done:**
+- Replaced the three-column analytical dashboard with one narrative composition led by two large text panels: a persistent Milton source and the current transformation state.
+- Reduced the default conceptual model to a stable four-family relation spine: created being, creator/maker, creation/origin, and consent/grievance.
+- Limited default evidence reporting to two categorical readouts—surface wording and evidence source—with no numeric values, fake precision, ruler charts, or measurement-like dots.
+- Replaced the vertical stage table with an immediately visible five-stage horizontal stepper; retained click, focus, arrow-key, Home, and End interaction, with an internally scrolling mobile layout.
+- Reduced each stage to one prominent plain-language explanation and one short sentence explaining why computational recovery becomes harder.
+- Made stage 05 the Shelley payoff: the current-text panel becomes Mary Shelley’s *Frankenstein* quotation and reveals the Adam/created-being and fallen-angel/Miltonic-creation mappings.
+- Kept Shelley as a subtle endpoint marker during stages 01–04 instead of permanently duplicating the destination quotation.
+- Moved the fuller D3 concept graph and the additional transformation/evidence categories behind a native `details` disclosure labelled “Explore the relation model.”
+- Preserved restrained, dynamically imported GSAP token motion for lexical substitution, repositioning, fading, fragmentation, and reconnection without scroll-driven activation.
+- Preserved a motion-independent rendering: reduced-motion users receive the Milton anchor, all five textual states, the Shelley payoff, and the relation mappings without importing or requiring GSAP.
+- Kept the existing Astro/Svelte/D3/GSAP/OGL architecture, page routes, content data, research claims, dependency set, and `client:visible` hydration unchanged.
+
+**Validation:**
+- `npm run build`: 35 source files checked with zero errors, warnings, or hints; all 14 static routes generated.
+- Chrome DevTools checks confirmed the desktop two-panel hierarchy, one visible animated passage, four default concept families, two default indicators, and a closed-by-default advanced model.
+- Click and keyboard navigation reached every state; End selected and focused ALLUSION, changed the right panel to Mary Shelley / *Frankenstein*, and revealed both literary mappings.
+- A true 390 px mobile viewport had no page-level horizontal overflow; the text panels stacked and the stepper scrolled only within its own container.
+- Reduced-motion emulation hid the animated active panel and navigator, displayed all five static states with both historical anchors, revealed the final mappings, and retained a no-overflow layout.
+- Confirmed the rendered default interface contains no invented decimal metrics and none of the former quantitative-looking similarity/relation/depth labels.
+- Lighthouse desktop: Performance 100, Accessibility 100, Best Practices 100, SEO 100; LCP 0.4 s, CLS 0.027, TBT 0 ms.
+- Lighthouse mobile: Performance 99, Accessibility 100, Best Practices 100, SEO 100; LCP 1.7 s, CLS 0.03, TBT 0 ms.
+- The deferred transformation component is approximately 22.4 KB and the existing dynamically loaded GSAP chunk approximately 69.7 KB; OGL remains separately deferred.
+- Lighthouse generated both valid reports but returned the known Windows EPERM warning while cleaning its temporary Chrome profiles after the completed audits.
+
+**Deployment:**
+- The owner explicitly authorised the completed simplification to be committed and pushed.
+- Created the annotated rollback tag `pre-transformation-reduction-2026-09-12` at the exact pre-pass commit, `2d6956c`.
+- Recorded the implementation, validation, and rollback point in one atomic commit and pushed `main` plus the rollback tag to origin.
+
+**Not done / future:**
+- No whole-site redesign, dependency addition, information-architecture change, or factual research-content edit was made.
+
+**Risks:**
+- The intermediate stages remain explanatory constructions rather than a claimed historical transmission sequence; retain the visible historical-anchor/constructed-demonstration disclosure.
 
 ---

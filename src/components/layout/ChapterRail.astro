@@ -1,70 +1,56 @@
 ---
-const chapters = [
-  { index: '00', label: 'Intro', href: '#intro' },
-  { index: '01', label: 'Position', href: '#position' },
-  { index: '02', label: 'Transformation', href: '#transformation' },
-  { index: '03', label: 'Architecture', href: '#architecture' },
-  { index: '04', label: 'Now', href: '#now' }
-];
+import { homeChapters, type HomeChapterId } from '../../data/homeChapters';
+
+interface Props { active: HomeChapterId; }
+const { active } = Astro.props;
 ---
 
 <nav class="chapter-rail" aria-label="Homepage chapters" data-chapter-rail>
   <ol>
-    {chapters.map((chapter, index) => (
+    {homeChapters.map(chapter => (
       <li>
-        <a href={chapter.href} data-chapter-link aria-current={index === 0 ? 'location' : undefined}>
+        <a href={chapter.href} aria-current={active === chapter.id ? 'page' : undefined}>
           <span>{chapter.index}</span>
-          <strong>{chapter.label}</strong>
+          <strong>{chapter.railLabel}</strong>
         </a>
       </li>
     ))}
   </ol>
 </nav>
 
-<script>
-  const rail = document.querySelector<HTMLElement>('[data-chapter-rail]');
-
-  if (rail) {
-    const links = Array.from(rail.querySelectorAll<HTMLAnchorElement>('[data-chapter-link]'));
-    const sections = links
-      .map(link => document.querySelector<HTMLElement>(link.hash))
-      .filter((section): section is HTMLElement => Boolean(section));
-
-    const setCurrent = (id: string) => {
-      links.forEach(link => {
-        if (link.hash === `#${id}`) link.setAttribute('aria-current', 'location');
-        else link.removeAttribute('aria-current');
-      });
-    };
-
-    links.forEach(link => link.addEventListener('click', () => setCurrent(link.hash.slice(1))));
-
-    const observer = new IntersectionObserver(entries => {
-      const current = entries
-        .filter(entry => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (current) setCurrent(current.target.id);
-    }, { rootMargin: '-18% 0px -67% 0px', threshold: [0, .01] });
-
-    sections.forEach(section => observer.observe(section));
-  }
-</script>
-
 <style>
   .chapter-rail {
     position: fixed;
     top: 50%;
-    right: max(.8rem, calc((100vw - var(--content)) / 2 - 6.3rem));
+    right: clamp(2rem, 4vw, 5rem);
     z-index: 20;
+    padding: 2rem 0 2rem 1.65rem;
+    border-left: 1px solid var(--rule);
     transform: translateY(-50%);
   }
   .chapter-rail ol { display: grid; gap: .72rem; margin: 0; padding: 0; list-style: none; }
-  .chapter-rail a { display: grid; grid-template-columns: 1.5rem 1fr; gap: .5rem; align-items: baseline; color: var(--paper-dim); font-family: var(--mono); font-size: .52rem; letter-spacing: .07em; text-decoration: none; text-transform: uppercase; transition: color .2s ease, opacity .2s ease; opacity: .52; }
+  .chapter-rail a { position: relative; display: grid; grid-template-columns: 1.8rem 1fr; gap: .65rem; align-items: baseline; color: var(--paper-dim); font-family: var(--mono); font-size: .58rem; letter-spacing: .07em; text-decoration: none; text-transform: uppercase; transition: color .2s ease; }
   .chapter-rail a::before { position: absolute; right: calc(100% + .55rem); width: 0; height: 1px; margin-top: .58rem; background: var(--amber); content: ''; transition: width .25s var(--ease); }
-  .chapter-rail a:hover, .chapter-rail a[aria-current='location'] { color: var(--paper); opacity: 1; }
-  .chapter-rail a[aria-current='location']::before { width: 1rem; }
-  .chapter-rail a[aria-current='location'] span { color: var(--amber); }
+  .chapter-rail a:hover, .chapter-rail a[aria-current='page'] { color: var(--paper); }
+  .chapter-rail a[aria-current='page']::before { width: 1rem; }
+  .chapter-rail a[aria-current='page'] span { color: var(--amber); }
   .chapter-rail strong { font-size: inherit; font-weight: 500; }
-  @media (max-width: 1360px) { .chapter-rail { display: none; } }
+  @media (min-width: 801px) and (max-width: 1180px) {
+    .chapter-rail {
+      top: auto;
+      right: 1.25rem;
+      bottom: 1.25rem;
+      padding: .65rem .9rem;
+      border: 1px solid var(--rule-strong);
+      background: rgba(8,11,18,.92);
+      backdrop-filter: blur(12px);
+      transform: none;
+    }
+    .chapter-rail ol { display: flex; gap: .95rem; }
+    .chapter-rail a { display: block; font-size: .62rem; }
+    .chapter-rail a::before { display: none; }
+    .chapter-rail strong { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+  }
+  @media (max-width: 800px) { .chapter-rail { display: none; } }
   @media (prefers-reduced-motion: reduce) { .chapter-rail a, .chapter-rail a::before { transition: none; } }
 </style>

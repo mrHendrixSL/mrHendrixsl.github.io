@@ -1,17 +1,24 @@
 ---
+import { homeChapters, type HomeChapterId } from '../../data/homeChapters';
+
+interface Props {
+  chapterMode?: boolean;
+  activeChapter?: HomeChapterId;
+}
+
+const { chapterMode = false, activeChapter } = Astro.props;
 const pathname = Astro.url.pathname;
 const links = [
   ['Home', '/'],
-  ['Research', '/research/'],
   ['Publications', '/publications/'],
   ['Talks', '/talks/'],
   ['Experience', '/experience/'],
   ['Notes', '/notes/']
 ];
-const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.startsWith(href);
+const isActive = (href: string) => href === '/' ? pathname === '/' || chapterMode : pathname.startsWith(href);
 ---
 
-<header class="site-header" data-site-header>
+<header class:list={['site-header', { 'chapter-header': chapterMode }]} data-site-header>
   <div class="nav-shell">
     <a class="wordmark" href="/" aria-label="R. Edirisinghe — home">
       <svg viewBox="0 0 44 44" aria-hidden="true">
@@ -29,6 +36,10 @@ const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.st
           <li><a href={href} aria-current={isActive(href) ? 'page' : undefined}>{label}</a></li>
         ))}
         <li><a href="/assets/Rasika_Edirisinghe-CV.pdf" target="_blank" rel="noopener noreferrer">CV <span aria-hidden="true">↗</span></a></li>
+        {chapterMode && <li class="chapter-menu-label">Homepage chapters</li>}
+        {chapterMode && homeChapters.map(chapter => (
+          <li class="chapter-route-link"><a href={chapter.href} aria-current={activeChapter === chapter.id ? 'location' : undefined}><span>{chapter.index}</span>{chapter.railLabel}</a></li>
+        ))}
       </ul>
     </nav>
   </div>
@@ -57,6 +68,7 @@ const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.st
 
 <style>
   .site-header { position: relative; z-index: 50; height: 5rem; border-bottom: 1px solid var(--rule); background: rgba(8,11,18,.88); backdrop-filter: blur(16px); }
+  .site-header.chapter-header { position: sticky; top: 0; }
   .nav-shell { display: flex; align-items: center; justify-content: space-between; width: min(calc(100% - clamp(2rem, 6vw, 7rem)), var(--content)); height: 100%; margin-inline: auto; }
   .wordmark { display: inline-flex; align-items: center; gap: .7rem; color: var(--paper); font-family: var(--serif); font-size: 1.15rem; text-decoration: none; }
   .wordmark svg { width: 1.9rem; color: var(--indigo); fill: var(--ink-0); stroke: currentColor; stroke-width: 1; }
@@ -66,6 +78,7 @@ const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.st
   .primary-nav a:hover, .primary-nav a[aria-current='page'] { color: var(--paper); }
   .primary-nav a[aria-current='page']::after { transform: scaleX(1); }
   .nav-toggle { display: none; border: 0; background: transparent; color: var(--paper); font-family: var(--mono); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; }
+  .chapter-menu-label, .chapter-route-link { display: none; }
   @media (max-width: 800px) {
     .nav-shell { width: calc(100% - 2rem); }
     .nav-toggle { display: flex; align-items: center; gap: .7rem; padding: .75rem 0 .75rem .75rem; }
@@ -78,5 +91,20 @@ const isActive = (href: string) => href === '/' ? pathname === '/' : pathname.st
     .primary-nav ul { align-items: stretch; flex-direction: column; gap: 0; }
     .primary-nav a { display: block; padding: .72rem 0; font-size: .8rem; }
     .primary-nav a::after { display: none; }
+    .chapter-menu-label {
+      display: block;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--rule);
+      color: var(--paper-dim);
+      font-family: var(--mono);
+      font-size: .62rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .chapter-route-link { display: block; }
+    .chapter-route-link a { display: grid; grid-template-columns: 2rem 1fr; color: var(--paper-dim); }
+    .chapter-route-link a[aria-current='location'] { color: var(--paper); }
+    .chapter-route-link a[aria-current='location'] span { color: var(--amber); }
   }
 </style>

@@ -1,6 +1,7 @@
 ---
 import Navigation from '../components/layout/Navigation.astro';
 import Footer from '../components/layout/Footer.astro';
+import type { HomeChapterId } from '../data/homeChapters';
 import '@fontsource-variable/newsreader/wght.css';
 import '@fontsource-variable/dm-sans/wght.css';
 import '../styles/global.css';
@@ -10,12 +11,18 @@ interface Props {
   description?: string;
   image?: string;
   type?: 'website' | 'article';
+  chapterMode?: boolean;
+  activeChapter?: HomeChapterId;
+  compact?: boolean;
 }
 const {
   title = 'Rasika Edirisinghe',
   description = 'Doctoral researcher at University College Cork working on the computational representation, retrieval, and visual analysis of textual relations under transformation.',
   image = '/assets/img/social-preview.png',
-  type = 'website'
+  type = 'website',
+  chapterMode = false,
+  activeChapter,
+  compact = false
 } = Astro.props;
 const pageTitle = title === 'Rasika Edirisinghe' ? title : `${title} — Rasika Edirisinghe`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -48,10 +55,10 @@ const socialImage = new URL(image, Astro.site);
       sameAs: ['https://orcid.org/0009-0008-4673-0259','https://github.com/mrHendrixSL/','https://www.linkedin.com/in/rasikaedirisinghe/']
     })} />
   </head>
-  <body>
+  <body class:list={{ 'chapter-mode': chapterMode, 'compact-layout': compact }}>
     <a class="skip-link" href="#main-content">Skip to main content</a>
-    <Navigation />
+    <Navigation chapterMode={chapterMode} activeChapter={activeChapter} />
     <main id="main-content" class="page-main"><slot /></main>
-    <Footer />
+    {!chapterMode && <Footer />}
   </body>
 </html>

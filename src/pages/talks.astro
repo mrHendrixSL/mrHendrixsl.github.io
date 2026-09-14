@@ -4,7 +4,7 @@ import SectionHeading from '../components/layout/SectionHeading.astro';
 import TalkTimeline from '../components/talks/TalkTimeline.astro';
 import { talks } from '../data/talks';
 ---
-<BaseLayout title="Talks & Contributions" description="Research presentations, peer review, evaluation, and curriculum contributions by Rasika Edirisinghe.">
+<BaseLayout title="Talks & Contributions" description="Research presentations, peer review, evaluation, and curriculum contributions by Rasika Edirisinghe." compact>
   <header class="page-header site-shell"><p class="section-kicker">Public scholarship</p><h1 class="page-title">Talks & contributions</h1><p class="page-deck">Research presented in public, alongside peer review, evaluation, and curriculum work.</p></header>
   <section class="content-section site-shell" aria-labelledby="presentations-heading"><SectionHeading index="01" kicker="Chronology" title="Research presentations" id="presentations-heading" /><TalkTimeline items={talks.filter(item => item.type === 'presentation')} /></section>
   <section class="content-section site-shell" aria-labelledby="contributions-heading"><SectionHeading index="02" kicker="Service" title="Academic contributions" id="contributions-heading" /><TalkTimeline items={talks.filter(item => item.type === 'contribution')} /></section>

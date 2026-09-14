@@ -1,0 +1,71 @@
+---
+import HomeChapterLayout from '../layouts/HomeChapterLayout.astro';
+import NextChapter from '../components/layout/NextChapter.astro';
+import ResearchArchitecture from '../components/relation/ResearchArchitecture.svelte';
+import { profile } from '../data/profile';
+---
+
+<HomeChapterLayout active="architecture" title="Research Architecture" description={profile.description}>
+  <section id="architecture" class="chapter-page architecture-page" aria-labelledby="architecture-heading">
+    <header class="architecture-heading">
+      <p class="chapter-kicker"><span>03</span> Research architecture</p>
+      <h1 id="architecture-heading">A connected system for recovering relation beyond surface similarity</h1>
+      <p>With the transformation problem visible, the research moves from texts and representations to candidates, ranked relations, evidence, and visual exploration.</p>
+    </header>
+    <ResearchArchitecture homepageChapter client:visible />
+    <NextChapter href="/now/" label="Current activity" />
+  </section>
+</HomeChapterLayout>
+
+<style>
+  .architecture-page {
+    display: grid;
+    grid-template-columns: minmax(23rem, .72fr) minmax(38rem, 1.28fr);
+    grid-template-rows: 1fr auto;
+    gap: 2rem clamp(4rem, 6vw, 7rem);
+    align-items: center;
+    padding: clamp(3rem, 6vh, 5rem) 10rem 2rem 0;
+  }
+  .architecture-heading { max-width: 42rem; }
+  .architecture-heading h1 { max-width: 18ch; margin-top: .6rem; font-size: clamp(2.75rem, 3.1vw, 3.55rem); }
+  .architecture-heading > p:last-child { max-width: 39rem; margin: 1.5rem 0 0; }
+  .architecture-page :global(.architecture) { min-width: 0; }
+  .architecture-page :global(.next-chapter) { grid-column: 1 / -1; margin-top: 0; }
+
+  @media (max-width: 1400px) {
+    .architecture-page { display: block; padding-right: 8rem; }
+    .architecture-heading { max-width: 64rem; margin-bottom: 2.5rem; }
+    .architecture-heading h1 { max-width: 21ch; }
+    .architecture-page :global(.next-chapter) { margin-top: 2rem; }
+  }
+
+  @media (max-width: 1180px) {
+    .architecture-page { padding-right: 0; }
+  }
+
+  @media (min-width: 801px) and (max-width: 1180px) {
+    .architecture-page {
+      display: grid;
+      grid-template-columns: minmax(0, .78fr) minmax(0, 1.22fr);
+      grid-template-rows: 1fr auto;
+      gap: 1rem 2rem;
+      padding: 2rem 0 .75rem;
+    }
+    .architecture-heading { margin-bottom: 0; }
+    .architecture-heading h1 { max-width: 16ch; margin-top: .4rem; font-size: clamp(2.25rem, 4vw, 2.7rem); }
+    .architecture-heading > p:last-child { margin-top: 1rem; font-size: .94rem; line-height: 1.5; }
+    .architecture-page :global(.homepage svg) { min-height: 18rem; }
+    .architecture-page :global(.homepage .architecture-readout) { grid-template-columns: 1fr; gap: .4rem; padding: .8rem 0; }
+    .architecture-page :global(.homepage .operation-context) { display: none; }
+    .architecture-page :global(.next-chapter) { grid-column: 1 / -1; margin-top: 0; }
+  }
+
+  @media (max-width: 800px) {
+    .architecture-page { display: block; padding: 1rem 0 .75rem; }
+    .architecture-heading { margin-bottom: 0; }
+    .architecture-heading h1 { max-width: 20ch; font-size: clamp(1.75rem, 7.5vw, 2.1rem); line-height: 1.02; }
+    .architecture-heading > p:last-child { display: none; }
+    .architecture-page :global(.mobile-architecture > svg) { width: min(100%, 34rem); margin-inline: auto; }
+    .architecture-page :global(.next-chapter) { margin-top: 0; }
+  }
+</style>

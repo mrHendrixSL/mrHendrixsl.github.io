@@ -9,7 +9,7 @@ const { publication: item, index } = Astro.props;
     <h3>{item.title}</h3>
     <p class="publication-venue">{item.venue}</p>
     {item.authors && <p class="publication-authors">{item.authors.join(', ')}</p>}
-    <p class="publication-description">{item.description}</p>
+    <details class="publication-abstract"><summary>Summary</summary><p class="publication-description">{item.description}</p></details>
     <ul class="tag-list" aria-label="Topics">{item.tags.map(tag => <li>{tag}</li>)}</ul>
   </div>
   <aside class="publication-meta">
@@ -19,15 +19,19 @@ const { publication: item, index } = Astro.props;
 </article>
 
 <style>
-  .publication-entry { display: grid; grid-template-columns: 3rem minmax(0,1fr) 12rem; gap: clamp(1.5rem,4vw,4rem); padding: clamp(2.5rem,5vw,4.5rem) 0; border-top: 1px solid var(--rule); }
+  .publication-entry { display: grid; grid-template-columns: 2rem minmax(0,1fr); gap: 1.25rem; align-content: start; padding: clamp(1.4rem,2.5vw,2.2rem) 0; border-top: 1px solid var(--rule); }
   .publication-entry:last-child { border-bottom: 1px solid var(--rule); }
   .publication-index { color: var(--indigo); font-family: var(--mono); font-size: .65rem; }
-  h3 { max-width: 27ch; }
-  .publication-venue, .publication-authors { margin: 1.15rem 0 0; color: var(--paper-dim); font-family: var(--mono); font-size: .68rem; line-height: 1.65; }
+  h3 { max-width: 30ch; font-size: clamp(1.4rem, 1.9vw, 1.8rem); }
+  .publication-venue, .publication-authors { margin: .7rem 0 0; color: var(--paper-dim); font-family: var(--mono); font-size: .65rem; line-height: 1.55; }
   .publication-authors { color: var(--paper-soft); }
-  .publication-description { max-width: 46rem; margin: 1.6rem 0 0; }
-  .publication-meta { display: flex; flex-direction: column; align-items: flex-start; gap: .8rem; }
+  .publication-abstract { margin-top: .75rem; }
+  .publication-abstract summary { color: var(--paper-soft); font-family: var(--mono); font-size: .62rem; letter-spacing: .07em; text-transform: uppercase; cursor: pointer; }
+  .publication-abstract summary::marker { color: var(--amber); }
+  .publication-description { max-width: 46rem; margin: .65rem 0 0; font-size: .92rem; line-height: 1.55; }
+  .publication-main .tag-list { margin-top: .8rem; }
+  .publication-meta { grid-column: 2; display: flex; flex-wrap: wrap; align-items: center; gap: .55rem 1rem; }
   .publication-meta span { color: var(--amber); font-family: var(--mono); font-size: .62rem; letter-spacing: .06em; line-height: 1.45; text-transform: uppercase; }
-  .publication-meta .text-link { margin-top: auto; }
-  @media (max-width: 760px) { .publication-entry { grid-template-columns: 2rem 1fr; } .publication-meta { grid-column: 2; } .publication-meta .text-link { margin-top: .5rem; } }
+  .publication-meta .text-link { margin-left: auto; font-size: .62rem; }
+  @media (max-width: 500px) { .publication-entry { grid-template-columns: 1.4rem 1fr; gap: .8rem; } .publication-meta .text-link { width: 100%; margin: .2rem 0 0; } }
 </style>

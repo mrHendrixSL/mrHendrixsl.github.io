@@ -1,0 +1,27 @@
+---
+import HomeChapterLayout from '../layouts/HomeChapterLayout.astro';
+import NextChapter from '../components/layout/NextChapter.astro';
+import TransformationSequence from '../components/relation/TransformationSequence.svelte';
+import { profile } from '../data/profile';
+---
+
+<HomeChapterLayout active="transformation" title="Relation Under Transformation" description={profile.description}>
+  <div id="transformation" class="chapter-page transformation-page">
+    <TransformationSequence chapterIndex="02" homepageChapter client:visible />
+    <NextChapter href="/architecture/" label="Research architecture" />
+  </div>
+</HomeChapterLayout>
+
+<style>
+  .transformation-page { width: calc(100% - 7vw); max-width: none; padding-right: clamp(10rem, 13vw, 15rem); }
+  .transformation-page :global(.next-chapter) { margin: 1.4rem 0 2rem; }
+
+  @media (max-width: 1180px) {
+    .transformation-page { width: calc(100% - 7vw); padding-right: 0; }
+  }
+
+  @media (max-width: 800px) {
+    .transformation-page { width: calc(100% - 2rem); }
+  }
+
+</style>

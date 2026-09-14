@@ -1,0 +1,90 @@
+---
+import HomeChapterLayout from '../layouts/HomeChapterLayout.astro';
+import { profile } from '../data/profile';
+import { updates } from '../data/updates';
+import { projects } from '../data/projects';
+
+const latestUpdates = updates.filter(item => item.featured).slice(0, 3);
+const nimbus = projects.find(project => project.id === 'nimbus-intrusted')!;
+const exitLinks = [
+  { label: 'Publications', href: '/publications/' },
+  { label: 'Talks', href: '/talks/' },
+  { label: 'Experience', href: '/experience/' }
+];
+---
+
+<HomeChapterLayout active="now" title="Current Activity" description={profile.description}>
+  <section id="now" class="chapter-page now-page" aria-labelledby="now-heading">
+    <header class="now-heading">
+      <p class="chapter-kicker"><span>04</span> Now / additional work</p>
+      <h1 id="now-heading">Current activity<br />and further research.</h1>
+    </header>
+
+    <div class="now-grid">
+      <div class="latest-updates">
+        <h2>Latest updates</h2>
+        <ol>
+          {latestUpdates.map(item => (
+            <li>
+              <time datetime={item.date}>{item.label}</time>
+              <div><p>{item.content}</p>{item.href && <a class="text-link" href={item.href} target="_blank" rel="noopener noreferrer">{item.linkLabel}</a>}</div>
+            </li>
+          ))}
+        </ol>
+      </div>
+
+      <article class="additional-work">
+        <p class="section-kicker">Secondary research experience · {nimbus.dates}</p>
+        <h2>{nimbus.title}</h2>
+        <p class="strand-meta"><a href={nimbus.href} target="_blank" rel="noopener noreferrer">{nimbus.context}</a></p>
+        <p>{nimbus.description}</p>
+      </article>
+    </div>
+
+    <nav class="exit-links" aria-label="Explore the website">
+      <span>Continue exploring</span>
+      {exitLinks.map(link => <a href={link.href}>{link.label}<i aria-hidden="true">→</i></a>)}
+    </nav>
+  </section>
+</HomeChapterLayout>
+
+<style>
+  .now-page { padding: clamp(3rem, 6vh, 5rem) 10rem 2rem 0; }
+  .now-heading { margin-bottom: clamp(3rem, 7vh, 5rem); }
+  .now-heading h1 { max-width: 17ch; margin-top: .6rem; font-size: clamp(3rem, 4.1vw, 4.2rem); }
+  .now-grid { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(20rem, .65fr); gap: clamp(4rem, 8vw, 9rem); }
+  .latest-updates h2, .additional-work h2 { font-size: clamp(1.7rem, 2.1vw, 2.25rem); }
+  .latest-updates ol { margin: 2rem 0 0; padding: 0; list-style: none; }
+  .latest-updates li { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: 1.5rem; padding: 1.35rem 0; border-top: 1px solid var(--rule); }
+  .latest-updates li:last-child { border-bottom: 1px solid var(--rule); }
+  .latest-updates time { color: var(--amber); font-family: var(--mono); font-size: .62rem; letter-spacing: .07em; text-transform: uppercase; }
+  .latest-updates p { margin: 0; color: var(--paper-soft); font-size: .9rem; line-height: 1.6; }
+  .latest-updates .text-link { margin-top: .65rem; font-size: .62rem; }
+  .additional-work { align-self: start; padding-top: 1.4rem; border-top: 1px solid var(--rule-strong); }
+  .additional-work h2 { max-width: 17ch; margin: 1rem 0 1.3rem; }
+  .additional-work > p:last-child { margin-top: 1.4rem; font-size: .9rem; line-height: 1.65; }
+  .strand-meta { color: var(--amber); font-family: var(--mono); font-size: .61rem; letter-spacing: .06em; line-height: 1.6; text-transform: uppercase; }
+  .exit-links { display: grid; grid-template-columns: minmax(10rem, 1fr) repeat(3, auto); gap: 1rem 2rem; align-items: center; margin-top: clamp(3rem, 6vh, 5rem); padding: 1.25rem 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .exit-links > span { color: var(--paper-dim); font-family: var(--mono); font-size: .58rem; letter-spacing: .08em; text-transform: uppercase; }
+  .exit-links a { display: inline-flex; gap: .55rem; align-items: center; color: var(--paper-soft); font-family: var(--mono); font-size: .66rem; letter-spacing: .06em; text-decoration: none; text-transform: uppercase; }
+  .exit-links i { color: var(--amber); font-style: normal; }
+
+  @media (max-width: 1180px) {
+    .now-page { padding-right: 0; }
+  }
+
+  @media (max-width: 900px) {
+    .now-grid { grid-template-columns: 1fr; }
+    .additional-work { max-width: 43rem; }
+    .exit-links { grid-template-columns: repeat(2, 1fr); }
+    .exit-links > span { grid-column: 1 / -1; }
+  }
+
+  @media (max-width: 800px) {
+    .now-page { padding: 2.8rem 0 2rem; }
+    .now-heading { margin-bottom: 3rem; }
+    .now-heading h1 { font-size: clamp(2.2rem, 9.5vw, 2.8rem); }
+    .latest-updates li { grid-template-columns: 1fr; gap: .45rem; }
+    .exit-links { grid-template-columns: 1fr; }
+  }
+</style>

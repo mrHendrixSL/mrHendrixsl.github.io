@@ -4,7 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 const notes = (await getCollection('notes', ({ data }) => !data.draft)).sort((a,b) => b.data.date.valueOf() - a.data.date.valueOf());
 const formatDate = (date: Date) => new Intl.DateTimeFormat('en-IE', { day: '2-digit', month: '2-digit', year: 'numeric' }).format(date);
 ---
-<BaseLayout title="Notes" description="Occasional notes on research, computational language work, academia, and related topics.">
+<BaseLayout title="Notes" description="Occasional notes on research, computational language work, academia, and related topics." compact>
   <header class="page-header site-shell"><p class="section-kicker">Essays & field notes</p><h1 class="page-title">Notes</h1><p class="page-deck">Occasional essays and reflections on research, computational language work, academia, and the stranger edges of meaning.</p></header>
   <section class="content-section site-shell" aria-label="Published notes">
     <ol class="notes-index">
@@ -14,11 +14,11 @@ const formatDate = (date: Date) => new Intl.DateTimeFormat('en-IE', { day: '2-di
 </BaseLayout>
 <style>
   .notes-index { margin: 0; padding: 0; list-style: none; }
-  .notes-index > li { display: grid; grid-template-columns: 8rem minmax(0,1fr) auto; gap: clamp(1.5rem,5vw,6rem); padding: 3rem 0; border-top: 1px solid var(--rule); }
+  .notes-index > li { display: grid; grid-template-columns: 7rem minmax(0,1fr) auto; gap: clamp(1.25rem,3vw,3rem); padding: 1.6rem 0; border-top: 1px solid var(--rule); }
   .notes-index > li:last-child { border-bottom: 1px solid var(--rule); }
   time { color: var(--amber); font-family: var(--mono); font-size: .66rem; letter-spacing: .07em; }
-  h2 { max-width: 25ch; font-size: clamp(1.9rem,4vw,3.25rem); }
+  h2 { max-width: 30ch; font-size: clamp(1.6rem,2.5vw,2.35rem); }
   h2 a { text-decoration: none; }
-  article > p { max-width: 40rem; margin: 1rem 0 0; }
+  article > p { max-width: 44rem; margin: .65rem 0 0; }
   @media (max-width: 650px) { .notes-index > li { grid-template-columns: 1fr auto; gap: .7rem; } .notes-index article { grid-column: 1 / -1; } }
 </style>

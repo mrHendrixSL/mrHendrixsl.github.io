@@ -4,7 +4,7 @@ import SectionHeading from '../components/layout/SectionHeading.astro';
 import ExperienceList from '../components/experience/ExperienceList.astro';
 import { academic, industry, education, skillGroups } from '../data/experience';
 ---
-<BaseLayout title="Experience" description="Academic, industry, education, and technical experience of Rasika Edirisinghe.">
+<BaseLayout title="Experience" description="Academic, industry, education, and technical experience of Rasika Edirisinghe." compact>
   <header class="page-header site-shell"><p class="section-kicker">Background</p><h1 class="page-title">Experience & methods</h1><p class="page-deck">Teaching, industry practice, education, and the methods that support the research programme.</p></header>
   <nav class="section-nav site-shell" aria-label="Experience sections"><a href="#academic">Academic</a><a href="#industry">Industry</a><a href="#education">Education</a><a href="#methods">Methods & skills</a></nav>
   <section id="academic" class="content-section site-shell" aria-labelledby="academic-heading"><SectionHeading index="01" kicker="Teaching" title="Academic experience" id="academic-heading" /><ExperienceList items={academic} /></section>
@@ -13,10 +13,11 @@ import { academic, industry, education, skillGroups } from '../data/experience';
   <section id="methods" class="content-section site-shell" aria-labelledby="methods-heading"><SectionHeading index="04" kicker="Working vocabulary" title="Methods & technical skills" id="methods-heading" /><div class="skill-groups">{skillGroups.map(group => <section><h3>{group.title}</h3><ul class="tag-list">{group.items.map(item => <li>{item}</li>)}</ul></section>)}</div></section>
 </BaseLayout>
 <style>
-  .section-nav { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: 1rem 2rem; padding: 1.2rem 0; border-bottom: 1px solid var(--rule); background: rgba(8,11,18,.92); backdrop-filter: blur(12px); }
+  .section-nav { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: .7rem 1.7rem; padding: .8rem 0; border-bottom: 1px solid var(--rule); background: rgba(8,11,18,.92); backdrop-filter: blur(12px); }
   .section-nav a { color: var(--paper-dim); font-family: var(--mono); font-size: .66rem; letter-spacing: .08em; text-transform: uppercase; }
-  .skill-groups { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 4rem clamp(2rem,7vw,8rem); }
-  .skill-groups section { padding-top: 1.5rem; border-top: 1px solid var(--rule); }
-  .skill-groups h3 { font-size: 1.8rem; }
-  @media (max-width: 650px) { .skill-groups { grid-template-columns: 1fr; } }
+  .skill-groups { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 2rem clamp(1.5rem,4vw,4rem); }
+  .skill-groups section { padding-top: 1rem; border-top: 1px solid var(--rule); }
+  .skill-groups h3 { font-size: 1.45rem; }
+  @media (max-width: 850px) { .skill-groups { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+  @media (max-width: 480px) { .skill-groups { grid-template-columns: 1fr; gap: 1.5rem; } }
 </style>

@@ -1,7 +1,7 @@
 ---
 name: AGENT_HANDOFF
 type: operational
-last_updated: 2026-09-12
+last_updated: 2026-09-15
 updated_by: Codex
 ---
 
@@ -20,7 +20,7 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|
 | Git remote | `https://github.com/mrHendrixSL/mrHendrixsl.github.io.git` |
 | Git branch | main |
-| Latest commit | Five-chapter homepage information architecture (this commit) |
+| Latest commit | `Deploy routed research interface and animated toolchain` — current deployment commit; use `git log -1` for its immutable hash |
 | Full-pass rollback | Annotated tag `pre-editorial-pass-2026-09-12` → `73b3d88` |
 | Homepage rollback | Annotated tag `pre-homepage-update-2026-09-12` → `fa50138` |
 | Skip-link rollback | Annotated tag `pre-skip-link-fix-2026-09-12` → `70646ba` |
@@ -30,8 +30,9 @@ Purpose: durable record of work across coding/writing assistants.
 | Milton–Shelley demo rollback | Annotated tag `pre-milton-shelley-demo-2026-09-12` → `6c152b6`; published with the focused demonstration redesign |
 | Transformation-reduction rollback | Annotated tag `pre-transformation-reduction-2026-09-12` → `2d6956c`; published with the progressive-disclosure pass |
 | Homepage-IA rollback | Annotated tag `pre-homepage-ia-correction-2026-09-12` → `a40b75d`; published with the five-chapter homepage pass |
-| Uncommitted work | None after the five-chapter homepage commit |
-| Active work | None; corrected homepage narrative is deployed through GitHub Actions |
+| Routed-home/toolchain rollback | Annotated tag `pre-routed-home-toolchain-2026-09-15` → `dc1c0a4`; published with the routed interface/toolchain pass |
+| Uncommitted work | None expected after the authorised deployment |
+| Active work | Confirm the GitHub Pages Actions deployment completes and review the live site |
 | Live URL | `https://mrHendrixSL.github.io` |
 
 ### Deliverable Status
@@ -56,13 +57,16 @@ Purpose: durable record of work across coding/writing assistants.
 | D16 | Integrated Milton source, transformation path, and Shelley relation-trace demonstration | ✅ Deployed |
 | D17 | Radically simplified transformation story with progressive disclosure | ✅ Deployed |
 | D18 | Five-chapter homepage narrative with quiet identity hero and compact Now exit surface | ✅ Deployed |
+| D19 | Reference-matched five-screen homepage with real routes, persistent responsive chapter navigation, reusable continuation controls, simplified transformation opening, and responsive architecture pipeline | ✅ Deployed |
+| D20 | Compact publication/talk/experience/note directories, abstract one-screen responsive architecture, and persistent D3-calculated landing toolchain animation | ✅ Deployed |
 
 ### Pending Actions
 
-1. **Zenodo DOI** — When the Hiberno-English dataset is uploaded to Zenodo, update its record in `src/data/publications.ts` with the DOI link.
-2. **Stale SCSS deletion** — `assets/css/style.scss` has been made non-compiling but remains tracked pending owner approval for deletion.
-3. **LaTeX artefact cleanup** — approve removal from version control of `cv_source/cv.aux`, `cv_source/cv.log`, `cv_source/cv.out`, `cv_source/texput.log`, and `cv_source/cv.pdf`; `.gitignore` now excludes future generated output.
-4. **Public CV privacy** — decide whether the public-web CV should use the UCC email and omit the mobile number; the verified PDF currently retains the existing personal email and mobile number.
+1. **Live deployment review** — Confirm the GitHub Pages workflow completes and inspect the routed homepage, interactive toolchain, Architecture page, and compact directories on the public URL.
+2. **Zenodo DOI** — When the Hiberno-English dataset is uploaded to Zenodo, update its record in `src/data/publications.ts` with the DOI link.
+3. **Stale SCSS deletion** — `assets/css/style.scss` has been made non-compiling but remains tracked pending owner approval for deletion.
+4. **LaTeX artefact cleanup** — approve removal from version control of `cv_source/cv.aux`, `cv_source/cv.log`, `cv_source/cv.out`, `cv_source/texput.log`, and `cv_source/cv.pdf`; `.gitignore` now excludes future generated output.
+5. **Public CV privacy** — decide whether the public-web CV should use the UCC email and omit the mobile number; the verified PDF currently retains the existing personal email and mobile number.
 
 ### Key Files
 
@@ -83,7 +87,7 @@ Purpose: durable record of work across coding/writing assistants.
 ### Site Architecture
 
 - **Current production architecture:** Astro 7 static output, with page source in `src/pages/`, shared layouts/styles/components in `src/`, and static assets in `public/`.
-- **Client islands:** Home hydrates only the transformation sequence and research architecture with `client:visible`; GSAP controls opt-in token transitions without scroll hijacking. RelationField remains preserved but unmounted, so its dynamically imported OGL layer is absent from current page output.
+- **Client islands:** Identity hydrates a focused D3-calculated toolchain animation with `client:visible`; Transformation and Architecture hydrate their focused Svelte components the same way. GSAP controls opt-in token transitions without scroll hijacking. RelationField remains preserved but unmounted, so its dynamically imported OGL layer is absent from the homepage-route output.
 - **Structured content:** typed data under `src/data/`; Notes under `src/content/notes/` through an Astro MDX content collection.
 - **Deployment:** `.github/workflows/deploy.yml` uses `withastro/action@v6` and `actions/deploy-pages@v5`; GitHub Pages uses the Actions artifact.
 - **Preserved fallback:** all prior Jekyll root Markdown, `_layouts/`, `_posts/`, `_config.yml`, and original `assets/` remain present for rollback.
@@ -93,7 +97,7 @@ Purpose: durable record of work across coding/writing assistants.
 
 | Page | File | Notes |
 |---|---|---|
-| Home | `src/pages/index.astro` | Five chapters: Identity, Research Position, Relation under Transformation, Research Architecture, and Now / Additional Work |
+| Home sequence | `src/pages/index.astro`, `src/pages/position.astro`, `src/pages/transformation.astro`, `src/pages/architecture.astro`, `src/pages/now.astro` | Five separately navigable screens: Identity, Research Position, Relation under Transformation, Research Architecture, and Now / Additional Work |
 | Research | `src/pages/research.astro` | Doctoral programme, D3 architecture, transformation model, and research contexts |
 | Publications | `src/pages/publications.astro` + `src/data/publications.ts` | Published work, conference output, and projects |
 | Talks | `src/pages/talks.astro` + `src/data/talks.ts` | Presentations and academic contributions |
@@ -110,7 +114,6 @@ Purpose: durable record of work across coding/writing assistants.
 | Program | CASCADE Horizon Europe Marie Skłodowska-Curie Doctoral Network |
 | Research | Textual relations under transformation · information retrieval · parallel text · relation judgement · visual analytics |
 | Secondment | Completed at Nimbus Research Centre, Apr–Jul 2026 (inTrusted project) |
-| Collaborator | Tharindu Ranathunga (Nimbus) |
 | Personal email | rasikahendrix@gmail.com |
 | UCC email | rasika.edirisinghe@ucc.ie |
 | GitHub | mrHendrixSL |
@@ -121,7 +124,7 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|---|
 | Modelling Intertextual Relations under Transformation | Current doctoral research | Representation, retrieval, relation judgement, benchmark construction, and evaluation |
 | Relation-Space Exploration and Visual Analytics for Parallel Text | Current doctoral research | Corpus-scale exploration and close reading |
-| Trust and Grounding in Agentic Cyber-Physical Systems | Research strand from completed secondment | Nimbus/inTrusted work conducted with Tharindu Ranathunga |
+| Trust and Grounding in Agentic Cyber-Physical Systems | Research strand from completed secondment | Nimbus/inTrusted secondment work |
 | Hiberno-English lexical extraction | Presented | DHC 2026 presentation, Sheffield, Sep 2–3 2026; official DHC page linked on site |
 
 ---
@@ -502,5 +505,124 @@ Purpose: durable record of work across coding/writing assistants.
 
 **Risks:**
 - The desktop chapter rail intentionally hides at 1360 px and below to protect the content column; chapter-to-chapter `NEXT` links remain available at every width.
+
+---
+
+### Session 13 — 2026-09-14 — Codex
+
+**Scope:** Interpret the four supplied homepage design references within the approved five-chapter Astro architecture and prepare a local review package
+
+**Done locally:**
+- Preserved the fixed `#intro` → `#position` → `#transformation` → `#architecture` → `#now` narrative, the current stack, all routes, and all factual research content.
+- Added the reusable `NextChapter.astro` component and used real anchor links after Identity, Position, Transformation, and Architecture.
+- Refined Identity proportions without adding decorative graphics or returning RelationField; the desktop remains quiet and editorial, while the complete mobile chapter now includes its portrait and continuation cue.
+- Rebalanced Research Position typography for desktop, laptop-height, tablet, and mobile contexts; the supplied central question remains unchanged and occupies seven lines at all tested phone widths.
+- Simplified the homepage Transformation opening around the two primary Milton/current-state panels, defaulted Home to Paraphrase, kept one stage explanation and exactly two qualitative cues, and retained the advanced D3 relation model behind a closed native disclosure.
+- Kept stages 02–04 labelled as constructed demonstrations and stage 05 as the Mary Shelley / *Frankenstein* payoff; no invented numeric research claims were added.
+- Made the D3 architecture pipeline more compact on desktop and added non-colliding multiline object labels; at 800 px and below it becomes a readable vertical object/operation flow rather than a squeezed SVG.
+- Kept the chapter rail secondary and desktop-only, native proximity snapping on desktop/tablet, no mobile snapping, `client:visible` islands, and no RelationField/OGL homepage payload.
+- Generated 20 local PNG review screenshots: all five chapters at 1440×900, 1024×768, 768×1024, and 390×844 under `C:/Users/sup3r/.codex/review/homepage-2026-09-14/`.
+
+**Validation:**
+- `npm run build`: 37 source files checked with zero errors, warnings, or hints; all 14 static routes generated successfully.
+- Local production preview ran successfully at `http://127.0.0.1:4321/`.
+- Explicitly audited all ten requested viewports: 1440×900, 1366×768, 1280×800, 1024×768, 820×1180, 768×1024, 430×932, 390×844, 375×812, and 360×800.
+- Every viewport reported zero page-level horizontal overflow, visible section overflow rather than clipping, exact anchor alignment, no portrait collision, three homepage updates, and the Paraphrase default state.
+- Desktop comparison panels remain side by side; phone panels stack; the phone stage selector scrolls only on its own horizontal axis; Architecture changes from horizontal to vertical at 800 px.
+- Keyboard End selected and focused ALLUSION, changed the destination to Mary Shelley, and exposed the Shelley quotation. Space opened the native advanced-model disclosure while retaining focus.
+- Reduced-motion mode disabled page snapping, hid the animated active panel/stage controller, and displayed all five transformation states statically.
+- Deferred JavaScript changed from 198,356 raw / 74,590 gzip bytes to 199,451 raw / 74,786 gzip bytes: +1,095 raw / +196 gzip bytes. No dependency was added.
+- Lighthouse mobile: Performance 99, Accessibility 100, Best Practices 100, SEO 100; LCP 1.7 s, CLS 0.004.
+- Lighthouse desktop: Performance 100, Accessibility 100, Best Practices 100, SEO 100; LCP 0.4 s, CLS 0.003.
+- Lighthouse reports are valid; the CLI emitted the known Windows temporary-profile EPERM cleanup warning and, on desktop, a non-fatal Lantern `NO_LCP` diagnostic despite recording the LCP value.
+
+**Deployment:**
+- Nothing was committed, tagged, or pushed. `HEAD` and `origin/main` remain at deployed baseline `dc1c0a4` until the owner reviews the screenshots and explicitly approves deployment.
+
+**Risks / review notes:**
+- Transformation and the mobile Architecture/Now chapters intentionally exceed one viewport so no content is clipped merely to imitate slides.
+- The intermediate transformation passages remain illustrative constructions; the historical-anchor disclosure remains visible.
+
+---
+
+### Session 14 — 2026-09-14 — Codex
+
+**Scope:** Match the supplied homepage screen references as closely as possible while replacing the long-scroll chapter document with explicit page navigation
+
+**Done locally:**
+- Split the five-part homepage narrative into five static Astro routes: `/`, `/position/`, `/transformation/`, `/architecture/`, and `/now/`.
+- Added typed shared chapter metadata plus a dedicated `HomeChapterLayout` so screen numbering, labels, active state, and route destinations stay consistent.
+- Replaced the IntersectionObserver/hash-only rail with real page links and `aria-current` states. Desktop uses the fixed right rail, tablet uses a fixed compact five-number navigator, and mobile exposes all five routes inside the sticky header menu.
+- Added ordinary `NEXT` route links to the first four screens, preserving native browser history and keyboard navigation rather than intercepting wheel or touch input.
+- Preserved compatibility for old homepage chapter hashes by redirecting `/#position`, `/#transformation`, `/#architecture`, and `/#now` to their canonical routes.
+- Matched the supplied screen compositions across Identity, Position, Transformation, Architecture, and Now, including the large editorial type, strict dark palette, restrained amber/indigo accents, right-side rail gutter, compact transformation selector, two-panel comparison, and split research-pipeline composition.
+- Kept the Identity route free of client JavaScript. Retained the established Svelte/D3 research pipeline and Svelte/GSAP textual transformation on their relevant routes with `client:visible`, without adding libraries or fabricated quantitative claims.
+- Preserved the richer transformation model on the Research page while keeping the routed homepage demonstration focused on the supplied reference.
+- Reduced the phone Transformation screen to the requested complete comparison: the Milton source, the active transformed passage, the horizontally scrollable five-stage selector, and one live explanatory sentence. Hid the relation spine, categorical status block, and Next footer at phone widths so the route fits within one viewport.
+- Rebalanced the phone Transformation typography by reducing display-heading dominance and raising micro-label, source metadata, and stage-selector sizes to a more legible middle register.
+- Restored the visible `NEXT — RESEARCH ARCHITECTURE` control on the phone Transformation screen; it remains fully inside the viewport down to 360×800, including for the longer Obfuscation and Allusion explanations.
+- Replaced the horizontally scrolling phone stage strip with five equal-width native buttons. All labels are visible simultaneously at a 45-degree angle, the interface explicitly says “Choose a stage to transform the passage,” and the active button has a distinct background/dot treatment.
+- Reduced oversized display typography across the shared site scale and all five routed homepage compositions, including Identity, Position, Transformation, Architecture, Now, generic page headers, notes, prose headings, and the global footer. Supporting body copy and metadata retain their readable middle register.
+- Contained GSAP token fragments within the responsive passage panel so changing states cannot create transient document overflow.
+- Generated 25 final PNG screenshots and five contact sheets at 1920×1080, 1440×900, 1024×768, 768×1024, and 390×844 under `C:/Users/sup3r/.codex/review/homepage-routed-2026-09-14/`.
+
+**Validation:**
+- `npm run build`: 43 source files checked with zero errors, warnings, or hints; all 18 static routes generated successfully.
+- Local production preview runs at `http://127.0.0.1:4321/`.
+- Audited all five routes at ten viewports: 1440×900, 1366×768, 1280×800, 1024×768, 820×1180, 768×1024, 430×932, 390×844, 375×812, and 360×800. All 50 cases have one H1, no page-level horizontal overflow, and the expected responsive route navigation.
+- Verified the mobile menu opens and displays all five chapter links; the tablet navigator is fixed and marks the active route; route clicks preserve native URL/history behaviour.
+- Verified keyboard End selection reaches and focuses ALLUSION, displays the Shelley destination, and preserves the correct quotation.
+- Verified reduced-motion mode displays all five transformation states statically with no animated passage and no horizontal overflow.
+- Verified every transformation state at 430×932, 390×844, 375×812, and 360×800. In all 20 cases, document width and height exactly match the viewport; both passages, the stage selector, and the longest explanatory sentence remain visible on the same screen.
+- Verified the revised stage control has equal client/scroll widths at all four phone sizes, confirming there is no horizontal scroll container, and confirmed the visible Next control resolves to `/architecture/`.
+- Ran a broader post-typography regression audit across 16 routes at six desktop/mobile viewports (96 cases): zero horizontal-overflow or H1-count failures.
+- Verified the old `/#architecture` URL redirects to `/architecture/` without retaining the hash.
+- Lighthouse mobile: Performance 100, Accessibility 100, Best Practices 100, SEO 100; FCP 1.1 s, LCP 1.2 s, CLS 0.004.
+- Lighthouse desktop: Performance 100, Accessibility 100, Best Practices 100, SEO 100; FCP 0.3 s, LCP 0.4 s, CLS 0.003.
+- Final built JavaScript across all lazy route chunks is 199,786 raw / 74,987 gzip bytes; the Identity route itself has no hydrated island.
+
+**Deployment:**
+- Nothing was committed, tagged, or pushed. `HEAD` and `origin/main` remain at deployed baseline `dc1c0a4` pending owner review of the routed screenshot package.
+
+**Risks / review notes:**
+- Mobile Architecture and Activity can scroll within their individual route where the content cannot fit legibly in one phone viewport; Transformation now fits its complete interactive comparison in one phone viewport. Page-to-page navigation stays immediately available from the sticky menu and the site is no longer one continuous homepage scroll.
+- The intermediate transformation passages remain clearly identified as constructed demonstrations, and the Milton/Shelley historical anchors remain intact.
+
+---
+
+### Session 15 — 2026-09-15 — Codex
+
+**Scope:** Reduce directory-page scrolling, replace the responsive Architecture diagram with an abstract layered research pipeline, remove redundant/name-specific public references, and add a persistent landing-page toolchain animation
+
+**Done locally:**
+- Removed the redundant Research item from the primary navigation and the Now-page continuation grid while preserving `/research/` as a compatibility/deep-research route.
+- Removed the named collaborator from the public Nimbus secondment copy in project/publication data; the work is now described without attributing it to an individual.
+- Added a compact layout mode to the shared page shell and applied it to Publications, Talks, Experience, and Notes. Desktop records now use denser two-column layouts where appropriate, while optional summaries, talk descriptions, and responsibility lists use accessible native `details` disclosures.
+- Reduced final page heights at 1920×1080 / 390×844 from 3322 / 4731 to 2682 / 3420 px for Publications, 2884 / 3565 to 2410 / 2873 px for Talks, and 5350 / 7730 to 4119 / 5572 px for Experience. Notes now renders at 1189 / 1161 px.
+- Replaced the responsive Architecture flow with six D3-calculated ascending planes for TEXTS, REPRESENTATIONS, CANDIDATE SPACE, RANKED RELATIONS, EVIDENCE, and VISUAL EXPLORATION. The component uses abstract points and signals only; no Milton, Shelley, or other literary example appears in the Architecture visualisation.
+- Kept each Architecture layer keyboard-focusable/clickable with one concise live readout, a restrained upward entrance, and a fully static reduced-motion mode.
+- Added a landscape-laptop split composition so Architecture fits one viewport at 1180×820 and 1024×768 as well as large desktop, tablet, and tested phone sizes.
+- Added `ToolOrbit.svelte` to the Identity route. D3 `scalePoint` distributes a concise tool inventory drawn from the existing Experience data and its timing; desktop uses two persistent, slow orbital paths and phones use two compact counter-moving tracks around REPRESENT / RETRIEVE / JUDGE / EXPLORE.
+- Reduced the landing name scale so the toolchain has visual presence without competing with the research statement. Reduced-motion mode presents all eight tools in a static two-row grid.
+- Refreshed 25 five-route screenshots plus five contact sheets under `C:/Users/sup3r/.codex/review/homepage-routed-2026-09-14/`, and eight compact-directory screenshots plus two contact sheets under `C:/Users/sup3r/.codex/review/compact-pages-2026-09-14/`.
+
+**Validation:**
+- `npm run build`: 43 source files checked with zero errors, warnings, or hints; all 18 static routes generated successfully.
+- Final 18-route × 6-viewport regression audit: 108/108 cases have exactly one H1 and no page-level horizontal overflow.
+- Architecture document height equals the viewport at 1180×820, 1024×768, 820×1180, 768×1024, 390×844, and 360×800; the Next control remains visible.
+- Identity document height equals the viewport at 1920×1080, 390×844, and 360×800. Phone tool tracks stay within the page bounds and the Next control remains visible.
+- Reduced-motion emulation at 390×844 reports `animation-name: none` for every tool, displays all eight labels, has no horizontal overflow, and remains exactly one viewport tall.
+- Landing Lighthouse mobile: Performance 99, Accessibility 100, Best Practices 100, SEO 100; FCP 1.5 s, LCP 1.7 s, CLS 0.001, TBT 0 ms.
+- Landing Lighthouse desktop: Performance 100, Accessibility 100, Best Practices 100, SEO 100; FCP/LCP 0.4 s, CLS 0, TBT 0 ms.
+- Architecture Lighthouse mobile remains Performance 99, Accessibility 100, Best Practices 100, SEO 100.
+
+**Deployment:**
+- The owner explicitly authorised the complete reviewed pass to be committed and pushed.
+- Created the annotated rollback tag `pre-routed-home-toolchain-2026-09-15` at the exact pre-pass commit, `dc1c0a4`.
+- Included the implementation, validation record, and rollback documentation in one detailed deployment commit and pushed `main` plus the rollback tag to origin.
+
+**Risks / review notes:**
+- The landing toolchain is a concise selection from the existing methods/skills inventory, not an exhaustive software list.
+- Historical Session 14 notes describe the state at that checkpoint; Session 15 supersedes its statements about the Identity route having no island and mobile Architecture requiring scroll.
 
 ---

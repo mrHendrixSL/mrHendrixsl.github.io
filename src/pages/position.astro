@@ -1,0 +1,65 @@
+---
+import HomeChapterLayout from '../layouts/HomeChapterLayout.astro';
+import NextChapter from '../components/layout/NextChapter.astro';
+import { profile } from '../data/profile';
+---
+
+<HomeChapterLayout active="position" title="Research Position" description={profile.description}>
+  <section id="position" class="chapter-page position-page" aria-labelledby="position-heading">
+    <div class="chapter-index">
+      <span>01</span>
+      <p>Research position</p>
+    </div>
+
+    <div class="position-content">
+      <h1 id="position-heading">{profile.question}</h1>
+      <div class="position-copy">
+        <p class="lead">My doctoral research examines <strong>textual relations under transformation</strong>: relationships that can persist through paraphrase, adaptation, obfuscation, allusion, historical variation, and other forms of textual change even as lexical overlap weakens.</p>
+        <p>I investigate how those relations can be represented, retrieved, ranked, judged, and interpreted across large textual collections when matching words are no longer sufficient evidence.</p>
+      </div>
+      <NextChapter href="/transformation/" label="Relation under transformation" />
+    </div>
+  </section>
+</HomeChapterLayout>
+
+<style>
+  .position-page {
+    display: grid;
+    grid-template-columns: 14rem minmax(0, 58rem) 1fr;
+    gap: clamp(3rem, 6vw, 7rem);
+    align-content: center;
+    padding: clamp(4rem, 8vh, 6rem) 0;
+  }
+  .chapter-index { align-self: start; padding-top: .35rem; }
+  .chapter-index span { display: block; color: var(--indigo); font-family: var(--serif); font-size: 2.7rem; font-style: italic; }
+  .chapter-index p { margin: .65rem 0 0; color: var(--paper-dim); font-family: var(--mono); font-size: .67rem; letter-spacing: .12em; text-transform: uppercase; }
+  .position-content { grid-column: 2; }
+  .position-content h1 { max-width: 24ch; font-size: clamp(2.9rem, 3.6vw, 3.75rem); line-height: 1; }
+  .position-copy { max-width: 50rem; margin-top: 2.4rem; text-align: left; hyphens: auto; }
+  .position-copy .lead { color: var(--paper); font-family: var(--serif); font-size: clamp(1.25rem, 1.55vw, 1.55rem); line-height: 1.38; }
+  .position-copy strong { font-weight: 550; }
+  .position-content :global(.next-chapter) { margin-top: 2.4rem; }
+
+  @media (max-width: 1180px) {
+    .position-page { grid-template-columns: 10rem minmax(0, 1fr); }
+    .position-content { grid-column: 2; }
+  }
+
+  @media (max-width: 800px) {
+    .position-page { display: block; padding: 2.8rem 0 2rem; }
+    .chapter-index { display: flex; gap: 1rem; align-items: baseline; padding: 0; }
+    .chapter-index span { font-size: 1.8rem; }
+    .chapter-index p { margin: 0; }
+    .position-content { margin-top: 1.8rem; }
+    .position-content h1 { max-width: none; font-size: clamp(1.9rem, 7.4vw, 2.15rem); line-height: 1.04; }
+    .position-copy { margin-top: 2.2rem; }
+    .position-content :global(.next-chapter) { margin-top: 2rem; }
+  }
+
+  @media (min-width: 801px) and (max-height: 820px) {
+    .position-page { padding-block: 2.6rem; }
+    .position-content h1 { font-size: 2.85rem; }
+    .position-copy { margin-top: 1.5rem; }
+    .position-content :global(.next-chapter) { margin-top: 1.6rem; }
+  }
+</style>

@@ -26,8 +26,7 @@ export const projects: ResearchProject[] = [
     context: 'inTrusted project · Nimbus Research Centre · Munster Technological University',
     dates: 'Apr–Jul 2026',
     status: 'completed',
-    collaborator: 'Tharindu Ranathunga',
     href: 'https://nimbuscentre.ie/project/intrusted/',
-    description: 'Completed a research secondment with Tharindu Ranathunga examining how natural-language instructions are preserved or altered as they pass through conversational interpretation, planning, tool use, and robotic action.'
+    description: 'Completed a research secondment examining how natural-language instructions are preserved or altered as they pass through conversational interpretation, planning, tool use, and robotic action.'
   }
 ];

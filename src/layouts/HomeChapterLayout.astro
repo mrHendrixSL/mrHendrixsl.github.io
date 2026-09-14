@@ -1,0 +1,50 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import ChapterRail from '../components/layout/ChapterRail.astro';
+import type { HomeChapterId } from '../data/homeChapters';
+
+interface Props {
+  active: HomeChapterId;
+  title?: string;
+  description?: string;
+}
+
+const { active, title = 'Rasika Edirisinghe', description } = Astro.props;
+---
+
+<BaseLayout title={title} description={description} chapterMode activeChapter={active}>
+  <ChapterRail active={active} />
+  <slot />
+</BaseLayout>
+
+<style is:global>
+  .chapter-page {
+    position: relative;
+    width: min(calc(100% - 14vw), 104rem);
+    min-height: calc(100svh - 5rem);
+    margin-inline: auto;
+  }
+
+  .chapter-page .chapter-kicker {
+    display: flex;
+    gap: .85rem;
+    align-items: baseline;
+    color: var(--paper-dim);
+    font-family: var(--mono);
+    font-size: .67rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+  .chapter-page .chapter-kicker span {
+    color: var(--indigo);
+    font-family: var(--serif);
+    font-size: 1.75rem;
+    font-style: italic;
+    letter-spacing: 0;
+  }
+
+  @media (max-width: 800px) {
+    .chapter-page { width: calc(100% - 2rem); }
+  }
+</style>

@@ -12,7 +12,7 @@ const { items } = Astro.props;
         <p class="organisation">{item.organisation}</p>
         <p class="meta">{item.meta}</p>
         {item.summary && <p>{item.summary}</p>}
-        {item.details && <ul>{item.details.map(detail => <li>{detail}</li>)}</ul>}
+        {item.details && <details class="experience-details"><summary>Responsibilities & details</summary><ul>{item.details.map(detail => <li>{detail}</li>)}</ul></details>}
         {item.tags && <ul class="tag-list" aria-label="Methods and skills">{item.tags.map(tag => <li>{tag}</li>)}</ul>}
       </div>
     </article>
@@ -20,13 +20,21 @@ const { items } = Astro.props;
 </div>
 
 <style>
-  .experience-entry { display: grid; grid-template-columns: 2.5rem minmax(0,1fr); gap: 1.5rem; padding: 3rem 0; border-top: 1px solid var(--rule); }
+  .experience-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(2rem, 5vw, 5rem); }
+  .experience-entry { display: grid; grid-template-columns: 2rem minmax(0,1fr); gap: 1rem; align-content: start; padding: 1.6rem 0 1.9rem; border-top: 1px solid var(--rule); }
   .experience-entry:last-child { border-bottom: 1px solid var(--rule); }
   .entry-index { color: var(--indigo); font-family: var(--mono); font-size: .65rem; }
-  h3 { max-width: 30ch; }
-  .organisation { margin: 1rem 0 .2rem; color: var(--amber); }
-  .meta { margin: 0 0 1.4rem; }
+  h3 { max-width: 32ch; font-size: clamp(1.35rem, 1.8vw, 1.75rem); }
+  .organisation { margin: .6rem 0 .15rem; color: var(--amber); }
+  .meta { margin: 0 0 .75rem; }
   article p:not(.organisation):not(.meta), article ul:not(.tag-list) { max-width: 46rem; }
-  article ul:not(.tag-list) { padding-left: 1.1rem; }
-  article li + li { margin-top: .45rem; }
+  article p:not(.organisation):not(.meta), article ul:not(.tag-list) { font-size: .9rem; line-height: 1.55; }
+  .experience-details { margin-top: .7rem; }
+  .experience-details summary { color: var(--paper-soft); font-family: var(--mono); font-size: .62rem; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+  .experience-details summary::marker { color: var(--amber); }
+  article ul:not(.tag-list) { margin-block: .7rem; padding-left: 1.1rem; }
+  article .tag-list { margin-top: .75rem; }
+  article li + li { margin-top: .25rem; }
+  @media (max-width: 900px) { .experience-list { grid-template-columns: 1fr; } }
+  @media (max-width: 500px) { .experience-entry { grid-template-columns: 1.4rem minmax(0,1fr); gap: .8rem; padding-block: 1.35rem; } }
 </style>

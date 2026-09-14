@@ -71,6 +71,6 @@ export const publications: Publication[] = [
     venue: 'Research Secondment · Nimbus Research Centre, Munster Technological University · inTrusted', date: '2026-07-01',
     statuses: ['Research Secondment'], tags: ['Agentic AI', 'Human-Robot Interaction', 'Cyber-Physical Systems', 'AI Safety', 'Grounding'],
     href: 'https://nimbuscentre.ie/project/intrusted/', sourceLabel: 'inTrusted',
-    description: 'Research conducted with Tharindu Ranathunga during the Nimbus secondment examined failures that arise when conversational AI systems translate human instructions into physical action. The work focused on maintaining grounded, action-critical information across planning and tool-use stages.'
+    description: 'Research conducted during the Nimbus secondment examined failures that arise when conversational AI systems translate human instructions into physical action. The work focused on maintaining grounded, action-critical information across planning and tool-use stages.'
   }
 ];

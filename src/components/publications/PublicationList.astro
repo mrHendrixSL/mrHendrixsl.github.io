@@ -5,3 +5,8 @@ interface Props { items: Publication[]; }
 const { items } = Astro.props;
 ---
 <div class="publication-list">{items.map((item, index) => <PublicationEntry publication={item} index={index} />)}</div>
+
+<style>
+  .publication-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 clamp(2rem, 4vw, 4rem); }
+  @media (max-width: 900px) { .publication-list { grid-template-columns: 1fr; } }
+</style>

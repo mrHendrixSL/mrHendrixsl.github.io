@@ -1,7 +1,7 @@
 ---
 import HomeChapterLayout from '../layouts/HomeChapterLayout.astro';
 import NextChapter from '../components/layout/NextChapter.astro';
-import ToolOrbit from '../components/home/ToolOrbit.svelte';
+import SemanticObservatory from '../components/home/SemanticObservatory.svelte';
 import { profile } from '../data/profile';
 import { getImage } from 'astro:assets';
 import headshotSource from '../../assets/img/headshot.jpg';
@@ -23,7 +23,7 @@ const headshotRetina = await getImage({ src: headshotSource, width: 352, height:
       </nav>
     </div>
 
-    <div class="trade-visual"><ToolOrbit client:visible /></div>
+    <div class="trade-visual"><SemanticObservatory client:visible /></div>
 
     <figure class="portrait">
       <img src={headshot.src} srcset={`${headshot.src} 1x, ${headshotRetina.src} 2x`} width="176" height="176" alt="Portrait of Rasika Edirisinghe" decoding="async" fetchpriority="high" />
@@ -78,8 +78,8 @@ const headshotRetina = await getImage({ src: headshotSource, width: 352, height:
     .hero-concept { max-width: 23rem; margin-block: .7rem; line-height: 1.65; }
     .profile-links { gap: .55rem 1.25rem; }
     .trade-visual { grid-column: 1; grid-row: auto; width: 100%; padding: 0; }
-    .portrait { right: 0; bottom: 4.8rem; }
-    .portrait img { width: 4.25rem; height: 4.25rem; }
+    .portrait { top: 4.2rem; right: 0; bottom: auto; }
+    .portrait img { width: 3.5rem; height: 3.5rem; }
     .portrait figcaption { display: none; }
     .hero-next { grid-column: 1; margin-top: .25rem; }
   }
@@ -91,5 +91,23 @@ const headshotRetina = await getImage({ src: headshotSource, width: 352, height:
     .hero-thesis { font-size: clamp(2rem, 2.7vw, 2.7rem); }
     .portrait { margin-bottom: 2rem; }
     .portrait img { width: 8rem; height: 8rem; }
+  }
+
+  @media (min-width: 901px) and (max-width: 1180px) and (max-height: 820px) {
+    .portrait { bottom: 5rem; margin-bottom: 0; }
+    .portrait img { width: 5rem; height: 5rem; }
+  }
+
+  @media (min-width: 801px) and (max-width: 900px) {
+    .home-hero { grid-template-columns: minmax(17rem, .82fr) minmax(0, 1.18fr); gap: 1.5rem; padding-top: 2.25rem; }
+    .hero-copy h1 { margin-block: .7rem 1rem; font-size: clamp(2.7rem, 5.8vw, 3.1rem); }
+    .identity-role { margin-bottom: 1.5rem; font-size: .65rem; }
+    .hero-thesis { font-size: 2rem; }
+    .hero-concept { margin-block: 1rem; font-size: .58rem; line-height: 1.55; }
+    .profile-links { gap: .45rem 1.2rem; }
+    .profile-links a { font-size: .6rem; }
+    .trade-visual { padding-right: 0; }
+    .portrait { bottom: 4.5rem; margin-bottom: 0; }
+    .portrait img { width: 4rem; height: 4rem; }
   }
 </style>

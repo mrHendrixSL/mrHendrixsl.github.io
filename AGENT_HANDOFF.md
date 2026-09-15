@@ -20,7 +20,7 @@ Purpose: durable record of work across coding/writing assistants.
 |---|---|
 | Git remote | `https://github.com/mrHendrixSL/mrHendrixsl.github.io.git` |
 | Git branch | main |
-| Latest commit | `Deploy routed research interface and animated toolchain` — current deployment commit; use `git log -1` for its immutable hash |
+| Latest commit | `Deploy cinematic Semantic Observatory` — current deployment commit; use `git log -1` for its immutable hash |
 | Full-pass rollback | Annotated tag `pre-editorial-pass-2026-09-12` → `73b3d88` |
 | Homepage rollback | Annotated tag `pre-homepage-update-2026-09-12` → `fa50138` |
 | Skip-link rollback | Annotated tag `pre-skip-link-fix-2026-09-12` → `70646ba` |
@@ -31,8 +31,9 @@ Purpose: durable record of work across coding/writing assistants.
 | Transformation-reduction rollback | Annotated tag `pre-transformation-reduction-2026-09-12` → `2d6956c`; published with the progressive-disclosure pass |
 | Homepage-IA rollback | Annotated tag `pre-homepage-ia-correction-2026-09-12` → `a40b75d`; published with the five-chapter homepage pass |
 | Routed-home/toolchain rollback | Annotated tag `pre-routed-home-toolchain-2026-09-15` → `dc1c0a4`; published with the routed interface/toolchain pass |
-| Uncommitted work | None expected after the authorised deployment |
-| Active work | Confirm the GitHub Pages Actions deployment completes and review the live site |
+| Semantic Observatory rollback | Annotated tag `pre-semantic-observatory-2026-09-15` → `fd39ffe`; published with the cinematic observatory pass |
+| Uncommitted work | Only the unused untracked prototype `src/components/home/MethodPipeline.svelte`; it was explicitly excluded from deployment |
+| Active work | Confirm the GitHub Pages Actions deployment completes and review the Semantic Observatory on the live site |
 | Live URL | `https://mrHendrixSL.github.io` |
 
 ### Deliverable Status
@@ -59,10 +60,11 @@ Purpose: durable record of work across coding/writing assistants.
 | D18 | Five-chapter homepage narrative with quiet identity hero and compact Now exit surface | ✅ Deployed |
 | D19 | Reference-matched five-screen homepage with real routes, persistent responsive chapter navigation, reusable continuation controls, simplified transformation opening, and responsive architecture pipeline | ✅ Deployed |
 | D20 | Compact publication/talk/experience/note directories, abstract one-screen responsive architecture, and persistent D3-calculated landing toolchain animation | ✅ Deployed |
+| D21 | Cinematic Semantic Observatory landing sequence with a persistent three-dimensional semantic field | ✅ Deployed |
 
 ### Pending Actions
 
-1. **Live deployment review** — Confirm the GitHub Pages workflow completes and inspect the routed homepage, interactive toolchain, Architecture page, and compact directories on the public URL.
+1. **Semantic Observatory live review** — Confirm the Pages workflow completes and inspect the complete animation on the public URL.
 2. **Zenodo DOI** — When the Hiberno-English dataset is uploaded to Zenodo, update its record in `src/data/publications.ts` with the DOI link.
 3. **Stale SCSS deletion** — `assets/css/style.scss` has been made non-compiling but remains tracked pending owner approval for deletion.
 4. **LaTeX artefact cleanup** — approve removal from version control of `cv_source/cv.aux`, `cv_source/cv.log`, `cv_source/cv.out`, `cv_source/texput.log`, and `cv_source/cv.pdf`; `.gitignore` now excludes future generated output.
@@ -76,6 +78,7 @@ Purpose: durable record of work across coding/writing assistants.
 | `src/layouts/BaseLayout.astro` | Global semantic shell, SEO metadata, navigation, and footer |
 | `src/pages/` | Canonical pages and thin compatibility routes |
 | `src/components/relation/` | D3 relation field/research map and GSAP transformation-sequence Svelte islands |
+| `src/components/home/SemanticObservatory.svelte` | D3/GSAP cinematic Identity visualisation |
 | `src/data/` | Typed profile, updates, publications, talks, projects, experience, and skills |
 | `src/content/notes/` | Notes MDX content collection |
 | `public/assets/` | URL-stable CV, portrait, favicon, and social-preview assets |
@@ -87,7 +90,7 @@ Purpose: durable record of work across coding/writing assistants.
 ### Site Architecture
 
 - **Current production architecture:** Astro 7 static output, with page source in `src/pages/`, shared layouts/styles/components in `src/`, and static assets in `public/`.
-- **Client islands:** Identity hydrates a focused D3-calculated toolchain animation with `client:visible`; Transformation and Architecture hydrate their focused Svelte components the same way. GSAP controls opt-in token transitions without scroll hijacking. RelationField remains preserved but unmounted, so its dynamically imported OGL layer is absent from the homepage-route output.
+- **Client islands:** Identity hydrates `SemanticObservatory.svelte` with `client:visible`, using D3 for deterministic spatial structure and dynamically imported GSAP for the cinematic sequence. Transformation and Architecture retain their focused islands. RelationField remains preserved but unmounted, so OGL is absent from the homepage-route output.
 - **Structured content:** typed data under `src/data/`; Notes under `src/content/notes/` through an Astro MDX content collection.
 - **Deployment:** `.github/workflows/deploy.yml` uses `withastro/action@v6` and `actions/deploy-pages@v5`; GitHub Pages uses the Actions artifact.
 - **Preserved fallback:** all prior Jekyll root Markdown, `_layouts/`, `_posts/`, `_config.yml`, and original `assets/` remain present for rollback.
@@ -624,5 +627,44 @@ Purpose: durable record of work across coding/writing assistants.
 **Risks / review notes:**
 - The landing toolchain is a concise selection from the existing methods/skills inventory, not an exhaustive software list.
 - Historical Session 14 notes describe the state at that checkpoint; Session 15 supersedes its statements about the Identity route having no island and mobile Architecture requiring scroll.
+
+---
+
+### Session 16 — 2026-09-15 — Codex
+
+**Scope:** Replace the landing-page orbit with a cinematic, semantically causal observatory sequence and resolve visual/document overflow.
+
+**Done locally:**
+- Replaced the Identity route's mounted `ToolOrbit` with a new `SemanticObservatory.svelte` client island; the deployed `ToolOrbit.svelte` source remains preserved and unchanged.
+- Built one continuous 14.15-second loop: archival Milton/Shelley fragments enter, words become a semantic field, retrieval highlights candidates, judgement reveals clusters and decays weak evidence, exploration resolves an interpretable relation map, and the final statement appears beside it.
+- Used D3 to generate deterministic clustered coordinates, Delaunay neighbourhood links, curved retrieval paths, cluster extents, and the final force-laid relation map.
+- Used dynamically imported GSAP only for the cinematic state transitions. After Represent establishes the coordinates, the semantic points remain fixed; highlight, decay, cluster contours, restrained pan, and zoom perform the later analytical stages.
+- Added three translucent depth planes and connecting struts so Represent constructs a restrained three-dimensional semantic space without adding another library or using decorative random particles.
+- Corrected GSAP/SVG transform composition by separating static-position wrappers from animated groups. This keeps both quotation cards inside the frame and restores the complete final statement.
+- Removed lingering retrieval/judgement artefacts before Explore and separated the final network from the concluding copy.
+- Repositioned the portrait on phone layouts so it no longer overlaps the observatory or Next control.
+- Added a compact 801–900 px two-column composition, eliminating the 820 px horizontal overflow while keeping the route one viewport tall at the tested tablet sizes.
+- Kept the complete static final state for `prefers-reduced-motion`; GSAP is not requested in that mode.
+
+**Validation:**
+- `npm run build`: 43 source files checked with zero errors, warnings, or hints; all 18 routes generated.
+- Captured and visually inspected every timed desktop phase plus mobile Represent, Judge, Relation Space, and reduced-motion states under `C:/Users/sup3r/.codex/review/semantic-observatory-2026-09-15/`.
+- Verified the loop returns to TEXTS after 14.15 seconds and that the complete quotation and final statement remain within the SVG frame.
+- Breakpoint checks at 1920×1080, 1440×900, 1180×820, 1024×768, 901×820, 900×820, 820×1180, 820×820, 801×800, 768×1024, 430×932, 390×844, and 360×800 found no horizontal overflow. The canonical 1920, 820, 768, 430, 390, and 360 layouts remain exactly one viewport tall.
+- At 390×844, both animated and reduced-motion layouts are exactly one viewport with the portrait, observatory, and Next control separated. At 360×800 the same holds.
+- Reduced-motion checks confirmed the stable final relation state and that no GSAP resource is loaded.
+- Lighthouse mobile: Performance 99, Accessibility 100, Best Practices 100, SEO 100; FCP 1.6 s, LCP 1.7 s, CLS 0.001, TBT 20 ms.
+- Lighthouse desktop: Performance 100, Accessibility 100, Best Practices 100, SEO 100; FCP/LCP 0.4 s, CLS 0, TBT 0 ms.
+- Both Lighthouse reports were written successfully; the CLI emitted only the known Windows EPERM temporary-profile cleanup warning.
+
+**Deployment:**
+- The owner explicitly authorised the completed and reviewed pass to be committed and pushed.
+- Created annotated rollback tag `pre-semantic-observatory-2026-09-15` at the exact pre-pass commit, `fd39ffe8366575657e8c818cffdab4442eae7bcd`.
+- Committed only the finished observatory implementation, Identity integration, and handoff record; the unused untracked prototype was not included.
+- Pushed `main` and the rollback tag to origin for GitHub Pages deployment.
+
+**Risks / review notes:**
+- `src/components/home/MethodPipeline.svelte` is an unused untracked intermediate prototype. It is not imported or built; standing instructions require owner confirmation before deleting source files.
+- The observatory uses the owner-supplied Milton/Shelley demonstration and qualitative research operations; it introduces no experimental measurements or quantitative claims.
 
 ---

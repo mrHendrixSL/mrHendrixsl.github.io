@@ -26,7 +26,7 @@ export const projects: ResearchProject[] = [
     context: 'inTrusted project · Nimbus Research Centre · Munster Technological University',
     dates: 'Apr–Jul 2026',
     status: 'completed',
-    href: 'https://nimbuscentre.ie/project/intrusted/',
+    href: 'https://www.horizoncascade.net/from-texts-to-robots-my-nimbus-secondment-story/',
     description: 'Completed a research secondment examining how natural-language instructions are preserved or altered as they pass through conversational interpretation, planning, tool use, and robotic action.'
   }
 ];
